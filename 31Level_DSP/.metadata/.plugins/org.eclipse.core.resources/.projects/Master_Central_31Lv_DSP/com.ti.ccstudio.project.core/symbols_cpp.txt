@@ -1,6 +1,6 @@
 #define __signed_chars__ 1	/* Predefined */
-#define __DATE__ "Apr  7 2021"	/* Predefined */
-#define __TIME__ "22:01:37"	/* Predefined */
+#define __DATE__ "Apr 22 2021"	/* Predefined */
+#define __TIME__ "11:15:30"	/* Predefined */
 #define __STDC__ 1	/* Predefined */
 #define __STDC_HOSTED__ 1	/* Predefined */
 #define __cplusplus 201402L	/* Predefined */
@@ -52,8 +52,8 @@
 #define __VERSION__ "EDG g++ 4.8 mode"	/* Predefined */
 #define __CHAR16_TYPE__ unsigned short	/* Predefined */
 #define __CHAR32_TYPE__ unsigned int	/* Predefined */
-#define __TI_COMPILER_VERSION__ 8003008	/* Predefined */
-#define __COMPILER_VERSION__ 8003008	/* Predefined */
+#define __TI_COMPILER_VERSION__ 8003002	/* Predefined */
+#define __COMPILER_VERSION__ 8003002	/* Predefined */
 #define _TMS320C6X 1	/* Predefined */
 #define __TMS320C6X__ 1	/* Predefined */
 #define _TMS320C6600 1	/* Predefined */

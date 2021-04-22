@@ -2,12 +2,18 @@
 
 Sources/Interrupt.obj: ../Sources/Interrupt.c
 Sources/Interrupt.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes/Define_Header.h
-Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.2.2/include/math.h
-Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.2.2/include/linkage.h
-Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.2.2/include/elfnames.h
-Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.2.2/include/abi_prefix.h
-Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.2.2/include/mathf.h
-Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.2.2/include/mathl.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/math.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/_ti_config.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/linkage.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/elfnames.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/abi_prefix.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/_bsdmath.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/sys/_types.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/sys/cdefs.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/machine/_types.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/machine/_limits.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/mathf.h
+Sources/Interrupt.obj: C:/ti/ti-cgt-c6000_8.3.2/include/mathl.h
 Sources/Interrupt.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes/AM572x_C66/AM572x_C66_device.h
 Sources/Interrupt.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes/AM572x_C66/AM572x_C66_CM_CORE_AON__IPU.h
 Sources/Interrupt.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes/AM572x_C66/AM572x_C66_DSP_ICFG.h
@@ -44,12 +50,18 @@ Sources/Interrupt.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Cen
 
 ../Sources/Interrupt.c: 
 C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes/Define_Header.h: 
-C:/ti/ti-cgt-c6000_8.2.2/include/math.h: 
-C:/ti/ti-cgt-c6000_8.2.2/include/linkage.h: 
-C:/ti/ti-cgt-c6000_8.2.2/include/elfnames.h: 
-C:/ti/ti-cgt-c6000_8.2.2/include/abi_prefix.h: 
-C:/ti/ti-cgt-c6000_8.2.2/include/mathf.h: 
-C:/ti/ti-cgt-c6000_8.2.2/include/mathl.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/math.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/_ti_config.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/linkage.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/elfnames.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/abi_prefix.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/_bsdmath.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/sys/_types.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/sys/cdefs.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/machine/_types.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/machine/_limits.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/mathf.h: 
+C:/ti/ti-cgt-c6000_8.3.2/include/mathl.h: 
 C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes/AM572x_C66/AM572x_C66_device.h: 
 C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes/AM572x_C66/AM572x_C66_CM_CORE_AON__IPU.h: 
 C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes/AM572x_C66/AM572x_C66_DSP_ICFG.h: 

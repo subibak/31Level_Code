@@ -23,93 +23,87 @@ Uint16 Flag_Out_Loop = 0;
 Uint32 CNT_BEn0 = 0;
 #define CNT_BEn0_Timer  300000
 
+#define SUM     1
+#define SUB     2
+#define MUL     3
+#define DIV     4
+
+int   mSum = 0.0, mSub, mMul = 0.0, mDiv = 0.0;
+int   mA = 1.0, mB = 2.0;
+Uint32  M_CASE = 0;
+
 interrupt void ISR_DSPTimer(void)
 {
-//    AL_test();
-//    if(Measure_case == 1) XF1_ON;
-//    GPMC_BE0n_OFF;
-////    CenLeg_WR_READY = 0x0000;
-//
-//    ADC_OP();
-//    if(Measure_case == 1) XF1_OFF;
-//
-//    if(Measure_case == 3) XF1_ON;
-//    Sensor_Outside();
-//    if(Measure_case == 3) XF1_OFF;
-//
-//    if(Measure_case == 4) XF1_ON;
-//    Sensor_Inside();
-//    if(Measure_case == 4) XF1_OFF;
-//
-//    if(Measure_case == 5) XF1_ON;
-//    MC_OP();
-//    if(Measure_case == 5) XF1_OFF;
-//
-//    if(Measure_case == 6) XF1_ON;
-//    fault();
-//    if(Measure_case == 6) XF1_OFF;
-//
-//
-//    if(++INT_carrier_loop_cnt1 >= 5)
-//    {
-//        Flag_Out_Loop = 1;
-//        INT_carrier_loop_cnt1 =0;
-//    }
-//    else
-//        Flag_Out_Loop = 0;
-//
-//    if(Measure_case == 7) XF1_ON;
-//    Mailbox_WR();
-//    if(Measure_case == 7) XF1_OFF;
-//
-//    if(Measure_case == 8) XF1_ON;
-//    Mailbox_RD();
-//    if(Measure_case == 8) XF1_OFF;
-//
-////    if(Flag_EcatReady == 1)
-////    {
-//    if(Measure_case == 9) XF1_ON;
-//        GPMC_Leg_Central();
-//    if(Measure_case == 9) XF1_OFF;
-//
-////    }
-//
-//    if(Measure_case == 10) XF1_ON;
-//    GPMC_EtherCAT();
-//    if(Measure_case == 10) XF1_OFF;
+ //   XF1_ON;
 
+    switch(M_CASE)
+    {
+        case SUM : XF1_ON; mSum = mA + mB; XF1_OFF; break;
+        case SUB : XF1_ON; mSub = mA - mB; XF1_OFF; break;
+        case MUL : XF1_ON; mMul = mA * mB; XF1_OFF; break;
+        case DIV : XF1_ON; mDiv = mA / mB; XF1_OFF; break;
+        default  : XF1_ON; XF1_OFF; break;
+    }
+
+    if(mA > 100.0)
+        mA = 1.0;
+    else
+        ma++;
+
+    if(mB > 100.0)
+        mB = 1.0;
+    else
+        mB++;
+
+    /*
+    GPMC_BE0n_OFF;
+//    CenLeg_WR_READY = 0x0000;
+
+    ADC_OP();
+    Sensor_Outside();
+    Sensor_Inside();
+
+    MC_OP();
+    fault();
+
+    if(++INT_carrier_loop_cnt1 >= 5)
+    {
+        Flag_Out_Loop = 1;
+        INT_carrier_loop_cnt1 =0;
+    }
+    else
+        Flag_Out_Loop = 0;
+
+    Mailbox_WR();
+    Mailbox_RD();
+
+    if(Flag_EcatReady == 1)
+    {
+        GPMC_Leg_Central();
+    }
+
+    GPMC_EtherCAT();
 
     Operation();
 
-//    if(Measure_case == 11) XF1_ON;
-//    Ecat_Time_Compen();
-//    if(Measure_case == 11) XF1_OFF;
-//
-////    if(Flag_EcatReady == 1)
-////    {
-//    if(Measure_case == 12) XF1_ON;
-//        GPMC_BE0n_ON;
-//        GPMC_Central_Leg();
-//    if(Measure_case == 12) XF1_OFF;
-//
-////    }
-//    if(Measure_case == 13) XF1_ON;
-//    Mode_Info_old.all = Mode_Info.all;
-//
-//    HMI_CenMa_Matching();
-//    if(Measure_case == 13) XF1_OFF;
-//
-//    if(Measure_case == 14) XF1_ON;
-//    LED();
-//    if(Measure_case == 14) XF1_OFF;
-//
-//    if(Measure_case == 15) XF1_ON;
+    Ecat_Time_Compen();
+
+    if(Flag_EcatReady == 1)
+    {
+        GPMC_BE0n_ON;
+        GPMC_Central_Leg();
+    }
+
+    Mode_Info_old.all = Mode_Info.all;
+
+    HMI_CenMa_Matching();
+*/
+    LED();
 //    DAC();
-//    if(Measure_case == 15) XF1_OFF;
 
-
-	// Interrupt Clear.
+//    XF1_OFF;
+    // Interrupt Clear.
     Timer5Regs.IRQSTATUS.all = IRQSTATUS_OVF_INT;
-	DSP_ICFGRegs.EVTCLR2.bit.EVT67 = 1;
-	ICR = M_INT5;
+    DSP_ICFGRegs.EVTCLR2.bit.EVT67 = 1;
+    ICR = M_INT5;
 }
