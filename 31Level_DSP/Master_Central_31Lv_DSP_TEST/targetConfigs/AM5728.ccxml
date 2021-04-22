@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configurations XML_version="1.2" id="configurations_0">
+    <configuration XML_version="1.2" id="configuration_0">
+        <instance XML_version="1.2" desc="Texas Instruments XDS100v2 USB Debug Probe" href="connections/TIXDS100v2_Connection.xml" id="Texas Instruments XDS100v2 USB Debug Probe" xml="TIXDS100v2_Connection.xml" xmlpath="connections"/>
+        <connection XML_version="1.2" id="Texas Instruments XDS100v2 USB Debug Probe">
+            <instance XML_version="1.2" href="drivers/tixds100v2icepick_d.xml" id="drivers" xml="tixds100v2icepick_d.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2arm9.xml" id="drivers" xml="tixds100v2arm9.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2cs_dap.xml" id="drivers" xml="tixds100v2cs_dap.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2cortexM.xml" id="drivers" xml="tixds100v2cortexM.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2cs_child.xml" id="drivers" xml="tixds100v2cs_child.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2c66xx.xml" id="drivers" xml="tixds100v2c66xx.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2dap_pc.xml" id="drivers" xml="tixds100v2dap_pc.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2cortexA15.xml" id="drivers" xml="tixds100v2cortexA15.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2csstm.xml" id="drivers" xml="tixds100v2csstm.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2etbcs.xml" id="drivers" xml="tixds100v2etbcs.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/tixds100v2pru.xml" id="drivers" xml="tixds100v2pru.xml" xmlpath="drivers"/>
+            <property Type="choicelist" Value="0" id="The JTAG TCLK Frequency (MHz)"/>
+            <platform XML_version="1.2" id="platform_0">
+                <instance XML_version="1.2" desc="AM5728" href="devices/AM5728.xml" id="AM5728" xml="AM5728.xml" xmlpath="devices"/>
+                <device HW_revision="2.0" XML_version="1.2" description="AM5728 - Cortex A15 Embedded Processor&#10;Silicon Revision 2.x" id="AM5728" partnum="AM5728" simulation="no">
+                    <router HW_revision="1.0" XML_version="1.2" description="ICEPick_D Router" id="IcePick_D_0" isa="ICEPICK_D">
+                        <subpath id="IPU_2_C0">
+                            <router HW_revision="1.0" XML_version="1.2" description="CS_DAP Router" id="CS_DAP_3" isa="CS_DAP">
+                                <subpath id="CortexM4_IPU_2_C0">
+                                </subpath>
+                            </router>
+                        </subpath>
+                        <subpath id="IPU_2_C1">
+                            <router HW_revision="1.0" XML_version="1.2" description="CS_DAP Router" id="CS_DAP_4" isa="CS_DAP">
+                                <subpath id="CortexM4_IPU_2_C1">
+                                </subpath>
+                            </router>
+                        </subpath>
+                    </router>
+                </device>
+            </platform>
+        </connection>
+    </configuration>
+</configurations>

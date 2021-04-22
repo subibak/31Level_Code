@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.ti.ccstudio.project.ui.internal.wizards.project.ProjectSettingsPage">
+		<item key="CCS.TARGET" value="devices/AM5728.xml"/>
+		<section name="1">
+			<item key="CCS.RUNTIME_SUPPORT_LIB" value="null"/>
+			<item key="CCS.LINKER_COMMAND_FILE" value="null"/>
+			<item key="CCS.OUTPUT_TYPE" value="executable"/>
+		</section>
+		<section name="2">
+			<item key="CCS.OUTPUT_TYPE" value="executable"/>
+			<item key="CCS.LINKER_COMMAND_FILE" value="null"/>
+			<item key="CCS.RUNTIME_SUPPORT_LIB" value="null"/>
+		</section>
+		<section name="3">
+			<item key="CCS.OUTPUT_TYPE" value="executable"/>
+			<item key="CCS.LINKER_COMMAND_FILE" value="null"/>
+			<item key="CCS.RUNTIME_SUPPORT_LIB" value="null"/>
+		</section>
+		<section name="4">
+			<item key="CCS.OUTPUT_TYPE" value="executable"/>
+			<item key="CCS.LINKER_COMMAND_FILE" value="null"/>
+			<item key="CCS.RUNTIME_SUPPORT_LIB" value="null"/>
+		</section>
+		<section name="5">
+			<item key="CCS.OUTPUT_TYPE" value="executable"/>
+			<item key="CCS.LINKER_COMMAND_FILE" value="null"/>
+			<item key="CCS.RUNTIME_SUPPORT_LIB" value="null"/>
+		</section>
+	</section>
+	<section name="com.ti.ccstudio.project.ui.internal.properties.DynamicPropertiesPageManager">
+		<item key="CCS.VIEW_ADVANCED" value="true"/>
+	</section>
+	<section name="com.ti.ccstudio.project.ui.internal.wizards.importexport.ProjectImportPage">
+		<item key="CCS.BROWSE_DIRS_FILTER" value="C:\Users\subi\Desktop\28377D\Labs\Labs\Lab11"/>
+		<item key="CCS.IMPORT_FROM_ARCHIVE" value="false"/>
+		<item key="CCS.COPY_INTO_WORKSPACE" value="false"/>
+		<item key="CCS.IMPORT_REFERENCED_PROJECTS" value="false"/>
+	</section>
+	<section name="com.ti.ccstudio.project.ui.internal.preferences.DynamicPreferencePageManager">
+	</section>
+	<section name="CCS.ImportCCSProjectWizard">
+		<item key="WizardProjectsImportPage.STORE_IMPORT_REFERENCED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.BROWSE_DIRS_FILTER" value="D:\Subi\reference_data\소스 모음\DSP\LG_Edu_2019(V.1)_7_1\LG_Edu_2019(V.1)_7_1"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+	</section>
+</section>

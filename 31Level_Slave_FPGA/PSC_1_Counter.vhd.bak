@@ -1,0 +1,101 @@
+-- Carrier를 만들어 내는 블럭
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+
+entity PSC_1_Counter is
+port(
+			XCLK					:	in std_logic;  -- 37.5MHz Clock
+			PWM_CNT_EN			:  in std_logic;  -- Chip Select Signal
+	
+			CNT_1_OUT 			:	buffer std_logic_vector(15 downto 0);
+			SEQ_1_OUT			:  out std_logic;
+			CNT_1_FLAG_OUT		:	out std_logic;
+			
+			
+
+	);
+end PSC_1_Counter;
+
+
+architecture arch of PSC_1_Counter is
+
+	signal cnt_reg					:		std_logic_vector(1 downto 0) ;
+	
+	constant HALF_CNT				:		std_logic_vector(15 downto 0)	:=	"0001110101001100";	--------  7500 count
+	constant ZERO_CNT				:		std_logic_vector(15 downto 0)	:=	"0000000000000000";  --------     0 count
+	constant SEQ0					:		std_logic                     := '0'; -- Down Count Mode
+	constant SEQ1					:		std_logic                     := '1'; -- Up   Count Mode
+	
+	constant INITIAL_CARRIER_1	:		std_logic_vector(15 downto 0) := "0000000000000000";  --------  Carrier 1 (initial :    0, seq : 1)
+	
+
+	-- 동기신호의 어긋남으로 인한 캐리어 파형 조절 (Count 마지막 값 설정 필요)
+	constant FINAL_CARRIER_1   :     std_logic_vector(15 downto 0) := "0000000000000001";  --------  Carrier 1 (final :    1, seq : 0)
+	
+	
+	signal cnt_1_value			:		std_logic_vector(15 downto 0);
+	
+	signal cnt_1_seq				: 		std_logic;
+		
+	
+	signal cnt_1_flag				: 		std_logic;
+	
+	
+begin
+ 	-- 37.5MHz의 클럭을 받아서 클럭이 매번 발생할 때 마다 외부에서(DSP) 받은 칩 셀렉터 신호를 2bit 의 레지스터에 저장&갱신
+	-- 매 클럭 발생할 때마다 2bit 의 레지스터 최하위 비트에 저장됨 
+	-- 그리고 다음 클럭 발생시 이전에 저장되었던 값을 상위 비트에 저장하면서 하위비트에는 새로운 값으로 갱신 
+		process(XCLK)
+		begin
+			if(XCLK'event and XCLK = '1') then
+				cnt_reg <= cnt_reg(0) & PWM_CNT_EN;
+			end if;
+		end process;
+	
+	--	37.5MHz의 클럭으로 정해진 초기값에 따라 업 또 다운 카운터를 진행 
+	-- seq = 1 일 때는 업 카운터, seq = 0 일 때는 다운 카운터를 실시함
+	-- 업 다운 카운터를 통해 최종적으로 카운터가 0에 도달하면 카운터 플래그 발생, 이 플래그는 이 후에 PWM_COMPARATOR 블럭에서 시컨스를 초기화 해주는 역활을 함
+		process(XCLK, cnt_reg, CNT_1_OUT) 					--------  Carrier 1
+		begin
+			if (XCLK'event and XCLK = '1') then
+				cnt_1_flag <= '1';
+				if (cnt_reg = "10") then    							
+					cnt_1_value <= INITIAL_CARRIER_1;     -- Counting Data Load				
+					cnt_1_seq <= SEQ1;                    -- Up Count Order
+					cnt_1_flag <= '1';				
+					
+				else -- cnt_reg = "00" & "01" & "11" 상태에서 계속적인 카운팅 실시
+				
+					if (cnt_1_seq = SEQ1) then             -- Up Count State
+						cnt_1_value <= cnt_1_value + '1';  -- Up Count  
+						
+						if (cnt_1_value = HALF_CNT) then    -- Count == 7500
+							cnt_1_seq <= SEQ0;              -- Down Count Order
+						end if;
+						
+					elsif (cnt_1_seq = SEQ0) then          -- Down Count State
+						
+						if (cnt_1_value = FINAL_CARRIER_1) then
+							cnt_1_value <= FINAL_CARRIER_1;
+						else
+							cnt_1_value <= cnt_1_value - '1';  -- Down Count
+						
+					--	if (cnt_1_value = ZERO_CNT) then    -- Zero Count State
+						--	cnt_1_seq <= SEQ1;              -- Up Count Order
+						--   cnt_1_flag <= '0';              -- Count Flag Initialization
+				   	--end if;
+							
+						end if;
+					end if;					
+				end if;
+			end if;
+			
+			CNT_1_OUT <= cnt_1_value;
+			SEQ_1_OUT <= cnt_1_seq;
+			CNT_1_FLAG_OUT <= cnt_1_flag;
+		end process;
+		
+		

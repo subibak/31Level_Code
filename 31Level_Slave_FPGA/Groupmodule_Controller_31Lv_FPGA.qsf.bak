@@ -1,0 +1,422 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 17:26:56  June 01, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Groupmodule_Controller_31Lv_FPGA_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 22:29:45  May 31, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Groupmodule_Controller_31Lv_FPGA_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE40F23C8
+set_global_assignment -name TOP_LEVEL_ENTITY Groupmodule_Controller_31Lv
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:29:45  MAY 31, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity sic_inverter -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity sic_inverter -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -entity sic_inverter -section_id Top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[1] -entity sic_inverter
+set_location_assignment PIN_AB10 -to XA[11]
+set_location_assignment PIN_AA10 -to XA[10]
+set_location_assignment PIN_Y10 -to XA[9]
+set_location_assignment PIN_W10 -to XA[8]
+set_location_assignment PIN_V11 -to XA[7]
+set_location_assignment PIN_U11 -to XA[6]
+set_location_assignment PIN_AB9 -to XA[5]
+set_location_assignment PIN_AA9 -to XA[4]
+set_location_assignment PIN_AB8 -to XA[3]
+set_location_assignment PIN_AA8 -to XA[2]
+set_location_assignment PIN_U10 -to XA[1]
+set_location_assignment PIN_K8 -to Led_3
+set_location_assignment PIN_J5 -to Led_0
+set_location_assignment PIN_H5 -to Led_1
+set_location_assignment PIN_L8 -to Led_2
+set_location_assignment PIN_V6 -to EMID[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[11] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[2] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[3] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[5] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[10] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[9] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[8] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[7] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[6] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA[4] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XA -entity sic_inverter
+set_location_assignment PIN_T8 -to EMID[15]
+set_location_assignment PIN_AB5 -to EMID[14]
+set_location_assignment PIN_AA5 -to EMID[13]
+set_location_assignment PIN_AB4 -to EMID[12]
+set_location_assignment PIN_AA4 -to EMID[11]
+set_location_assignment PIN_V7 -to EMID[10]
+set_location_assignment PIN_W6 -to EMID[9]
+set_location_assignment PIN_AB3 -to EMID[8]
+set_location_assignment PIN_AA3 -to EMID[7]
+set_location_assignment PIN_Y6 -to EMID[6]
+set_location_assignment PIN_Y3 -to EMID[5]
+set_location_assignment PIN_Y4 -to EMID[4]
+set_location_assignment PIN_U8 -to EMID[3]
+set_location_assignment PIN_U7 -to EMID[2]
+set_location_assignment PIN_V5 -to EMID[1]
+set_location_assignment PIN_G1 -to EM1CLK
+set_location_assignment PIN_H7 -to /EM1WE
+set_location_assignment PIN_C2 -to /EM1WAIT
+set_location_assignment PIN_E1 -to /EM1RNW
+set_location_assignment PIN_E3 -to /EM1OE
+set_location_assignment PIN_B2 -to /EM1CS3n
+set_location_assignment PIN_C1 -to /EM1CS2n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /EM1CS2n -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /EM1CS3n -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /EM1OE -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /EM1RNW -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /EM1WAIT -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Led_3 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /EM1WE -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EM1CLK -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[0] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[1] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[2] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[3] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[4] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Led_2 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Led_1 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Led_0 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[15] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[5] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[6] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[7] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[8] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[9] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[10] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[14] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[11] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[12] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID[13] -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMID -entity sic_inverter
+set_location_assignment PIN_M2 -to Pin_M1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Pin_M1 -entity sic_inverter
+set_location_assignment PIN_AA13 -to /Dac_A1_LD
+set_location_assignment PIN_AB13 -to /Dac_A2_LD
+set_location_assignment PIN_V12 -to /Dac_A_CS
+set_location_assignment PIN_AB14 -to Dac_A_CLK
+set_location_assignment PIN_AA14 -to Dac_A_SDI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /Dac_A1_LD -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /Dac_A2_LD -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /Dac_A_CS -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Dac_A_SDI -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Dac_A_CLK -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to pin_name1 -entity sic_inverter
+set_location_assignment PIN_V10 -to pin_name1
+set_location_assignment PIN_B3 -to Group1_74f240
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Group1_74f240 -entity sic_inverter
+set_location_assignment PIN_A4 -to Group2_74f240
+set_location_assignment PIN_G11 -to Group3_74f240
+set_location_assignment PIN_F11 -to Group4_74f240
+set_location_assignment PIN_B13 -to Group5_74f240
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Group2_74f240 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Group3_74f240 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Group4_74f240 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Group5_74f240 -entity sic_inverter
+set_location_assignment PIN_E12 -to GATE1
+set_location_assignment PIN_H11 -to GATE2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE1 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE2 -entity sic_inverter
+set_location_assignment PIN_AA12 -to Clk1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Clk1 -entity sic_inverter
+set_location_assignment PIN_E11 -to GATE3
+set_location_assignment PIN_H10 -to GATE4
+set_location_assignment PIN_F10 -to GATE5
+set_location_assignment PIN_D10 -to GATE6
+set_location_assignment PIN_B10 -to GATE7
+set_location_assignment PIN_G9 -to GATE8
+set_location_assignment PIN_E9 -to GATE9
+set_location_assignment PIN_A9 -to GATE10
+set_location_assignment PIN_F8 -to GATE11
+set_location_assignment PIN_B8 -to GATE12
+set_location_assignment PIN_F7 -to GATE13
+set_location_assignment PIN_D7 -to GATE14
+set_location_assignment PIN_B7 -to GATE15
+set_location_assignment PIN_E6 -to GATE16
+set_location_assignment PIN_C6 -to GATE17
+set_location_assignment PIN_A6 -to GATE18
+set_location_assignment PIN_B5 -to GATE19
+set_location_assignment PIN_C4 -to GATE20
+set_location_assignment PIN_A3 -to GATE21
+set_location_assignment PIN_C3 -to GATE22
+set_location_assignment PIN_B4 -to GATE23
+set_location_assignment PIN_A5 -to GATE24
+set_location_assignment PIN_E5 -to GATE25
+set_location_assignment PIN_B6 -to GATE26
+set_location_assignment PIN_D6 -to GATE27
+set_location_assignment PIN_A7 -to GATE28
+set_location_assignment PIN_C7 -to GATE29
+set_location_assignment PIN_E7 -to GATE30
+set_location_assignment PIN_G7 -to GATE31
+set_location_assignment PIN_A8 -to GATE32
+set_location_assignment PIN_C8 -to GATE33
+set_location_assignment PIN_G8 -to GATE34
+set_location_assignment PIN_B9 -to GATE35
+set_location_assignment PIN_F9 -to GATE36
+set_location_assignment PIN_A10 -to GATE37
+set_location_assignment PIN_C10 -to GATE38
+set_location_assignment PIN_E10 -to GATE39
+set_location_assignment PIN_G10 -to GATE40
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE3 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE4 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE5 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE6 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE7 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE8 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE9 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE10 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE11 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE12 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE13 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE14 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE15 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE16 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE17 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE18 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE19 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE20 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE21 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE22 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE23 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE24 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE25 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE26 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE27 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE28 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE29 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE30 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE31 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE32 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE33 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE34 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE35 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE36 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE37 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE38 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE39 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GATE40 -entity sic_inverter
+set_location_assignment PIN_B1 -to /EM1CS4n
+set_location_assignment PIN_Y13 -to /Dac_B1_LD
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /Dac_B1_LD -entity sic_inverter
+set_location_assignment PIN_AA15 -to /Dac_B2_LD
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /Dac_B2_LD -entity sic_inverter
+set_location_assignment PIN_AA16 -to /Dac_B_CS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /Dac_B_CS -entity sic_inverter
+set_location_assignment PIN_U12 -to DAC_B_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_B_CLK -entity sic_inverter
+set_location_assignment PIN_AB15 -to DAC_B_SDI
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DAC_B_SDI -entity sic_inverter
+set_location_assignment PIN_AA20 -to /ADC_A_CONV
+set_location_assignment PIN_AA18 -to /ADC_A_CS
+set_location_assignment PIN_T16 -to /ADC_B_CONV
+set_location_assignment PIN_W15 -to /ADC_B_CS
+set_location_assignment PIN_U14 -to /ADC_C_CONV
+set_location_assignment PIN_R15 -to /ADC_C_CS
+set_location_assignment PIN_AB18 -to /ADC_D_CONV
+set_location_assignment PIN_AB20 -to /ADC_D_CS
+set_location_assignment PIN_V16 -to /ADC_E_CONV
+set_location_assignment PIN_U17 -to /ADC_E_CS
+set_location_assignment PIN_R14 -to /ADC_F_CONV
+set_location_assignment PIN_R16 -to /ADC_F_CS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_A_CONV -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_A_CS -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_B_CONV -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_B_CS -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_C_CONV -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_C_CS -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_D_CONV -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_D_CS -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_E_CONV -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_F_CONV -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_E_CS -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_F_CS -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /EM1CS4n -entity sic_inverter
+set_location_assignment PIN_W17 -to /ADC_ALL_RD1
+set_location_assignment PIN_U15 -to /ADC_ALL_RD2
+set_location_assignment PIN_T12 -to /ADC_ALL_RD3
+set_location_assignment PIN_Y17 -to /ADC_ALL_RD4
+set_location_assignment PIN_U16 -to /ADC_ALL_RD5
+set_location_assignment PIN_T13 -to /ADC_ALL_RD6
+set_location_assignment PIN_AA17 -to /ADC_ALL_WR1
+set_location_assignment PIN_V15 -to /ADC_ALL_WR2
+set_location_assignment PIN_T15 -to /ADC_ALL_WR3
+set_location_assignment PIN_AB17 -to /ADC_ALL_WR4
+set_location_assignment PIN_V14 -to /ADC_ALL_WR5
+set_location_assignment PIN_T14 -to /ADC_ALL_WR6
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_RD1 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_RD2 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_RD3 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_RD4 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_RD5 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_RD6 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_WR1 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_WR2 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_WR3 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_WR4 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_WR5 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to /ADC_ALL_WR6 -entity sic_inverter
+set_location_assignment PIN_M4 -to RX_A
+set_location_assignment PIN_M3 -to RX_B
+set_location_assignment PIN_N2 -to RX_C
+set_location_assignment PIN_N1 -to RX_D
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_A -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_B -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_C -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_D -entity sic_inverter
+set_location_assignment PIN_M6 -to 422_TX_2
+set_location_assignment PIN_L6 -to 422_TX_1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to 422_TX_1 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to 422_TX_2 -entity sic_inverter
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to CLK_RS422 -section_id auto_signaltap_0
+set_location_assignment PIN_M2 -to 422_TX_3
+set_location_assignment PIN_M1 -to 422_TX_4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to 422_TX_3 -entity sic_inverter
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to 422_TX_4 -entity sic_inverter
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to TX_Addr_1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to TX_Data_1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to TX_output_1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to TX_Addr_1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to TX_Data_1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to TX_output_1 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT trigger_in -to CLK_RS422 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to RX_B -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to RX_B -section_id auto_signaltap_0
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity sic_inverter -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE Dac_B_loader.vhd
+set_global_assignment -name VHDL_FILE ADC_EF_Address_Decoder.vhd
+set_global_assignment -name VHDL_FILE ADC_CD_Address_Decoder.vhd
+set_global_assignment -name VHDL_FILE ADC_ALL_Address_Decoder.vhd
+set_global_assignment -name VHDL_FILE ADC_AB_Address_Decoder.vhd
+set_global_assignment -name VHDL_FILE ADC_GEN.vhd
+set_global_assignment -name VHDL_FILE ADC_Address_Decoder_F.vhd
+set_global_assignment -name VHDL_FILE ADC_Address_Decoder_E.vhd
+set_global_assignment -name VHDL_FILE ADC_Address_Decoder_D.vhd
+set_global_assignment -name VHDL_FILE ADC_Address_Decoder_C.vhd
+set_global_assignment -name VHDL_FILE ADC_Address_Decoder_B.vhd
+set_global_assignment -name VHDL_FILE ADC_Address_Decoder_A.vhd
+set_global_assignment -name SOURCE_FILE pll.cmp
+set_global_assignment -name QIP_FILE pll.qip
+set_global_assignment -name BDF_FILE RX_Memory_Module.bdf
+set_global_assignment -name BDF_FILE PWM3.bdf
+set_global_assignment -name BDF_FILE PWM.bdf
+set_global_assignment -name BDF_FILE INVERTER_LEVEL10.bdf
+set_global_assignment -name BDF_FILE INVERTER_LEVEL1.bdf
+set_global_assignment -name BDF_FILE INVERTER.bdf
+set_global_assignment -name BDF_FILE DEADTIME_COM.bdf
+set_global_assignment -name VHDL_FILE TX_RS_422.vhd
+set_global_assignment -name VHDL_FILE RX_RS_422.vhd
+set_global_assignment -name VHDL_FILE RX_Memory.vhd
+set_global_assignment -name VHDL_FILE RX_Addr_latch.vhd
+set_global_assignment -name VHDL_FILE PWM_en.vhd
+set_global_assignment -name VHDL_FILE PWM_COMPARATOR.vhd
+set_global_assignment -name VHDL_FILE PWM_Address_Decoder.vhd
+set_global_assignment -name VHDL_FILE PS_10_CARRIER_GENERATOR.vhd
+set_global_assignment -name VHDL_FILE PSC_1_Counter.vhd
+set_global_assignment -name VHDL_FILE PSC_10_Counter_new.vhd
+set_global_assignment -name VHDL_FILE pll.vhd
+set_global_assignment -name VHDL_FILE led.vhd
+set_global_assignment -name VHDL_FILE GATE_MUX.vhd
+set_global_assignment -name VHDL_FILE Gate_latch.vhd
+set_global_assignment -name VHDL_FILE Gate_en_Adress_Decoder.vhd
+set_global_assignment -name VHDL_FILE FIFO_Module.vhd
+set_global_assignment -name VHDL_FILE Decoder_SCI.vhd
+set_global_assignment -name VHDL_FILE DEAD_TIME.vhd
+set_global_assignment -name VHDL_FILE Data_Validation.vhd
+set_global_assignment -name VHDL_FILE Data_Sum_3.vhd
+set_global_assignment -name VHDL_FILE Data_latch_Memory.vhd
+set_global_assignment -name VHDL_FILE Dac_loader.vhd
+set_global_assignment -name VHDL_FILE Dac_8ch.vhd
+set_global_assignment -name VHDL_FILE cs_sig_generator.vhd
+set_global_assignment -name VHDL_FILE Basic_Address_Decoder.vhd
+set_global_assignment -name VHDL_FILE address_latch.vhd
+set_global_assignment -name VHDL_FILE address_decoder.vhd
+set_global_assignment -name BDF_FILE Groupmodule_Controller_31Lv.bdf
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE ../../Code/FPGA/sic_inverter_DAC_LED/stp1.stp
+set_global_assignment -name SIGNALTAP_FILE ../../Code/FPGA/sic_inverter_DAC_LED/stp1.stp
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

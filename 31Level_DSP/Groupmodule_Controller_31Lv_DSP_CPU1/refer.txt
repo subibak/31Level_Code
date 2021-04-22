@@ -1,0 +1,2 @@
+Method being able to excute build project flash and ram concurrently 
+C/C++ Gneneral -> Paths and Symbol -> Source location tab -> Folder click -> Filter 

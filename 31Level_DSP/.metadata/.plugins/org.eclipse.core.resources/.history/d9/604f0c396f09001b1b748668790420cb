@@ -1,0 +1,61 @@
+/*
+ * Define_Prototypes.h
+ *
+ *  Created on: 2018. 06. 19.
+ *      Author: Subi
+ */
+
+#ifndef DEFINE_PROTOTYPES_H_
+#define DEFINE_PROTOTYPES_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include "F2837xD/F2837xD_device.h"
+
+
+//Dual_core.c
+extern void Init_CpuSelect(void);
+
+//Emif.c
+extern void Init_Emif(void);
+extern void EMif1Initialize(void);
+
+//ePWM.c
+extern void Init_Epwm(void);
+extern void Start_PWM(void);
+
+//GPIO.c
+extern void Init_GPIO(void);
+
+//MAIN_Interrupt.c
+interrupt void Interrupt(void);
+
+//IPC.c
+extern Uint16 IPCBootCPU2(Uint32);
+
+//SysCtrl.c
+extern void Init_Shared_Mem(void);
+extern void Init_PLL(void);
+extern void Init_PeripheralClocks(void);
+extern void Init_PieCtrl(void);
+extern void Init_PieVectTable(void);
+extern void Init_Mem(void);
+extern void Start_PieCtrl(void);
+interrupt void ISR_Default(void);
+extern void Init_Flash(void);
+
+//Timer.c
+extern void Init_Timer(void);
+extern void Start_Timer(void);
+
+//WatchDog.c
+extern void DisableDog(void);
+
+#ifdef __cplusplus
+}
+#endif /* extern "C" */
+
+
+#endif /* DEFINE_PROTOTYPES_H_ */

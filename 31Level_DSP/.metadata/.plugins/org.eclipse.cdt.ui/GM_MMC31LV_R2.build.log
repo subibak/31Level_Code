@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug_CPU2_RAM for project GM_MMC31LV_R2 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: 'GM_MMC31LV_CPU2_RAM.out' is up to date.
+
+**** Build Finished ****

@@ -1,0 +1,86 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity BUFFER_74F240 is 
+	
+	port(
+				OP_CLK	 				:	in std_logic;
+				
+				EMIF_ADDR				:	in std_logic_vector(11 downto 0);
+				EM1CS2n					:	in std_logic;
+				EM1WEn					: 	in std_logic;	
+
+				Buffer1n					:	out std_logic;
+				Buffer2n					:  out std_logic;				
+				Buffer3n					:	out std_logic;
+				Buffer4n					:  out std_logic
+	);
+
+end BUFFER_74F240;
+
+
+architecture arch of BUFFER_74F240 is 
+	
+	signal Buffer1n_reg			:	std_logic := '1';
+	signal Buffer2n_reg			:	std_logic := '1';
+	signal Buffer3n_reg			:	std_logic := '1';
+	signal Buffer4n_reg			:	std_logic := '1';
+
+begin
+
+	BUFFER14_74F240_Gating : process(OP_CLK, EMIF_ADDR, EM1CS2n, EM1WEn)
+	begin
+		if OP_CLK'event and OP_CLK = '1' then
+			if EMIF_ADDR = "000010110001" and EM1CS2n = '0' and EM1WEn = '0' then
+				Buffer1n_reg <= '0';
+				Buffer4n_reg <= '0';
+			elsif EMIF_ADDR = "000010110010" and EM1CS2n = '0' and EM1WEn = '0' then
+				Buffer1n_reg <= '1';
+				Buffer4n_reg <= '1';	
+			else
+				if EMIF_ADDR = "000010110101" and EM1CS2n = '0' and EM1WEn = '0' then
+					Buffer1n_reg <= '0';
+				elsif EMIF_ADDR = "000010110110" and EM1CS2n = '0' and EM1WEn = '0' then
+					Buffer1n_reg <= '1';
+				end if;
+			
+				if EMIF_ADDR = "000010111011" and EM1CS2n = '0' and EM1WEn = '0' then
+					Buffer4n_reg <= '0';
+				elsif EMIF_ADDR = "000010111100" and EM1CS2n = '0' and EM1WEn = '0' then
+					Buffer4n_reg <= '1';
+				end if;			
+			end if;	
+		end if;
+			Buffer1n <= Buffer1n_reg;
+			Buffer4n <= Buffer4n_reg;
+	end process;
+	
+	BUFFER23_74F240_Bypass : process(OP_CLK, EMIF_ADDR, EM1CS2n, EM1WEn)
+	begin
+		if OP_CLK'event and OP_CLK = '1' then
+			if EMIF_ADDR = "000010110011" and EM1CS2n = '0' and EM1WEn = '0' then
+				Buffer2n_reg <= '0';
+				Buffer3n_reg <= '0';
+			elsif EMIF_ADDR = "000010110100" and EM1CS2n = '0' and EM1WEn = '0' then
+				Buffer2n_reg <= '1';
+				Buffer3n_reg <= '1';
+			else
+				if EMIF_ADDR = "000010110111" and EM1CS2n = '0' and EM1WEn = '0' then
+					Buffer2n_reg <= '0';
+				elsif EMIF_ADDR = "000010111000" and EM1CS2n = '0' and EM1WEn = '0' then
+					Buffer2n_reg <= '1';
+				end if;
+			
+				if EMIF_ADDR = "000010111001" and EM1CS2n = '0' and EM1WEn = '0' then
+					Buffer3n_reg <= '0';
+				elsif EMIF_ADDR = "000010111010" and EM1CS2n = '0' and EM1WEn = '0' then
+					Buffer3n_reg <= '1';
+				end if;				
+			end if;	
+		end if;
+			Buffer2n <= Buffer2n_reg;
+			Buffer3n <= Buffer3n_reg;
+	end process;
+	
+end arch;

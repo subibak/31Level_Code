@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity xxx is
+
+	port(
+			EMxCLK			: 	in std_logic							:= '0';								--EMIFx Clock
+			EMxADDR			: 	in std_logic_vector(11 downto 0)	:= (others => '0');				--EMIFx Address		
+			nEMxCS2			:	in std_logic							:= '0';								--EMIFx Chip Selection2
+			nEMxCS3			: 	in std_logic							:= '0';								--EMIFx Chip Selection3
+			nEMxCS4			:	in std_logic							:= '0';								--EMIFx Chip Selection4
+			
+			
+			
+	
+	);
+
+end xxx;

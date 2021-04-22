@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug_CPU1_RAM for project 3LV_SiC_MAIN_VER1_2_20190718_0930 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+gmake[1]: '3LV_SiC_MAIN_VER1_2_20190718_0930_CPU1_RAM.out' is up to date.
+
+**** Build Finished ****

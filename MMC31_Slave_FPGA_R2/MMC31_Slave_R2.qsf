@@ -1,0 +1,142 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 01:03:19  October 07, 2020
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		MMC31_Slave_R2_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE40F23I8L
+set_global_assignment -name TOP_LEVEL_ENTITY MMC31_Slave_R2
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:03:19  OCTOBER 07, 2020"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.0V
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_location_assignment PIN_T11 -to EM1BA1
+set_location_assignment PIN_AB10 -to EMIF1_ADDR[11]
+set_location_assignment PIN_AA10 -to EMIF1_ADDR[10]
+set_location_assignment PIN_Y10 -to EMIF1_ADDR[9]
+set_location_assignment PIN_W10 -to EMIF1_ADDR[8]
+set_location_assignment PIN_V11 -to EMIF1_ADDR[7]
+set_location_assignment PIN_U11 -to EMIF1_ADDR[6]
+set_location_assignment PIN_AB9 -to EMIF1_ADDR[5]
+set_location_assignment PIN_AA9 -to EMIF1_ADDR[4]
+set_location_assignment PIN_AB8 -to EMIF1_ADDR[3]
+set_location_assignment PIN_AA8 -to EMIF1_ADDR[2]
+set_location_assignment PIN_U10 -to EMIF1_ADDR[1]
+set_location_assignment PIN_T8 -to EMIF1_DATA[15]
+set_location_assignment PIN_AB5 -to EMIF1_DATA[14]
+set_location_assignment PIN_AA5 -to EMIF1_DATA[13]
+set_location_assignment PIN_AB4 -to EMIF1_DATA[12]
+set_location_assignment PIN_AA4 -to EMIF1_DATA[11]
+set_location_assignment PIN_V7 -to EMIF1_DATA[10]
+set_location_assignment PIN_W6 -to EMIF1_DATA[9]
+set_location_assignment PIN_AB3 -to EMIF1_DATA[8]
+set_location_assignment PIN_AA3 -to EMIF1_DATA[7]
+set_location_assignment PIN_Y6 -to EMIF1_DATA[6]
+set_location_assignment PIN_Y3 -to EMIF1_DATA[5]
+set_location_assignment PIN_Y4 -to EMIF1_DATA[4]
+set_location_assignment PIN_U8 -to EMIF1_DATA[3]
+set_location_assignment PIN_U7 -to EMIF1_DATA[2]
+set_location_assignment PIN_V5 -to EMIF1_DATA[1]
+set_location_assignment PIN_V6 -to EMIF1_DATA[0]
+set_location_assignment PIN_H5 -to LED0
+set_location_assignment PIN_J5 -to LED1
+set_location_assignment PIN_K8 -to LED2
+set_location_assignment PIN_L8 -to LED3
+set_location_assignment PIN_C1 -to nEM1CS2
+set_location_assignment PIN_B1 -to nEM1CS4
+set_location_assignment PIN_E3 -to nEM1OE
+set_location_assignment PIN_H7 -to nEM1WE
+set_location_assignment PIN_B2 -to nEM1CS3
+set_location_assignment PIN_G1 -to CLK_EMIF
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLK_EMIF
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EM1BA1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_ADDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to EMIF1_DATA[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nEM1CS2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nEM1CS3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nEM1CS4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nEM1OE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to nEM1WE
+set_location_assignment PIN_U2 -to XF3
+set_location_assignment PIN_U1 -to XF4
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XF3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to XF4
+set_global_assignment -name SDC_FILE MMC31_Slave_R2.out.sdc
+set_global_assignment -name BDF_FILE MMC31_Slave_R2.bdf
+set_global_assignment -name VHDL_FILE EMIFx_Interface.vhd
+set_global_assignment -name VHDL_FILE GPIOx.vhd
+set_global_assignment -name VHDL_FILE Internal_Data_16Mux.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

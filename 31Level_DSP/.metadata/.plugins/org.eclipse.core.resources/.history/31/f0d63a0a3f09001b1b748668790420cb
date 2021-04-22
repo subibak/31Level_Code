@@ -1,0 +1,31 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+OBJ_SRCS += \
+../Debug/Source/ADC.obj \
+../Debug/Source/Bypass.obj \
+../Debug/Source/DAC.obj \
+../Debug/Source/DAQ_RS422.obj \
+../Debug/Source/Dual_core.obj \
+../Debug/Source/EMIF.obj \
+../Debug/Source/FAN.obj \
+../Debug/Source/Fault.obj \
+../Debug/Source/GPIO.obj \
+../Debug/Source/Group_module_test.obj \
+../Debug/Source/Interrupt.obj \
+../Debug/Source/LED.obj \
+../Debug/Source/LPF_Parameter.obj \
+../Debug/Source/OPERATION_MODE.obj \
+../Debug/Source/PWM.obj \
+../Debug/Source/Sensor.obj \
+../Debug/Source/SysCtrl.obj \
+../Debug/Source/Vol_Balance.obj \
+../Debug/Source/WatchDog.obj \
+../Debug/Source/ePWM.obj \
+../Debug/Source/timer.obj 
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Master_Central_31Lv_DSP/Includes/AM572x_C66/Define_C66_Struct.h&apos; to &apos;AM572x_C66_Struct.h&apos;" description="Rename resource &apos;Define_C66_Struct.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Includes/AM572x_C66/Define_C66_Struct.h" name="AM572x_C66_Struct.h" stamp="1600845395583" updateReferences="true"/>
+</session>

@@ -1,0 +1,814 @@
+******************************************************************************
+               TMS320C6x Linker PC v8.2.2                      
+******************************************************************************
+>> Linked Wed Mar 17 20:49:17 2021
+
+OUTPUT FILE NAME:   <Master_Central_31Lv_DSP_R2.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 40503540
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  IRAM_MEM              00800000   00008000  00000200  00007e00  RWIX
+  DSP_ICFG              01800000   0000018c  0000018c  00000000  RWIX
+  OCMC_RAM2             40400000   00100000  00000000  00100000  RWIX
+  OCMC_RAM3             40500000   00100000  000043da  000fbc26  RWIX
+  GPIO7                 48051000   00000198  00000198  00000000  RWIX
+  GPIO8                 48053000   00000198  00000000  00000198  RWIX
+  GPIO2                 48055000   00000198  00000198  00000000  RWIX
+  GPIO3                 48057000   00000198  00000198  00000000  RWIX
+  GPIO4                 48059000   00000198  00000198  00000000  RWIX
+  GPIO5                 4805b000   00000198  00000000  00000198  RWIX
+  GPIO6                 4805d000   00000198  00000198  00000000  RWIX
+  McSPI2                4809a000   000001a4  000001a4  00000000  RWIX
+  TIMER5                48820000   0000005c  0000005c  00000000  RWIX
+  MAILBOX2              4883a000   00000144  00000144  00000000  RWIX
+  MAILBOX3              4883c000   00000144  00000144  00000000  RWIX
+  MAILBOX4              4883e000   00000144  00000144  00000000  RWIX
+  MAILBOX5              48840000   00000144  00000144  00000000  RWIX
+  MAILBOX6              48842000   00000144  00000144  00000000  RWIX
+  MAILBOX7              48844000   00000144  00000144  00000000  RWIX
+  CM_CORE_AON__DSP1     4a005400   00000024  00000024  00000000  RWIX
+  CM_CORE_AON__IPU      4a005500   00000084  00000084  00000000  RWIX
+  CM_CORE__CORE         4a008700   00000754  00000094  000006c0  RWIX
+  CM_CORE__L4PER        4a009700   00000218  00000218  00000000  RWIX
+  GPIO1                 4ae10000   00000198  00000000  00000198  RWIX
+  GPMC                  50000000   0000037c  00000378  00000004  RWIX
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00800000    00800000    00000200   00000000    rw-
+  00800000    00800000    00000200   00000000    rw- .vects
+01800000    01800000    0000018c   00000000    rw-
+  01800000    01800000    0000018c   00000000    rw- DSP_ICFGRegsFile
+40500000    40500000    00003800   00003800    r-x
+  40500000    40500000    00003800   00003800    r-x .text
+40503800    40503800    000009d4   00000000    rw-
+  40503800    40503800    00000800   00000000    rw- .stack
+  40504000    40504000    0000018e   00000000    rw- .neardata
+  40504190    40504190    00000044   00000000    rw- .far
+405041d4    405041d4    0000001c   0000001c    r--
+  405041d4    405041d4    0000001c   0000001c    r-- .switch
+405041f0    405041f0    0000000c   00000000    rw-
+  405041f0    405041f0    0000000c   00000000    rw- .fardata
+40504200    40504200    000001e0   000001e0    r--
+  40504200    40504200    000001e0   000001e0    r-- .cinit
+48051000    48051000    00000198   00000000    rw-
+  48051000    48051000    00000198   00000000    rw- GPIO7RegsFile
+48055000    48055000    00000198   00000000    rw-
+  48055000    48055000    00000198   00000000    rw- GPIO2RegsFile
+48057000    48057000    00000198   00000000    rw-
+  48057000    48057000    00000198   00000000    rw- GPIO3RegsFile
+48059000    48059000    00000198   00000000    rw-
+  48059000    48059000    00000198   00000000    rw- GPIO4RegsFile
+4805d000    4805d000    00000198   00000000    rw-
+  4805d000    4805d000    00000198   00000000    rw- GPIO6RegsFile
+4809a000    4809a000    000001a4   00000000    rw-
+  4809a000    4809a000    000001a4   00000000    rw- McSPI2RegsFile
+48820000    48820000    0000005c   00000000    rw-
+  48820000    48820000    0000005c   00000000    rw- Timer5RegsFile
+4883a000    4883a000    00000144   00000000    rw-
+  4883a000    4883a000    00000144   00000000    rw- MAILBOX2RegsFile
+4883c000    4883c000    00000144   00000000    rw-
+  4883c000    4883c000    00000144   00000000    rw- MAILBOX3RegsFile
+4883e000    4883e000    00000144   00000000    rw-
+  4883e000    4883e000    00000144   00000000    rw- MAILBOX4RegsFile
+48840000    48840000    00000144   00000000    rw-
+  48840000    48840000    00000144   00000000    rw- MAILBOX5RegsFile
+48842000    48842000    00000144   00000000    rw-
+  48842000    48842000    00000144   00000000    rw- MAILBOX6RegsFile
+48844000    48844000    00000144   00000000    rw-
+  48844000    48844000    00000144   00000000    rw- MAILBOX7RegsFile
+4a005400    4a005400    00000024   00000000    rw-
+  4a005400    4a005400    00000024   00000000    rw- CM_CORE_AON__DSP1RegsFile
+4a005500    4a005500    00000084   00000000    rw-
+  4a005500    4a005500    00000084   00000000    rw- CM_CORE_AON__IPURegsFile
+4a008700    4a008700    00000094   00000000    rw-
+  4a008700    4a008700    00000094   00000000    rw- CM_CORE__CORERegsFile
+4a009700    4a009700    00000218   00000000    rw-
+  4a009700    4a009700    00000218   00000000    rw- CM_CORE__L4PERRegsFile
+50000000    50000000    00000378   00000000    rw-
+  50000000    50000000    00000378   00000000    rw- GPMCRegsFile
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+DSP_ICFGRegsFile 
+*          0    01800000    0000018c     UNINITIALIZED
+                  01800000    0000018c     AM572x_C66_GlobarVariableDefs.obj (DSP_ICFGRegsFile)
+
+.text      0    40500000    00003800     
+                  40500000    00000860     Sensor.obj (.text)
+                  40500860    000007e0     GPMC.obj (.text)
+                  40501040    000004a0     ADC.obj (.text:retain)
+                  405014e0    00000440     IntCtrl.obj (.text)
+                  40501920    000003e0     CtrlModule.obj (.text)
+                  40501d00    00000340     PRCM.obj (.text)
+                  40502040    000002e0     GPIO.obj (.text)
+                  40502320    00000280     ADC.obj (.text)
+                  405025a0    00000280     LED.obj (.text)
+                  40502820    00000280     rts6600_elf.lib : divf.obj (.text:__c6xabi_divf)
+                  40502aa0    000001a0     Timer.obj (.text)
+                  40502c40    00000180     Interrupt.obj (.text:retain)
+                  40502dc0    00000160     rts6600_elf.lib : autoinit.obj (.text:_auto_init_elf)
+                  40502f20    00000100     McSPI.obj (.text)
+                  40503020    00000100     rts6600_elf.lib : copy_decompress_rle.obj (.text:__TI_decompress_rle_core)
+                  40503120    00000100                     : cpy_tbl.obj (.text:copy_in)
+                  40503220    000000e0                     : exit.obj (.text:exit)
+                  40503300    000000e0                     : memset.obj (.text:memset)
+                  405033e0    000000c0                     : tls.obj (.text:tls:init:__TI_tls_init)
+                  405034a0    000000a0                     : memcpy64.obj (.text:memcpy)
+                  40503540    00000080                     : boot.obj (.text:_c_int00)
+                  405035c0    00000080     device.obj (.text)
+                  40503640    00000080     IntCtrl.obj (.text:retain)
+                  405036c0    00000060     main.obj (.text)
+                  40503720    00000040     rts6600_elf.lib : args_main.obj (.text:_args_main)
+                  40503760    00000020                     : startup.obj (.text:_system_post_cinit)
+                  40503780    00000020                     : pre_init.obj (.text:_system_pre_init)
+                  405037a0    00000020                     : exit.obj (.text:abort)
+                  405037c0    00000020                     : copy_decompress_none.obj (.text:decompress:none:__TI_decompress_none)
+                  405037e0    00000020                     : copy_decompress_rle.obj (.text:decompress:rle24:__TI_decompress_rle24)
+
+.stack     0    40503800    00000800     UNINITIALIZED
+                  40503800    00000008     rts6600_elf.lib : boot.obj (.stack)
+                  40503808    000007f8     --HOLE--
+
+.neardata 
+*          0    40504000    0000018e     UNINITIALIZED
+                  40504000    000000b4     ADC.obj (.neardata)
+                  405040b4    000000a4     Sensor.obj (.neardata)
+                  40504158    00000020     Interrupt.obj (.neardata)
+                  40504178    00000012     Timer.obj (.neardata)
+                  4050418a    00000004     LED.obj (.neardata)
+
+.far       0    40504190    00000044     UNINITIALIZED
+                  40504190    00000004     (.common:DiffTime)
+                  40504194    00000004     (.common:I_AL_T)
+                  40504198    00000004     (.common:I_AS_T)
+                  4050419c    00000004     (.common:I_AU_T)
+                  405041a0    00000004     (.common:I_BL_T)
+                  405041a4    00000004     (.common:I_BS_T)
+                  405041a8    00000004     (.common:I_BU_T)
+                  405041ac    00000004     (.common:I_CL_T)
+                  405041b0    00000004     (.common:I_CS_T)
+                  405041b4    00000004     (.common:I_CU_T)
+                  405041b8    00000004     (.common:V_AS_sec_T)
+                  405041bc    00000004     (.common:V_BS_sec_T)
+                  405041c0    00000004     (.common:V_CS_sec_T)
+                  405041c4    00000004     (.common:V_DC_T)
+                  405041c8    00000002     (.common:CenLegOpData_Alower)
+                  405041ca    00000002     (.common:CenLegOpData_Aupper)
+                  405041cc    00000002     (.common:CenLegOpData_Blower)
+                  405041ce    00000002     (.common:CenLegOpData_Bupper)
+                  405041d0    00000002     (.common:CenLegOpData_Clower)
+                  405041d2    00000002     (.common:CenLegOpData_Cupper)
+
+.cinit     0    40504200    000001e0     
+                  40504200    00000033     (.cinit..neardata.load) [load image, compression = rle]
+                  40504233    0000000d     (.cinit..fardata.load) [load image, compression = rle]
+                  40504240    0000000b     (.cinit..vects.load) [load image, compression = rle]
+                  4050424b    0000000b     (.cinit.CM_CORE__L4PERRegsFile.load) [load image, compression = rle]
+                  40504256    0000000b     (.cinit.DSP_ICFGRegsFile.load) [load image, compression = rle]
+                  40504261    0000000b     (.cinit.GPIO2RegsFile.load) [load image, compression = rle]
+                  4050426c    0000000b     (.cinit.GPIO3RegsFile.load) [load image, compression = rle]
+                  40504277    0000000b     (.cinit.GPIO4RegsFile.load) [load image, compression = rle]
+                  40504282    0000000b     (.cinit.GPIO6RegsFile.load) [load image, compression = rle]
+                  4050428d    0000000b     (.cinit.GPIO7RegsFile.load) [load image, compression = rle]
+                  40504298    0000000b     (.cinit.GPMCRegsFile.load) [load image, compression = rle]
+                  405042a3    0000000b     (.cinit.MAILBOX2RegsFile.load) [load image, compression = rle]
+                  405042ae    0000000b     (.cinit.MAILBOX3RegsFile.load) [load image, compression = rle]
+                  405042b9    0000000b     (.cinit.MAILBOX4RegsFile.load) [load image, compression = rle]
+                  405042c4    0000000b     (.cinit.MAILBOX5RegsFile.load) [load image, compression = rle]
+                  405042cf    0000000b     (.cinit.MAILBOX6RegsFile.load) [load image, compression = rle]
+                  405042da    0000000b     (.cinit.MAILBOX7RegsFile.load) [load image, compression = rle]
+                  405042e5    0000000b     (.cinit.McSPI2RegsFile.load) [load image, compression = rle]
+                  405042f0    00000009     (.cinit..far.load) [load image, compression = rle]
+                  405042f9    00000009     (.cinit.CM_CORE_AON__DSP1RegsFile.load) [load image, compression = rle]
+                  40504302    00000009     (.cinit.CM_CORE_AON__IPURegsFile.load) [load image, compression = rle]
+                  4050430b    00000009     (.cinit.CM_CORE__CORERegsFile.load) [load image, compression = rle]
+                  40504314    00000009     (.cinit.Timer5RegsFile.load) [load image, compression = rle]
+                  4050431d    00000003     --HOLE-- [fill = 0]
+                  40504320    00000008     (__TI_handler_table)
+                  40504328    000000b8     (__TI_cinit_table)
+
+GPIO7RegsFile 
+*          0    48051000    00000198     UNINITIALIZED
+                  48051000    00000198     AM572x_C66_GlobarVariableDefs.obj (GPIO7RegsFile)
+
+Timer5RegsFile 
+*          0    48820000    0000005c     UNINITIALIZED
+                  48820000    0000005c     AM572x_C66_GlobarVariableDefs.obj (Timer5RegsFile)
+
+GPIO2RegsFile 
+*          0    48055000    00000198     UNINITIALIZED
+                  48055000    00000198     AM572x_C66_GlobarVariableDefs.obj (GPIO2RegsFile)
+
+GPIO3RegsFile 
+*          0    48057000    00000198     UNINITIALIZED
+                  48057000    00000198     AM572x_C66_GlobarVariableDefs.obj (GPIO3RegsFile)
+
+GPIO4RegsFile 
+*          0    48059000    00000198     UNINITIALIZED
+                  48059000    00000198     AM572x_C66_GlobarVariableDefs.obj (GPIO4RegsFile)
+
+GPIO6RegsFile 
+*          0    4805d000    00000198     UNINITIALIZED
+                  4805d000    00000198     AM572x_C66_GlobarVariableDefs.obj (GPIO6RegsFile)
+
+McSPI2RegsFile 
+*          0    4809a000    000001a4     UNINITIALIZED
+                  4809a000    000001a4     AM572x_C66_GlobarVariableDefs.obj (McSPI2RegsFile)
+
+MAILBOX2RegsFile 
+*          0    4883a000    00000144     UNINITIALIZED
+                  4883a000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX2RegsFile)
+
+MAILBOX3RegsFile 
+*          0    4883c000    00000144     UNINITIALIZED
+                  4883c000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX3RegsFile)
+
+MAILBOX4RegsFile 
+*          0    4883e000    00000144     UNINITIALIZED
+                  4883e000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX4RegsFile)
+
+MAILBOX5RegsFile 
+*          0    48840000    00000144     UNINITIALIZED
+                  48840000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX5RegsFile)
+
+MAILBOX6RegsFile 
+*          0    48842000    00000144     UNINITIALIZED
+                  48842000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX6RegsFile)
+
+MAILBOX7RegsFile 
+*          0    48844000    00000144     UNINITIALIZED
+                  48844000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX7RegsFile)
+
+CM_CORE_AON__DSP1RegsFile 
+*          0    4a005400    00000024     UNINITIALIZED
+                  4a005400    00000024     AM572x_C66_GlobarVariableDefs.obj (CM_CORE_AON__DSP1RegsFile)
+
+CM_CORE_AON__IPURegsFile 
+*          0    4a005500    00000084     UNINITIALIZED
+                  4a005500    00000084     AM572x_C66_GlobarVariableDefs.obj (CM_CORE_AON__IPURegsFile)
+
+CM_CORE__CORERegsFile 
+*          0    4a008700    00000094     UNINITIALIZED
+                  4a008700    00000094     AM572x_C66_GlobarVariableDefs.obj (CM_CORE__CORERegsFile)
+
+CM_CORE__L4PERRegsFile 
+*          0    4a009700    00000218     UNINITIALIZED
+                  4a009700    00000218     AM572x_C66_GlobarVariableDefs.obj (CM_CORE__L4PERRegsFile)
+
+GPMCRegsFile 
+*          0    50000000    00000378     UNINITIALIZED
+                  50000000    00000378     AM572x_C66_GlobarVariableDefs.obj (GPMCRegsFile)
+
+.vects     0    00800000    00000200     UNINITIALIZED
+                  00800000    00000200     IntCtrl.obj (.vects)
+
+.switch    0    405041d4    0000001c     
+                  405041d4    0000001c     LED.obj (.switch:LED)
+
+.fardata   0    405041f0    0000000c     UNINITIALIZED
+                  405041f0    0000000c     rts6600_elf.lib : exit.obj (.fardata)
+
+MODULE SUMMARY
+
+       Module                              code    ro data   rw data
+       ------                              ----    -------   -------
+    .\Includes\AM572x_C66\
+       AM572x_C66_GlobarVariableDefs.obj   0       0         6632   
+    +--+-----------------------------------+-------+---------+---------+
+       Total:                              0       0         6632   
+                                                                    
+    .\Sources\
+       Sensor.obj                          2144    0         216    
+       GPMC.obj                            2016    0         12     
+       ADC.obj                             1824    0         180    
+       IntCtrl.obj                         1216    0         512    
+       CtrlModule.obj                      992     0         0      
+       PRCM.obj                            832     0         0      
+       GPIO.obj                            736     0         0      
+       LED.obj                             640     28        4      
+       Timer.obj                           416     0         22     
+       Interrupt.obj                       384     0         32     
+       McSPI.obj                           256     0         0      
+       device.obj                          128     0         0      
+       main.obj                            96      0         0      
+    +--+-----------------------------------+-------+---------+---------+
+       Total:                              11680   28        978    
+                                                                    
+    C:\ti\ti-cgt-c6000_8.2.2\lib\rts6600_elf.lib
+       divf.obj                            640     0         0      
+       autoinit.obj                        352     0         0      
+       copy_decompress_rle.obj             288     0         0      
+       exit.obj                            256     0         12     
+       cpy_tbl.obj                         256     0         0      
+       memset.obj                          224     0         0      
+       tls.obj                             192     0         0      
+       memcpy64.obj                        160     0         0      
+       boot.obj                            128     0         0      
+       args_main.obj                       64      0         0      
+       copy_decompress_none.obj            32      0         0      
+       pre_init.obj                        32      0         0      
+       startup.obj                         32      0         0      
+    +--+-----------------------------------+-------+---------+---------+
+       Total:                              2656    0         12     
+                                                                    
+       Stack:                              0       0         2048   
+       Linker Generated:                   0       477       0      
+    +--+-----------------------------------+-------+---------+---------+
+       Grand Total:                        14336   505       9670   
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 40504328 records: 23, size/record: 8, table size: 184
+	.neardata: load addr=40504200, load size=00000033 bytes, run addr=40504000, run size=0000018e bytes, compression=rle
+	.fardata: load addr=40504233, load size=0000000d bytes, run addr=405041f0, run size=0000000c bytes, compression=rle
+	.vects: load addr=40504240, load size=0000000b bytes, run addr=00800000, run size=00000200 bytes, compression=rle
+	CM_CORE__L4PERRegsFile: load addr=4050424b, load size=0000000b bytes, run addr=4a009700, run size=00000218 bytes, compression=rle
+	DSP_ICFGRegsFile: load addr=40504256, load size=0000000b bytes, run addr=01800000, run size=0000018c bytes, compression=rle
+	GPIO2RegsFile: load addr=40504261, load size=0000000b bytes, run addr=48055000, run size=00000198 bytes, compression=rle
+	GPIO3RegsFile: load addr=4050426c, load size=0000000b bytes, run addr=48057000, run size=00000198 bytes, compression=rle
+	GPIO4RegsFile: load addr=40504277, load size=0000000b bytes, run addr=48059000, run size=00000198 bytes, compression=rle
+	GPIO6RegsFile: load addr=40504282, load size=0000000b bytes, run addr=4805d000, run size=00000198 bytes, compression=rle
+	GPIO7RegsFile: load addr=4050428d, load size=0000000b bytes, run addr=48051000, run size=00000198 bytes, compression=rle
+	GPMCRegsFile: load addr=40504298, load size=0000000b bytes, run addr=50000000, run size=00000378 bytes, compression=rle
+	MAILBOX2RegsFile: load addr=405042a3, load size=0000000b bytes, run addr=4883a000, run size=00000144 bytes, compression=rle
+	MAILBOX3RegsFile: load addr=405042ae, load size=0000000b bytes, run addr=4883c000, run size=00000144 bytes, compression=rle
+	MAILBOX4RegsFile: load addr=405042b9, load size=0000000b bytes, run addr=4883e000, run size=00000144 bytes, compression=rle
+	MAILBOX5RegsFile: load addr=405042c4, load size=0000000b bytes, run addr=48840000, run size=00000144 bytes, compression=rle
+	MAILBOX6RegsFile: load addr=405042cf, load size=0000000b bytes, run addr=48842000, run size=00000144 bytes, compression=rle
+	MAILBOX7RegsFile: load addr=405042da, load size=0000000b bytes, run addr=48844000, run size=00000144 bytes, compression=rle
+	McSPI2RegsFile: load addr=405042e5, load size=0000000b bytes, run addr=4809a000, run size=000001a4 bytes, compression=rle
+	.far: load addr=405042f0, load size=00000009 bytes, run addr=40504190, run size=00000044 bytes, compression=rle
+	CM_CORE_AON__DSP1RegsFile: load addr=405042f9, load size=00000009 bytes, run addr=4a005400, run size=00000024 bytes, compression=rle
+	CM_CORE_AON__IPURegsFile: load addr=40504302, load size=00000009 bytes, run addr=4a005500, run size=00000084 bytes, compression=rle
+	CM_CORE__CORERegsFile: load addr=4050430b, load size=00000009 bytes, run addr=4a008700, run size=00000094 bytes, compression=rle
+	Timer5RegsFile: load addr=40504314, load size=00000009 bytes, run addr=48820000, run size=0000005c bytes, compression=rle
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 40504320 records: 2, size/record: 4, table size: 8
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                           
+-------   ----                           
+40502358  ADC                            
+40502320  ADC_OP                         
+40501040  ADC_Offset                     
+40502384  ADC_Read                       
+40504000  AIN0_CH1                       
+40504004  AIN0_CH2                       
+40504008  AIN0_CH3                       
+4050400c  AIN0_CH4                       
+40504010  AIN1_CH1                       
+40504014  AIN1_CH2                       
+40504018  AIN1_CH3                       
+4050401c  AIN1_CH4                       
+40504020  AIN2_CH1                       
+40504024  AIN2_CH2                       
+40504028  AIN2_CH3                       
+4050402c  AIN2_CH4                       
+40504030  AIN3_CH1                       
+40504034  AIN3_CH2                       
+40504038  AIN3_CH3                       
+4050403c  AIN3_CH4                       
+405037a0  C$$EXIT                        
+4a005400  CM_CORE_AON__DSP1Regs          
+4a005500  CM_CORE_AON__IPURegs           
+4a008700  CM_CORE__CORERegs              
+4a009700  CM_CORE__L4PERRegs             
+40504174  CNT_BEn0                       
+405041c8  CenLegOpData_Alower            
+405041ca  CenLegOpData_Aupper            
+405041cc  CenLegOpData_Blower            
+405041ce  CenLegOpData_Bupper            
+405041d0  CenLegOpData_Clower            
+405041d2  CenLegOpData_Cupper            
+40504184  Compen_CNT                     
+01800000  DSP_ICFGRegs                   
+40504190  DiffTime                       
+40504180  Diff_CNT                       
+40502bb8  Ecat_Time_Compen               
+4050417c  End_CNT                        
+4050416e  Flag_BE0n_test                 
+40504158  Flag_DO1                       
+4050415a  Flag_DO2                       
+4050415c  Flag_DO3                       
+4050415e  Flag_DO4                       
+40504162  Flag_EcatReady                 
+40504164  Flag_Ecat_DAQ_EN_CNT           
+40504160  Flag_GPMC_BE1n                 
+40504188  Flag_Mode_Info                 
+40504172  Flag_Out_Loop                  
+48055000  GPIO2Regs                      
+48057000  GPIO3Regs                      
+48059000  GPIO4Regs                      
+4805d000  GPIO6Regs                      
+48051000  GPIO7Regs                      
+50000000  GPMCRegs                       
+40504170  INT_carrier_loop_cnt1          
+40502c40  ISR_DSPTimer                   
+40503674  ISR_Default10                  
+4050367c  ISR_Default11                  
+40503684  ISR_Default12                  
+4050368c  ISR_Default13                  
+40503694  ISR_Default14                  
+4050369c  ISR_Default15                  
+4050364c  ISR_Default5                   
+40503654  ISR_Default6                   
+4050365c  ISR_Default7                   
+40503664  ISR_Default8                   
+4050366c  ISR_Default9                   
+40503648  ISR_DefaultNMI                 
+40503640  ISR_Reset                      
+00800000  ISR_TABLE                      
+40504110  I_AL                           
+40504194  I_AL_T                         
+4050406c  I_AL_offset                    
+4050411c  I_AO                           
+405040e8  I_AS                           
+40504198  I_AS_T                         
+40504054  I_AS_offset                    
+40504104  I_AU                           
+4050419c  I_AU_T                         
+40504060  I_AU_offset                    
+40504114  I_BL                           
+405041a0  I_BL_T                         
+40504070  I_BL_offset                    
+40504120  I_BO                           
+405040ec  I_BS                           
+405041a4  I_BS_T                         
+40504058  I_BS_offset                    
+40504108  I_BU                           
+405041a8  I_BU_T                         
+40504064  I_BU_offset                    
+40504118  I_CL                           
+405041ac  I_CL_T                         
+40504074  I_CL_offset                    
+40504124  I_CO                           
+405040f0  I_CS                           
+405041b0  I_CS_T                         
+4050405c  I_CS_offset                    
+4050410c  I_CU                           
+405041b4  I_CU_T                         
+40504068  I_CU_offset                    
+40504100  I_DC                           
+40504050  I_DC_offset                    
+40504154  I_DC_old                       
+405040f4  I_RS                           
+405040f8  I_SS                           
+40504128  I_T1                           
+4050412c  I_T2                           
+405040fc  I_TS                           
+40504138  I_sensor_max                   
+40504144  Idc_sensor_low                 
+40502334  Init_ADC                       
+40501920  Init_DSP_IRQCROSSBAR           
+40502040  Init_GPIO                      
+40500860  Init_GPMC                      
+405014e0  Init_Interrupt                 
+40502f20  Init_McSPI                     
+40501928  Init_PAD                       
+40501d00  Init_PRCM                      
+40502aa0  Init_Timer                     
+405025a0  LED                            
+4050418c  LEDCase                        
+4050418a  LEDCount                       
+4883a000  MAILBOX2Regs                   
+4883c000  MAILBOX3Regs                   
+4883e000  MAILBOX4Regs                   
+48840000  MAILBOX5Regs                   
+48842000  MAILBOX6Regs                   
+48844000  MAILBOX7Regs                   
+4809a000  McSPI2Regs                     
+40504168  STATUS_ECAT_READY_L1           
+4050416a  STATUS_ECAT_READY_L2           
+4050416c  STATUS_ECAT_READY_L3           
+40500428  Sensor_Inside                  
+40500000  Sensor_Outside                 
+40504178  Start_CNT                      
+40502b98  Start_Timer                    
+40504150  Tcl                            
+48820000  Timer5Regs                     
+4050413c  Trans_ratio                    
+4050414c  Twc_Vdc                        
+40501824  USERISR_RSTSET                 
+40501880  USERISR_SET                    
+405040b4  V_AB                           
+40504040  V_AB_offset                    
+405040d8  V_AB_sec                       
+405040c0  V_AS_pri                       
+405040cc  V_AS_sec                       
+405041b8  V_AS_sec_T                     
+405040b8  V_BC                           
+40504044  V_BC_offset                    
+405040dc  V_BC_sec                       
+405040c4  V_BS_pri                       
+405040d0  V_BS_sec                       
+405041bc  V_BS_sec_T                     
+405040bc  V_CA                           
+40504048  V_CA_offset                    
+405040e0  V_CA_sec                       
+405040c8  V_CS_pri                       
+405040d4  V_CS_sec                       
+405041c0  V_CS_sec_T                     
+405040e4  V_DC                           
+405041c4  V_DC_T                         
+4050404c  V_DC_offset                    
+40504134  V_dc_max                       
+40504130  V_grid_max                     
+40504140  Vdc_low                        
+40504148  Vdc_old                        
+40504328  __TI_CINIT_Base                
+405043e0  __TI_CINIT_Limit               
+40504320  __TI_Handler_Table_Base        
+40504328  __TI_Handler_Table_Limit       
+UNDEFED   __TI_INITARRAY_Base            
+UNDEFED   __TI_INITARRAY_Limit           
+40504000  __TI_STACK_END                 
+00000800  __TI_STACK_SIZE                
+40504000  __TI_STATIC_BASE               
+UNDEFED   __TI_TLS_INIT_Base             
+UNDEFED   __TI_TLS_INIT_Limit            
+405041f0  __TI_cleanup_ptr               
+405037c0  __TI_decompress_none           
+405037e0  __TI_decompress_rle24          
+405041f4  __TI_dtors_ptr                 
+405041f8  __TI_enable_exit_profile_output
+ffffffff  __TI_pprof_out_hndl            
+ffffffff  __TI_prof_data_size            
+ffffffff  __TI_prof_data_start           
+405033e0  __TI_tls_init                  
+ffffffff  __binit__                      
+40502820  __c6xabi_divf                  
+ffffffff  __c_args__                     
+40503720  _args_main                     
+40502dc0  _auto_init_elf                 
+40503540  _c_int00                       
+40503800  _stack                         
+40503760  _system_post_cinit             
+40503780  _system_pre_init               
+405037a0  abort                          
+ffffffff  binit                          
+40503120  copy_in                        
+405035e0  cycleDelay                     
+40503220  exit                           
+405036c0  main                           
+405034a0  memcpy                         
+40503300  memset                         
+405040a4  offset_sum_I_AL                
+4050408c  offset_sum_I_AS                
+40504098  offset_sum_I_AU                
+405040a8  offset_sum_I_BL                
+40504090  offset_sum_I_BS                
+4050409c  offset_sum_I_BU                
+405040ac  offset_sum_I_CL                
+40504094  offset_sum_I_CS                
+405040a0  offset_sum_I_CU                
+40504088  offset_sum_I_DC                
+40504078  offset_sum_V_AB                
+4050407c  offset_sum_V_BC                
+40504080  offset_sum_V_CA                
+40504084  offset_sum_V_DC                
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                           
+-------   ----                           
+00000800  __TI_STACK_SIZE                
+00800000  ISR_TABLE                      
+01800000  DSP_ICFGRegs                   
+40500000  Sensor_Outside                 
+40500428  Sensor_Inside                  
+40500860  Init_GPMC                      
+40501040  ADC_Offset                     
+405014e0  Init_Interrupt                 
+40501824  USERISR_RSTSET                 
+40501880  USERISR_SET                    
+40501920  Init_DSP_IRQCROSSBAR           
+40501928  Init_PAD                       
+40501d00  Init_PRCM                      
+40502040  Init_GPIO                      
+40502320  ADC_OP                         
+40502334  Init_ADC                       
+40502358  ADC                            
+40502384  ADC_Read                       
+405025a0  LED                            
+40502820  __c6xabi_divf                  
+40502aa0  Init_Timer                     
+40502b98  Start_Timer                    
+40502bb8  Ecat_Time_Compen               
+40502c40  ISR_DSPTimer                   
+40502dc0  _auto_init_elf                 
+40502f20  Init_McSPI                     
+40503120  copy_in                        
+40503220  exit                           
+40503300  memset                         
+405033e0  __TI_tls_init                  
+405034a0  memcpy                         
+40503540  _c_int00                       
+405035e0  cycleDelay                     
+40503640  ISR_Reset                      
+40503648  ISR_DefaultNMI                 
+4050364c  ISR_Default5                   
+40503654  ISR_Default6                   
+4050365c  ISR_Default7                   
+40503664  ISR_Default8                   
+4050366c  ISR_Default9                   
+40503674  ISR_Default10                  
+4050367c  ISR_Default11                  
+40503684  ISR_Default12                  
+4050368c  ISR_Default13                  
+40503694  ISR_Default14                  
+4050369c  ISR_Default15                  
+405036c0  main                           
+40503720  _args_main                     
+40503760  _system_post_cinit             
+40503780  _system_pre_init               
+405037a0  C$$EXIT                        
+405037a0  abort                          
+405037c0  __TI_decompress_none           
+405037e0  __TI_decompress_rle24          
+40503800  _stack                         
+40504000  AIN0_CH1                       
+40504000  __TI_STACK_END                 
+40504000  __TI_STATIC_BASE               
+40504004  AIN0_CH2                       
+40504008  AIN0_CH3                       
+4050400c  AIN0_CH4                       
+40504010  AIN1_CH1                       
+40504014  AIN1_CH2                       
+40504018  AIN1_CH3                       
+4050401c  AIN1_CH4                       
+40504020  AIN2_CH1                       
+40504024  AIN2_CH2                       
+40504028  AIN2_CH3                       
+4050402c  AIN2_CH4                       
+40504030  AIN3_CH1                       
+40504034  AIN3_CH2                       
+40504038  AIN3_CH3                       
+4050403c  AIN3_CH4                       
+40504040  V_AB_offset                    
+40504044  V_BC_offset                    
+40504048  V_CA_offset                    
+4050404c  V_DC_offset                    
+40504050  I_DC_offset                    
+40504054  I_AS_offset                    
+40504058  I_BS_offset                    
+4050405c  I_CS_offset                    
+40504060  I_AU_offset                    
+40504064  I_BU_offset                    
+40504068  I_CU_offset                    
+4050406c  I_AL_offset                    
+40504070  I_BL_offset                    
+40504074  I_CL_offset                    
+40504078  offset_sum_V_AB                
+4050407c  offset_sum_V_BC                
+40504080  offset_sum_V_CA                
+40504084  offset_sum_V_DC                
+40504088  offset_sum_I_DC                
+4050408c  offset_sum_I_AS                
+40504090  offset_sum_I_BS                
+40504094  offset_sum_I_CS                
+40504098  offset_sum_I_AU                
+4050409c  offset_sum_I_BU                
+405040a0  offset_sum_I_CU                
+405040a4  offset_sum_I_AL                
+405040a8  offset_sum_I_BL                
+405040ac  offset_sum_I_CL                
+405040b4  V_AB                           
+405040b8  V_BC                           
+405040bc  V_CA                           
+405040c0  V_AS_pri                       
+405040c4  V_BS_pri                       
+405040c8  V_CS_pri                       
+405040cc  V_AS_sec                       
+405040d0  V_BS_sec                       
+405040d4  V_CS_sec                       
+405040d8  V_AB_sec                       
+405040dc  V_BC_sec                       
+405040e0  V_CA_sec                       
+405040e4  V_DC                           
+405040e8  I_AS                           
+405040ec  I_BS                           
+405040f0  I_CS                           
+405040f4  I_RS                           
+405040f8  I_SS                           
+405040fc  I_TS                           
+40504100  I_DC                           
+40504104  I_AU                           
+40504108  I_BU                           
+4050410c  I_CU                           
+40504110  I_AL                           
+40504114  I_BL                           
+40504118  I_CL                           
+4050411c  I_AO                           
+40504120  I_BO                           
+40504124  I_CO                           
+40504128  I_T1                           
+4050412c  I_T2                           
+40504130  V_grid_max                     
+40504134  V_dc_max                       
+40504138  I_sensor_max                   
+4050413c  Trans_ratio                    
+40504140  Vdc_low                        
+40504144  Idc_sensor_low                 
+40504148  Vdc_old                        
+4050414c  Twc_Vdc                        
+40504150  Tcl                            
+40504154  I_DC_old                       
+40504158  Flag_DO1                       
+4050415a  Flag_DO2                       
+4050415c  Flag_DO3                       
+4050415e  Flag_DO4                       
+40504160  Flag_GPMC_BE1n                 
+40504162  Flag_EcatReady                 
+40504164  Flag_Ecat_DAQ_EN_CNT           
+40504168  STATUS_ECAT_READY_L1           
+4050416a  STATUS_ECAT_READY_L2           
+4050416c  STATUS_ECAT_READY_L3           
+4050416e  Flag_BE0n_test                 
+40504170  INT_carrier_loop_cnt1          
+40504172  Flag_Out_Loop                  
+40504174  CNT_BEn0                       
+40504178  Start_CNT                      
+4050417c  End_CNT                        
+40504180  Diff_CNT                       
+40504184  Compen_CNT                     
+40504188  Flag_Mode_Info                 
+4050418a  LEDCount                       
+4050418c  LEDCase                        
+40504190  DiffTime                       
+40504194  I_AL_T                         
+40504198  I_AS_T                         
+4050419c  I_AU_T                         
+405041a0  I_BL_T                         
+405041a4  I_BS_T                         
+405041a8  I_BU_T                         
+405041ac  I_CL_T                         
+405041b0  I_CS_T                         
+405041b4  I_CU_T                         
+405041b8  V_AS_sec_T                     
+405041bc  V_BS_sec_T                     
+405041c0  V_CS_sec_T                     
+405041c4  V_DC_T                         
+405041c8  CenLegOpData_Alower            
+405041ca  CenLegOpData_Aupper            
+405041cc  CenLegOpData_Blower            
+405041ce  CenLegOpData_Bupper            
+405041d0  CenLegOpData_Clower            
+405041d2  CenLegOpData_Cupper            
+405041f0  __TI_cleanup_ptr               
+405041f4  __TI_dtors_ptr                 
+405041f8  __TI_enable_exit_profile_output
+40504320  __TI_Handler_Table_Base        
+40504328  __TI_CINIT_Base                
+40504328  __TI_Handler_Table_Limit       
+405043e0  __TI_CINIT_Limit               
+48051000  GPIO7Regs                      
+48055000  GPIO2Regs                      
+48057000  GPIO3Regs                      
+48059000  GPIO4Regs                      
+4805d000  GPIO6Regs                      
+4809a000  McSPI2Regs                     
+48820000  Timer5Regs                     
+4883a000  MAILBOX2Regs                   
+4883c000  MAILBOX3Regs                   
+4883e000  MAILBOX4Regs                   
+48840000  MAILBOX5Regs                   
+48842000  MAILBOX6Regs                   
+48844000  MAILBOX7Regs                   
+4a005400  CM_CORE_AON__DSP1Regs          
+4a005500  CM_CORE_AON__IPURegs           
+4a008700  CM_CORE__CORERegs              
+4a009700  CM_CORE__L4PERRegs             
+50000000  GPMCRegs                       
+ffffffff  __TI_pprof_out_hndl            
+ffffffff  __TI_prof_data_size            
+ffffffff  __TI_prof_data_start           
+ffffffff  __binit__                      
+ffffffff  __c_args__                     
+ffffffff  binit                          
+UNDEFED   __TI_INITARRAY_Base            
+UNDEFED   __TI_INITARRAY_Limit           
+UNDEFED   __TI_TLS_INIT_Base             
+UNDEFED   __TI_TLS_INIT_Limit            
+
+[218 symbols]

@@ -1,0 +1,22 @@
+library ieee
+use ieee.std_logic_1164.all
+use ieee.std_logic_unsigned.all
+
+entity Bypass is
+	port(
+				OP_CLK	 				:	in std_logic;
+				
+				EMIF_ADDR				:	in std_logic_vector(11 downto 0);
+				EM1CS2n					:	in std_logic;
+				EM1WEn					: 	in std_logic;
+					
+				
+	);
+end Bypass;
+
+architecture OP of Bypass is 
+begin
+
+
+end OP;
+

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Dec 30 17:10:09 2018
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : Master_Upper_31Lv_FPGA
+Top-level Entity Name : Master_31Lv_FPGA
+Family : Cyclone IV E
+Device : EP4CE40F23I8L
+Timing Models : Final
+Total logic elements : 1,330 / 39,600 ( 3 % )
+    Total combinational functions : 770 / 39,600 ( 2 % )
+    Dedicated logic registers : 1,102 / 39,600 ( 3 % )
+Total registers : 1102
+Total pins : 173 / 329 ( 53 % )
+Total virtual pins : 0
+Total memory bits : 167,936 / 1,161,216 ( 14 % )
+Embedded Multiplier 9-bit elements : 0 / 232 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

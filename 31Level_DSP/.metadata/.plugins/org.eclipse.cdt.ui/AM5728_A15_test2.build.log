@@ -1,0 +1,22 @@
+
+**** Build of configuration Debug for project AM5728_A15_test2 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../startup_ARMCA15.S"
+Invoking: GNU Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-a15 -mtune=cortex-a15 -marm -Dam5728 -Dcore0 -I"C:/Users/subi/Desktop/31Level_Code/31Level_DSP/AM5728_A15_test2" -I"C:/ti/ccs1020/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -specs="rdimon.specs" -MMD -MP -MF"startup_ARMCA15.d" -MT"startup_ARMCA15.o"  -o"startup_ARMCA15.o" "../startup_ARMCA15.S"
+Finished building: "../startup_ARMCA15.S"
+ 
+Building file: "../hello.c"
+Invoking: GNU Compiler
+"C:/ti/ccs1020/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -c -mcpu=cortex-a15 -mtune=cortex-a15 -marm -Dam5728 -Dcore0 -I"C:/Users/subi/Desktop/31Level_Code/31Level_DSP/AM5728_A15_test2" -I"C:/ti/ccs1020/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/arm-none-eabi/include" -Og -g -gdwarf-3 -gstrict-dwarf -Wall -specs="rdimon.specs" -MMD -MP -MF"hello.d" -MT"hello.o"   -o"hello.o" "../hello.c"
+Finished building: "../hello.c"
+ 
+Building target: "AM5728_A15_test2.out"
+Invoking: GNU Linker
+"C:/ti/ccs1020/ccs/tools/compiler/gcc-arm-none-eabi-7-2017-q4-major-win32/bin/arm-none-eabi-gcc-7.2.1.exe" -mtune=cortex-a15 -marm -Dam5728 -Dcore0 -Og -g -gdwarf-3 -gstrict-dwarf -Wall -specs="rdimon.specs" -mcpu=cortex-a15 -Wl,-Map,"AM5728_A15_test2.map" -Wl,--defsym,CORE0=1 -Wl,--defsym,STACKSIZE=0x10000 -Wl,--defsym,HEAPSIZE=0x400 -o"AM5728_A15_test2.out" "./hello.o" "./startup_ARMCA15.o" -Wl,-T"../AM572x.lds"  
+Finished building target: "AM5728_A15_test2.out"
+ 
+
+**** Build Finished ****

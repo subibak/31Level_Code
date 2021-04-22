@@ -1,0 +1,29 @@
+/*
+ * Interrupt.c
+ *
+ *  Created on: 2018. 9. 29.
+ *      Author: subi
+ */
+
+#include "Define_Header.h"
+
+
+interrupt void Interrupt(void)
+{
+	//static Uint16 INT_loop_cnt = 0;
+    XF1_ON;                                 // XF1 Pin ON
+
+    DELAY_US(1);
+
+	LED_DSP();
+//    Temp_Calc();
+//	CPU_Msg_Read(msg_test_rd);
+
+//	CPU_Msg_Write(msg_test_wr);
+
+
+	XF1_OFF;						        // XF1 Pin OFF
+
+//	EPwm1Regs.ETCLR.bit.INT = 1;			// ePWM1 Interrupt Clear
+//	PieCtrlRegs.PIEACK.bit.ACK3 = 1;		// ePWM1 PIE Interrupt Clear
+}

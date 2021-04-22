@@ -1,0 +1,161 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED0",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[15]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[14]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[13]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[12]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[11]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[10]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[9]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[8]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED1",
+					"strict" : false
+				},
+				{
+					"name" : "LED3",
+					"strict" : false
+				},
+				{
+					"name" : "LED2",
+					"strict" : false
+				},
+				{
+					"name" : "nEM1OE",
+					"strict" : false
+				},
+				{
+					"name" : "EM1BA1",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_EMIF",
+					"strict" : false
+				},
+				{
+					"name" : "nEM1CS2",
+					"strict" : false
+				},
+				{
+					"name" : "nEM1CS3",
+					"strict" : false
+				},
+				{
+					"name" : "nEM1CS4",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "nEM1WE",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "EMIF1_ADDR[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

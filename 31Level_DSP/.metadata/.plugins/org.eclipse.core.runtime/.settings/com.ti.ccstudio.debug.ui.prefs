@@ -1,0 +1,12 @@
+MODULES_MRU_PATH=C\:\\Users\\subi\\Desktop\\31Level_Code\\31Level_DSP\\AM5728_A15_test2\\Debug\\AM5728_A15_test2.out\#THREAD_IDS\#Texas Instruments XDS100v2 USB Debug Probe/CortexA15_0
+MODULES_MRU_PATH.1=C\:\\Users\\subi\\Desktop\\31Level_Code\\31Level_DSP\\AM5728_A15_test1\\Debug\\AM5728_A15_test1.out\#THREAD_IDS\#Texas Instruments XDS100v2 USB Debug Probe/CortexA15_0
+MODULES_MRU_PATH.2=C\:\\Users\\subi\\Desktop\\31Level_Code\\31Level_DSP\\Master_Central_31Lv_DSP_TEST\\Debug\\Master_Central_31Lv_DSP_TEST.out\#THREAD_IDS\#Texas Instruments XDS100v2 USB Debug Probe/C66xx_DSP1
+MODULES_MRU_PATH.3=C\:\\Users\\subi\\Desktop\\31Level_Code\\31Level_DSP\\Master_Central_31Lv_DSP\\Debug\\Master_Central_31Lv_DSP.out\#THREAD_IDS\#Texas Instruments XDS100v2 USB Debug Probe/C66xx_DSP1
+MODULES_MRU_PATH.4=C\:\\Users\\subi\\Desktop\\31Level_Code\\31Level_DSP\\Master_Central_31Lv_DSP_R2\\Debug\\Master_Central_31Lv_DSP_R2.out\#THREAD_IDS\#Texas Instruments XDS100v2 USB Debug Probe/C66xx_DSP1
+MODULES_MRU_PATH.5=C\:\\Users\\subi\\Desktop\\31Level_Code\\31Level_DSP\\GM_MMC31LV_R2\\Debug_CPU1_RAM\\GM_MMC31LV_CPU1_RAM.out\#THREAD_IDS\#Texas Instruments XDS100v3 USB Debug Probe_0/C28xx_CPU1
+MODULES_MRU_PATH.6=C\:\\Users\\subi\\Desktop\\31Level_Code\\31Level_DSP\\GM_MMC31LV_R2\\Debug_CPU2_RAM\\GM_MMC31LV_CPU2_RAM.out\#THREAD_IDS\#Texas Instruments XDS100v3 USB Debug Probe_0/C28xx_CPU2\#THREAD_IDS\#Texas Instruments XDS100v3 USB Debug Probe_0/C28xx_CPU1
+MODULES_MRU_PATH.7=C\:\\Users\\subi\\Desktop\\31Level_Code\\31Level_DSP\\GM_MMC31LV_R2\\Debug_CPU2_RAM\\GM_MMC31LV_R2.out\#THREAD_IDS\#Texas Instruments XDS100v3 USB Debug Probe_0/C28xx_CPU1\#THREAD_IDS\#Texas Instruments XDS100v3 USB Debug Probe_0/C28xx_CPU2
+MODULES_MRU_PATH.8=C\:\\Users\\subi\\Desktop\\31Level_Code\\31Level_DSP\\GM_MMC31LV_R2\\Debug_CPU1_RAM\\GM_MMC31LV_R2.out\#THREAD_IDS\#Texas Instruments XDS100v3 USB Debug Probe_0/C28xx_CPU1
+MODULES_MRU_PATH.9=C\:\\Users\\subi\\Desktop\\3LV_SiC_MAIN_Ver1_20181223_1532_CPU2_RAM.out\#THREAD_IDS\#Texas Instruments XDS100v3 USB Debug Probe_0/C28xx_CPU2
+eclipse.preferences.version=1
+useAnnotationsPrefPage=true

@@ -1,0 +1,259 @@
+/*
+ * AM572x_C66_PRCM_L4CFG_CM_CORE__L4PER.h
+ *
+ *  Created on: 2018. 11. 6.
+ *      Author: HJHeo
+ */
+
+#ifndef AM572X_C66_PRCM_L4CFG_CM_CORE__L4PER_H_
+#define AM572X_C66_PRCM_L4CFG_CM_CORE__L4PER_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+struct CM_L4PER_CLKSTCTRL_BITS {
+	Uint32	CLKTRCTRL:2;
+	Uint32	rsvd0:6;
+	Uint32	CLKACTIVITY_L4PER_L3_GICLK:1;
+	Uint32	CLKACTIVITY_TIMER10_GICLK:1;
+	Uint32	CLKACTIVITY_TIMER11_GICLK:1;
+	Uint32	CLKACTIVITY_TIMER2_GICLK:1;
+	Uint32	CLKACTIVITY_TIMER3_GICLK:1;
+	Uint32	CLKACTIVITY_TIMER4_GICLK:1;
+	Uint32	CLKACTIVITY_TIMER9_GICLK:1;
+	Uint32	CLKACTIVITY_UART1_GICLK:1;
+	Uint32	CLKACTIVITY_UART2_GICLK:1;
+	Uint32	CLKACTIVITY_UART3_GICLK:1;
+	Uint32	CLKACTIVITY_UART4_GICLK:1;
+	Uint32	CLKACTIVITY_PER_12M_GICLK:1;
+	Uint32	CLKACTIVITY_PER_48M_GICLK:1;
+	Uint32	CLKACTIVITY_PER_96M_GICLK:1;
+	Uint32	CLKACTIVITY_MMC3_GICLK:1;
+	Uint32	CLKACTIVITY_MMC4_GICLK:1;
+	Uint32	CLKACTIVITY_GPIO_GICLK:1;
+	Uint32	rsvd1:1;
+	Uint32	CLKACTIVITY_UART5_GICLK:1;
+	Uint32	CLKACTIVITY_L4PER_32K_GICLK:1;
+	Uint32	rsvd2:4;
+};
+
+union CM_L4PER_CLKSTCTRL_REG {
+	Uint32								all;
+	struct CM_L4PER_CLKSTCTRL_BITS		bit;
+};
+
+
+
+
+
+
+struct CM_L4PER_L4_PER_CLKCTRL_BITS {
+	Uint32	MODULEMODE:2;
+	Uint32	rsvd0:14;
+	Uint32	IDLEST:2;
+	Uint32	rsvd1:14;
+};
+
+union CM_L4PER_L4_PER_CLKCTRL_REG {
+	Uint32								all;
+	struct CM_L4PER_L4_PER_CLKCTRL_BITS	bit;
+};
+
+struct CM_L4PER_TIMER_CLKCTRL_BITS {
+	Uint32	MODULEMODE:2;
+	Uint32	rsvd0:14;
+	Uint32	IDLEST:2;
+	Uint32	rsvd1:6;
+	Uint32	CLKSEL:4;
+	Uint32	rsvd2:4;
+};
+
+union CM_L4PER_TIMER_CLKCTRL_REG {
+	Uint32								all;
+	struct CM_L4PER_TIMER_CLKCTRL_BITS	bit;
+};
+
+// TIMER_CLKCTRL Register.
+//// TIMER_CLKCTRL Register : Byte Value.
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_SYSCLK1		0x00000000
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_FUNC32KCLK	0x01000000
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_SYSCLK2		0x02000000
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_XREFCLK0		0x03000000
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_XREFCLK1		0x04000000
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_XREFCLK2		0x05000000
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_XREFCLK3		0x06000000
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_ABEGICLK		0x07000000
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_VIDEO1DIVCLK	0x08000000
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_VIDEO2DIVCLK	0x09000000
+#define CM_L4PER_TIMER_CLKCTRL_CLKSEL_HDMIDIVCLK	0x0A000000
+
+#define CM_L4PER_TIMER_CLKCTRL_IDLEST_FullFuncFlag	0x00000000
+#define CM_L4PER_TIMER_CLKCTRL_IDLEST_PerfTransFlag	0x00010000
+#define CM_L4PER_TIMER_CLKCTRL_IDLEST_IdleModeFlag	0x00020000
+#define CM_L4PER_TIMER_CLKCTRL_IDLEST_ModuleDisFlag	0x00030000
+
+#define CM_L4PER_TIMER_CLKCTRL_MODULEMODE_ModuleDis	0x00000000
+#define CM_L4PER_TIMER_CLKCTRL_MODULEMODE_ModuleEn	0x00000002
+
+
+
+
+
+
+struct CM_L4PER_I2C_CLKCTRL_BITS {
+	Uint32	MODULEMODE:2;
+	Uint32	rsvd0:14;
+	Uint32	IDLEST:2;
+	Uint32	rsvd1:14;
+};
+
+union CM_L4PER_I2C_CLKCTRL_REG {
+	Uint32								all;
+	struct CM_L4PER_I2C_CLKCTRL_BITS	bit;
+};
+
+
+
+
+struct CM_L4PER_GPIO_CLKCTRL_BITS {
+	Uint32	MODULEMODE:2;
+	Uint32	rsvd0:6;
+	Uint32	OPTFCLKEN_DBCLK:1;
+	Uint32	rsvd1:7;
+	Uint32	IDLEST:2;
+	Uint32	rsvd2:14;
+};
+
+union CM_L4PER_GPIO_CLKCTRL_REG {
+	Uint32								all;
+	struct CM_L4PER_GPIO_CLKCTRL_BITS	bit;
+};
+
+// GPIO_CLKCTRL Register.
+//// GPIO_CLKCTRL Register : Byte Value.
+#define CM_L4PER_GPIO_CLKCTRL_IDLEST_FullFuncFlag		0x00000000
+#define CM_L4PER_GPIO_CLKCTRL_IDLEST_PerfTransFlag		0x00010000
+#define CM_L4PER_GPIO_CLKCTRL_IDLEST_IdleModeFlag		0x00020000
+#define CM_L4PER_GPIO_CLKCTRL_IDLEST_ModuleDisFlag		0x00030000
+
+#define CM_L4PER_GPIO_CLKCTRL_OPTFCLKEN_DBCLK_OptClkDis	0x00000000
+#define CM_L4PER_GPIO_CLKCTRL_OPTFCLKEN_DBCLK_OptClkEn	0x00000100
+
+#define CM_L4PER_GPIO_CLKCTRL_MODULEMODE_ModuleDis		0x00000000
+#define CM_L4PER_GPIO_CLKCTRL_MODULEMODE_ModuleEn		0x00000001
+
+
+
+struct CM_L4PER_MCSPI_CLKCTRL_BITS {
+    Uint32  MODULEMODE:2;
+    Uint32  rsvd0:14;
+    Uint32  IDLEST:2;
+    Uint32  rsvd1:14;
+};
+
+union CM_L4PER_MCSPI_CLKCTRL_REG {
+    Uint32                                    all;
+    struct CM_L4PER_MCSPI_CLKCTRL_BITS        bit;
+};
+
+#define CM_L4PER_MCSPI_CLKCTRL_MODULEMODE_ModuleDis     0x00000000
+#define CM_L4PER_MCSPI_CLKCTRL_MODULEMODE_ModuleEn      0x00000002
+
+#define CM_L4PER_MCSPI_CLKCTRL_IDLEST_FullFunc          0x00000000
+#define CM_L4PER_MCSPI_CLKCTRL_IDLEST_PerformTran       0x00010000
+#define CM_L4PER_MCSPI_CLKCTRL_IDLEST_IdleMode          0x00020000
+#define CM_L4PER_MCSPI_CLKCTRL_IDLEST_ModuleDis         0x00030000
+
+
+// -------------------- Registers Define --------------------//
+struct CM_CORE__L4PER_REGS {
+	union CM_L4PER_CLKSTCTRL_REG		CM_L4PER_CLKSTCTRL;			// 0x0000
+	Uint32								rsvd0;						// 0x0004
+	Uint32								CM_L4PER_DYNAMINCDEP;		// 0x0008
+	union CM_L4PER_L4_PER_CLKCTRL_REG	CM_L4PER_L4_PER2_CLKCTRL;	// 0x000C
+	Uint32								rsvd1_0;					// 0x0010
+	union CM_L4PER_L4_PER_CLKCTRL_REG	CM_L4PER_L4_PER3_CLKCTRL;	// 0x0014
+	Uint32								rsvd1_8[2];					// 0x0010
+	Uint32								rsvd2_0;					// 0x0020
+	Uint32								rsvd2_4;					// 0x0024
+	union CM_L4PER_TIMER_CLKCTRL_REG	CM_L4PER_TIMER10_CLKCTRL;	// 0x0028
+	Uint32								rsvd2_C;					// 0x002C
+	union CM_L4PER_TIMER_CLKCTRL_REG	CM_L4PER_TIMER11_CLKCTRL;	// 0x0030
+	Uint32								rsvd3_4;					// 0x0034
+	union CM_L4PER_TIMER_CLKCTRL_REG	CM_L4PER_TIMER2_CLKCTRL;	// 0x0038
+	Uint32								rsvd3_C;					// 0x003C
+	union CM_L4PER_TIMER_CLKCTRL_REG	CM_L4PER_TIMER3_CLKCTRL;	// 0x0040
+	Uint32								rsvd4_4;					// 0x0044
+	union CM_L4PER_TIMER_CLKCTRL_REG	CM_L4PER_TIMER4_CLKCTRL;	// 0x0048
+	Uint32								rsvd4_C;					// 0x004C
+	union CM_L4PER_TIMER_CLKCTRL_REG	CM_L4PER_TIMER9_CLKCTRL;	// 0x0050
+	Uint32								rsvd5_4;					// 0x0054
+	Uint32								rsvd5_8;					// 0x0058
+	Uint32								rsvd5_C;					// 0x005C
+	union CM_L4PER_GPIO_CLKCTRL_REG		CM_L4PER_GPIO2_CLKCTRL;		// 0x0060
+	Uint32								rsvd6_4;					// 0x0064
+	union CM_L4PER_GPIO_CLKCTRL_REG		CM_L4PER_GPIO3_CLKCTRL;		// 0x0068
+	Uint32								rsvd6_C;					// 0x006C
+	union CM_L4PER_GPIO_CLKCTRL_REG		CM_L4PER_GPIO4_CLKCTRL;		// 0x0070
+	Uint32								rsvd7_4;					// 0x0074
+	union CM_L4PER_GPIO_CLKCTRL_REG		CM_L4PER_GPIO5_CLKCTRL;		// 0x0078
+	Uint32								rsvd7_C;					// 0x007C
+	union CM_L4PER_GPIO_CLKCTRL_REG		CM_L4PER_GPIO6_CLKCTRL;		// 0x0080
+	Uint32								rsvd8_4;					// 0x0084
+	Uint32								rsvd8_8;					// 0x0088
+	Uint32								rsvd8_C;					// 0x008C
+	Uint32								rsvd9[4];					// 0x0090
+	union CM_L4PER_I2C_CLKCTRL_REG		CM_L4PER_I2C1_CLKCTRL;		// 0x00A0
+	Uint32								rsvdA_4;					// 0x00A4
+	union CM_L4PER_I2C_CLKCTRL_REG		CM_L4PER_I2C2_CLKCTRL;		// 0x00A8
+	Uint32								rsvdA_C;					// 0x00AC
+	union CM_L4PER_I2C_CLKCTRL_REG		CM_L4PER_I2C3_CLKCTRL;		// 0x00B0
+	Uint32								rsvdB_4;					// 0x00B4
+	union CM_L4PER_I2C_CLKCTRL_REG		CM_L4PER_I2C4_CLKCTRL;		// 0x00B8
+	Uint32								rsvdB_C;					// 0x00BC
+	Uint32								rsvdC_0;					// 0x00C0
+	Uint32								rsvdC_4;					// 0x00C0
+	union CM_L4PER_TIMER_CLKCTRL_REG	CM_L4PER_TIMER13_CLKCTRL;	// 0x00C8
+	Uint32								rsvdC_C;					// 0x00CC
+	union CM_L4PER_TIMER_CLKCTRL_REG	CM_L4PER_TIMER14_CLKCTRL;	// 0x00D0
+	Uint32								rsvdD_4;					// 0x00D4
+	union CM_L4PER_TIMER_CLKCTRL_REG	CM_L4PER_TIMER15_CLKCTRL;	// 0x00D8
+	Uint32								rsvdD_C;					// 0x00DC
+	Uint32								rsvdE[4];					// 0x00E0
+	Uint32								rsvdF[2];					// 0x00F0
+	union CM_L4PER_MCSPI_CLKCTRL_REG    CM_L4PER_MCSPI2_CLKCTRL;    // 0x00F8
+	Uint32								rsvd10[5];					// 0x00FC
+	union CM_L4PER_GPIO_CLKCTRL_REG		CM_L4PER_GPIO7_CLKCTRL;		// 0x0110
+	Uint32								rsvd11_4;					// 0x0114
+	union CM_L4PER_GPIO_CLKCTRL_REG		CM_L4PER_GPIO8_CLKCTRL;		// 0x0118
+	Uint32								rsvd11_C;					// 0x011C
+	Uint32								rsvd12[4];					// 0x0120
+	union CM_L4PER_TIMER_CLKCTRL_REG	CM_L4PER_TIMER16_CLKCTRL;	// 0x0130
+	Uint32								rsvd13_4;					// 0x0134
+	Uint32								rsvd13_8;					// 0x0138
+	Uint32								rsvd13_C;					// 0x013C
+	Uint32								rsvd14[4];					// 0x0140
+	Uint32								rsvd15[4];					// 0x0150
+	Uint32								rsvd16[4];					// 0x0160
+	Uint32								rsvd17[4];					// 0x0170
+	Uint32								rsvd18[4];					// 0x0180
+	Uint32								rsvd19[4];					// 0x0190
+	Uint32								rsvd1A[4];					// 0x01A0
+	Uint32								rsvd1B[4];					// 0x01B0
+	Uint32								rsvd1C[4];					// 0x01C0
+	Uint32								rsvd1D[4];					// 0x01D0
+	Uint32								rsvd1E[4];					// 0x01E0
+	Uint32								rsvd1F[4];					// 0x01F0
+	Uint32								rsvd20[4];					// 0x0200
+	Uint32								rsvd21_0;					// 0x0210
+	Uint32								rsvd21_4;					// 0x0214
+};
+
+extern volatile struct CM_CORE__L4PER_REGS	CM_CORE__L4PERRegs;
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* AM572X_C66_PRCM_L4CFG_CM_CORE__L4PER_H_ */

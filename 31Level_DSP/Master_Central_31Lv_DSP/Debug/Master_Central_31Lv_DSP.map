@@ -1,0 +1,1638 @@
+******************************************************************************
+               TMS320C6x Linker PC v8.3.2                      
+******************************************************************************
+>> Linked Mon Jan 11 09:31:34 2021
+
+OUTPUT FILE NAME:   <Master_Central_31Lv_DSP.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 40503fa0
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  IRAM_MEM              00800000   00008000  00000200  00007e00  RWIX
+  DSP_ICFG              01800000   0000018c  0000018c  00000000  RWIX
+  OCMC_RAM3             40500000   00100000  0000558e  000faa72  RWIX
+  GPIO7                 48051000   00000198  00000198  00000000  RWIX
+  GPIO8                 48053000   00000198  00000000  00000198  RWIX
+  GPIO2                 48055000   00000198  00000198  00000000  RWIX
+  GPIO3                 48057000   00000198  00000198  00000000  RWIX
+  GPIO4                 48059000   00000198  00000198  00000000  RWIX
+  GPIO5                 4805b000   00000198  00000000  00000198  RWIX
+  GPIO6                 4805d000   00000198  00000198  00000000  RWIX
+  McSPI2                4809a000   000001a4  000001a4  00000000  RWIX
+  TIMER5                48820000   0000005c  0000005c  00000000  RWIX
+  MAILBOX2              4883a000   00000144  00000144  00000000  RWIX
+  MAILBOX3              4883c000   00000144  00000144  00000000  RWIX
+  MAILBOX4              4883e000   00000144  00000144  00000000  RWIX
+  MAILBOX5              48840000   00000144  00000144  00000000  RWIX
+  MAILBOX6              48842000   00000144  00000144  00000000  RWIX
+  MAILBOX7              48844000   00000144  00000144  00000000  RWIX
+  CM_CORE_AON__DSP1     4a005400   00000024  00000024  00000000  RWIX
+  CM_CORE_AON__IPU      4a005500   00000084  00000084  00000000  RWIX
+  CM_CORE__CORE         4a008700   00000754  00000094  000006c0  RWIX
+  CM_CORE__L4PER        4a009700   00000218  00000218  00000000  RWIX
+  GPIO1                 4ae10000   00000198  00000000  00000198  RWIX
+  GPMC                  50000000   0000037c  00000378  00000004  RWIX
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00800000    00800000    00000200   00000000    rw-
+  00800000    00800000    00000200   00000000    rw- .vects
+01800000    01800000    0000018c   00000000    rw-
+  01800000    01800000    0000018c   00000000    rw- DSP_ICFGRegsFile
+40500000    40500000    00004260   00004260    r-x
+  40500000    40500000    00004260   00004260    r-x .text
+40504260    40504260    0000100a   00000000    rw-
+  40504260    40504260    00000800   00000000    rw- .stack
+  40504a60    40504a60    0000073c   00000000    rw- .neardata
+  4050519c    4050519c    000000ce   00000000    rw- .far
+4050526c    4050526c    0000002c   0000002c    r--
+  4050526c    4050526c    0000002c   0000002c    r-- .switch
+40505298    40505298    00000010   00000000    rw-
+  40505298    40505298    0000000c   00000000    rw- .fardata
+  405052a4    405052a4    00000004   00000000    rw- .bss
+405052a8    405052a8    000002e8   000002e8    r--
+  405052a8    405052a8    000002e8   000002e8    r-- .cinit
+48051000    48051000    00000198   00000000    rw-
+  48051000    48051000    00000198   00000000    rw- GPIO7RegsFile
+48055000    48055000    00000198   00000000    rw-
+  48055000    48055000    00000198   00000000    rw- GPIO2RegsFile
+48057000    48057000    00000198   00000000    rw-
+  48057000    48057000    00000198   00000000    rw- GPIO3RegsFile
+48059000    48059000    00000198   00000000    rw-
+  48059000    48059000    00000198   00000000    rw- GPIO4RegsFile
+4805d000    4805d000    00000198   00000000    rw-
+  4805d000    4805d000    00000198   00000000    rw- GPIO6RegsFile
+4809a000    4809a000    000001a4   00000000    rw-
+  4809a000    4809a000    000001a4   00000000    rw- McSPI2RegsFile
+48820000    48820000    0000005c   00000000    rw-
+  48820000    48820000    0000005c   00000000    rw- Timer5RegsFile
+4883a000    4883a000    00000144   00000000    rw-
+  4883a000    4883a000    00000144   00000000    rw- MAILBOX2RegsFile
+4883c000    4883c000    00000144   00000000    rw-
+  4883c000    4883c000    00000144   00000000    rw- MAILBOX3RegsFile
+4883e000    4883e000    00000144   00000000    rw-
+  4883e000    4883e000    00000144   00000000    rw- MAILBOX4RegsFile
+48840000    48840000    00000144   00000000    rw-
+  48840000    48840000    00000144   00000000    rw- MAILBOX5RegsFile
+48842000    48842000    00000144   00000000    rw-
+  48842000    48842000    00000144   00000000    rw- MAILBOX6RegsFile
+48844000    48844000    00000144   00000000    rw-
+  48844000    48844000    00000144   00000000    rw- MAILBOX7RegsFile
+4a005400    4a005400    00000024   00000000    rw-
+  4a005400    4a005400    00000024   00000000    rw- CM_CORE_AON__DSP1RegsFile
+4a005500    4a005500    00000084   00000000    rw-
+  4a005500    4a005500    00000084   00000000    rw- CM_CORE_AON__IPURegsFile
+4a008700    4a008700    00000094   00000000    rw-
+  4a008700    4a008700    00000094   00000000    rw- CM_CORE__CORERegsFile
+4a009700    4a009700    00000218   00000000    rw-
+  4a009700    4a009700    00000218   00000000    rw- CM_CORE__L4PERRegsFile
+50000000    50000000    00000378   00000000    rw-
+  50000000    50000000    00000378   00000000    rw- GPMCRegsFile
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+DSP_ICFGRegsFile 
+*          0    01800000    0000018c     UNINITIALIZED
+                  01800000    0000018c     AM572x_C66_GlobarVariableDefs.obj (DSP_ICFGRegsFile)
+
+.text      0    40500000    00004260     
+                  40500000    00001200     GPMC.obj (.text)
+                  40501200    00000860     Sensor.obj (.text)
+                  40501a60    000004a0     ADC.obj (.text:retain)
+                  40501f00    00000440     IntCtrl.obj (.text)
+                  40502340    000003e0     CtrlModule.obj (.text)
+                  40502720    00000340     PRCM.obj (.text)
+                  40502a60    000002e0     GPIO.obj (.text)
+                  40502d40    00000280     ADC.obj (.text)
+                  40502fc0    00000280     LED.obj (.text)
+                  40503240    00000280     rts6600_elf.lib : divf.c.obj (.text:__c6xabi_divf)
+                  405034c0    00000280     Interrupt.obj (.text:retain)
+                  40503740    000001a0     Timer.obj (.text)
+                  405038e0    00000100     McSPI.obj (.text)
+                  405039e0    00000100     rts6600_elf.lib : copy_decompress_rle.c.obj (.text:__TI_decompress_rle_core)
+                  40503ae0    000000e0                     : divi.asm.obj (.text:__divi)
+                  40503bc0    000000e0                     : exit.c.obj (.text:exit)
+                  40503ca0    000000e0                     : memset.c.obj (.text:memset)
+                  40503d80    000000c0                     : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit:__TI_auto_init_nobinit_nopinit)
+                  40503e40    000000c0                     : tls.c.obj (.text:tls:init:__TI_tls_init)
+                  40503f00    000000a0                     : memcpy64.asm.obj (.text:memcpy)
+                  40503fa0    00000080                     : boot.c.obj (.text:_c_int00)
+                  40504020    00000080     device.obj (.text)
+                  405040a0    00000080     IntCtrl.obj (.text:retain)
+                  40504120    00000060     main.obj (.text)
+                  40504180    00000040     rts6600_elf.lib : args_main.c.obj (.text:_args_main)
+                  405041c0    00000020                     : startup.c.obj (.text:_system_post_cinit)
+                  405041e0    00000020                     : pre_init.c.obj (.text:_system_pre_init)
+                  40504200    00000020                     : exit.c.obj (.text:abort)
+                  40504220    00000020                     : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  40504240    00000020                     : copy_decompress_rle.c.obj (.text:decompress:rle24:__TI_decompress_rle24)
+
+.stack     0    40504260    00000800     UNINITIALIZED
+                  40504260    00000008     rts6600_elf.lib : boot.c.obj (.stack)
+                  40504268    000007f8     --HOLE--
+
+.neardata 
+*          0    40504a60    0000073c     UNINITIALIZED
+                  40504a60    00000588     MMC_controller.obj (.neardata)
+                  40504fe8    000000b4     ADC.obj (.neardata)
+                  4050509c    000000a4     Sensor.obj (.neardata)
+                  40505140    00000038     Interrupt.obj (.neardata)
+                  40505178    00000012     Timer.obj (.neardata)
+                  4050518a    00000002     --HOLE--
+                  4050518c    0000000c     GPMC.obj (.neardata)
+                  40505198    00000004     LED.obj (.neardata)
+
+.far       0    4050519c    000000ce     UNINITIALIZED
+                  4050519c    00000014     (.common:CenLegBypass_A)
+                  405051b0    00000014     (.common:CenLegBypass_B)
+                  405051c4    00000014     (.common:CenLegBypass_C)
+                  405051d8    0000000e     (.common:CenLegComm)
+                  405051e6    00000002     (.common:CenLegOpData_Alower)
+                  405051e8    00000004     (.common:DiffTime)
+                  405051ec    00000004     (.common:I_AL_T)
+                  405051f0    00000004     (.common:I_AS_T)
+                  405051f4    00000004     (.common:I_AU_T)
+                  405051f8    00000004     (.common:I_BL_T)
+                  405051fc    00000004     (.common:I_BS_T)
+                  40505200    00000004     (.common:I_BU_T)
+                  40505204    00000004     (.common:I_CL_T)
+                  40505208    00000004     (.common:I_CS_T)
+                  4050520c    00000004     (.common:I_CU_T)
+                  40505210    00000004     (.common:Mode_Info)
+                  40505214    00000004     (.common:NLC_REF_AL)
+                  40505218    00000004     (.common:NLC_REF_AU)
+                  4050521c    00000004     (.common:NLC_REF_BL)
+                  40505220    00000004     (.common:NLC_REF_BU)
+                  40505224    00000004     (.common:NLC_REF_CL)
+                  40505228    00000004     (.common:NLC_REF_CU)
+                  4050522c    00000004     (.common:SmFaultA)
+                  40505230    00000004     (.common:SmFaultB)
+                  40505234    00000004     (.common:SmFaultC)
+                  40505238    00000004     (.common:SmSumAL)
+                  4050523c    00000004     (.common:SmSumAU)
+                  40505240    00000004     (.common:SmSumBL)
+                  40505244    00000004     (.common:SmSumBU)
+                  40505248    00000004     (.common:SmSumCL)
+                  4050524c    00000004     (.common:SmSumCU)
+                  40505250    00000004     (.common:V_AS_sec_T)
+                  40505254    00000004     (.common:V_BS_sec_T)
+                  40505258    00000004     (.common:V_CS_sec_T)
+                  4050525c    00000004     (.common:V_DC_T)
+                  40505260    00000002     (.common:CenLegOpData_Aupper)
+                  40505262    00000002     (.common:CenLegOpData_Blower)
+                  40505264    00000002     (.common:CenLegOpData_Bupper)
+                  40505266    00000002     (.common:CenLegOpData_Clower)
+                  40505268    00000002     (.common:CenLegOpData_Cupper)
+
+.bss       0    405052a4    00000004     UNINITIALIZED
+                  405052a4    00000004     (.common:mSub)
+
+.cinit     0    405052a8    000002e8     
+                  405052a8    00000127     (.cinit..neardata.load) [load image, compression = rle]
+                  405053cf    0000000d     (.cinit..fardata.load) [load image, compression = rle]
+                  405053dc    0000000b     (.cinit..vects.load) [load image, compression = rle]
+                  405053e7    0000000b     (.cinit.CM_CORE__L4PERRegsFile.load) [load image, compression = rle]
+                  405053f2    0000000b     (.cinit.DSP_ICFGRegsFile.load) [load image, compression = rle]
+                  405053fd    0000000b     (.cinit.GPIO2RegsFile.load) [load image, compression = rle]
+                  40505408    0000000b     (.cinit.GPIO3RegsFile.load) [load image, compression = rle]
+                  40505413    0000000b     (.cinit.GPIO4RegsFile.load) [load image, compression = rle]
+                  4050541e    0000000b     (.cinit.GPIO6RegsFile.load) [load image, compression = rle]
+                  40505429    0000000b     (.cinit.GPIO7RegsFile.load) [load image, compression = rle]
+                  40505434    0000000b     (.cinit.GPMCRegsFile.load) [load image, compression = rle]
+                  4050543f    0000000b     (.cinit.MAILBOX2RegsFile.load) [load image, compression = rle]
+                  4050544a    0000000b     (.cinit.MAILBOX3RegsFile.load) [load image, compression = rle]
+                  40505455    0000000b     (.cinit.MAILBOX4RegsFile.load) [load image, compression = rle]
+                  40505460    0000000b     (.cinit.MAILBOX5RegsFile.load) [load image, compression = rle]
+                  4050546b    0000000b     (.cinit.MAILBOX6RegsFile.load) [load image, compression = rle]
+                  40505476    0000000b     (.cinit.MAILBOX7RegsFile.load) [load image, compression = rle]
+                  40505481    0000000b     (.cinit.McSPI2RegsFile.load) [load image, compression = rle]
+                  4050548c    00000009     (.cinit..bss.load) [load image, compression = rle]
+                  40505495    00000009     (.cinit..far.load) [load image, compression = rle]
+                  4050549e    00000009     (.cinit.CM_CORE_AON__DSP1RegsFile.load) [load image, compression = rle]
+                  405054a7    00000009     (.cinit.CM_CORE_AON__IPURegsFile.load) [load image, compression = rle]
+                  405054b0    00000009     (.cinit.CM_CORE__CORERegsFile.load) [load image, compression = rle]
+                  405054b9    00000009     (.cinit.Timer5RegsFile.load) [load image, compression = rle]
+                  405054c2    00000002     --HOLE-- [fill = 0]
+                  405054c4    00000008     (__TI_handler_table)
+                  405054cc    00000004     --HOLE-- [fill = 0]
+                  405054d0    000000c0     (__TI_cinit_table)
+
+GPIO7RegsFile 
+*          0    48051000    00000198     UNINITIALIZED
+                  48051000    00000198     AM572x_C66_GlobarVariableDefs.obj (GPIO7RegsFile)
+
+Timer5RegsFile 
+*          0    48820000    0000005c     UNINITIALIZED
+                  48820000    0000005c     AM572x_C66_GlobarVariableDefs.obj (Timer5RegsFile)
+
+GPIO2RegsFile 
+*          0    48055000    00000198     UNINITIALIZED
+                  48055000    00000198     AM572x_C66_GlobarVariableDefs.obj (GPIO2RegsFile)
+
+GPIO3RegsFile 
+*          0    48057000    00000198     UNINITIALIZED
+                  48057000    00000198     AM572x_C66_GlobarVariableDefs.obj (GPIO3RegsFile)
+
+GPIO4RegsFile 
+*          0    48059000    00000198     UNINITIALIZED
+                  48059000    00000198     AM572x_C66_GlobarVariableDefs.obj (GPIO4RegsFile)
+
+GPIO6RegsFile 
+*          0    4805d000    00000198     UNINITIALIZED
+                  4805d000    00000198     AM572x_C66_GlobarVariableDefs.obj (GPIO6RegsFile)
+
+McSPI2RegsFile 
+*          0    4809a000    000001a4     UNINITIALIZED
+                  4809a000    000001a4     AM572x_C66_GlobarVariableDefs.obj (McSPI2RegsFile)
+
+MAILBOX2RegsFile 
+*          0    4883a000    00000144     UNINITIALIZED
+                  4883a000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX2RegsFile)
+
+MAILBOX3RegsFile 
+*          0    4883c000    00000144     UNINITIALIZED
+                  4883c000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX3RegsFile)
+
+MAILBOX4RegsFile 
+*          0    4883e000    00000144     UNINITIALIZED
+                  4883e000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX4RegsFile)
+
+MAILBOX5RegsFile 
+*          0    48840000    00000144     UNINITIALIZED
+                  48840000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX5RegsFile)
+
+MAILBOX6RegsFile 
+*          0    48842000    00000144     UNINITIALIZED
+                  48842000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX6RegsFile)
+
+MAILBOX7RegsFile 
+*          0    48844000    00000144     UNINITIALIZED
+                  48844000    00000144     AM572x_C66_GlobarVariableDefs.obj (MAILBOX7RegsFile)
+
+CM_CORE_AON__DSP1RegsFile 
+*          0    4a005400    00000024     UNINITIALIZED
+                  4a005400    00000024     AM572x_C66_GlobarVariableDefs.obj (CM_CORE_AON__DSP1RegsFile)
+
+CM_CORE_AON__IPURegsFile 
+*          0    4a005500    00000084     UNINITIALIZED
+                  4a005500    00000084     AM572x_C66_GlobarVariableDefs.obj (CM_CORE_AON__IPURegsFile)
+
+CM_CORE__CORERegsFile 
+*          0    4a008700    00000094     UNINITIALIZED
+                  4a008700    00000094     AM572x_C66_GlobarVariableDefs.obj (CM_CORE__CORERegsFile)
+
+CM_CORE__L4PERRegsFile 
+*          0    4a009700    00000218     UNINITIALIZED
+                  4a009700    00000218     AM572x_C66_GlobarVariableDefs.obj (CM_CORE__L4PERRegsFile)
+
+GPMCRegsFile 
+*          0    50000000    00000378     UNINITIALIZED
+                  50000000    00000378     AM572x_C66_GlobarVariableDefs.obj (GPMCRegsFile)
+
+.vects     0    00800000    00000200     UNINITIALIZED
+                  00800000    00000200     IntCtrl.obj (.vects)
+
+.switch    0    4050526c    0000002c     
+                  4050526c    0000001c     LED.obj (.switch:LED)
+                  40505288    00000010     Interrupt.obj (.switch:ISR_DSPTimer)
+
+.fardata   0    40505298    0000000c     UNINITIALIZED
+                  40505298    0000000c     rts6600_elf.lib : exit.c.obj (.fardata)
+
+MODULE SUMMARY
+
+       Module                              code    ro data   rw data
+       ------                              ----    -------   -------
+    .\Includes\AM572x_C66\
+       AM572x_C66_GlobarVariableDefs.obj   0       0         6632   
+    +--+-----------------------------------+-------+---------+---------+
+       Total:                              0       0         6632   
+                                                                    
+    .\Sources\
+       GPMC.obj                            4608    0         134    
+       Sensor.obj                          2144    0         216    
+       ADC.obj                             1824    0         180    
+       IntCtrl.obj                         1216    0         512    
+       MMC_controller.obj                  0       0         1420   
+       CtrlModule.obj                      992     0         0      
+       PRCM.obj                            832     0         0      
+       GPIO.obj                            736     0         0      
+       Interrupt.obj                       640     16        60     
+       LED.obj                             640     28        4      
+       Timer.obj                           416     0         22     
+       McSPI.obj                           256     0         0      
+       device.obj                          128     0         0      
+       main.obj                            96      0         0      
+       Group_sorting.obj                   0       0         24     
+    +--+-----------------------------------+-------+---------+---------+
+       Total:                              14528   44        2572   
+                                                                    
+    C:\ti\ccs901\ccs\tools\compiler\ti-cgt-c6000_8.3.2\lib\rts6600_elf.lib
+       divf.c.obj                          640     0         0      
+       copy_decompress_rle.c.obj           288     0         0      
+       exit.c.obj                          256     0         12     
+       divi.asm.obj                        224     0         0      
+       memset.c.obj                        224     0         0      
+       autoinit.c.obj                      192     0         0      
+       tls.c.obj                           192     0         0      
+       memcpy64.asm.obj                    160     0         0      
+       boot.c.obj                          128     0         0      
+       args_main.c.obj                     64      0         0      
+       copy_decompress_none.c.obj          32      0         0      
+       pre_init.c.obj                      32      0         0      
+       startup.c.obj                       32      0         0      
+    +--+-----------------------------------+-------+---------+---------+
+       Total:                              2464    0         12     
+                                                                    
+       Stack:                              0       0         2048   
+       Linker Generated:                   0       738       0      
+    +--+-----------------------------------+-------+---------+---------+
+       Grand Total:                        16992   782       11264  
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 405054d0 records: 24, size/record: 8, table size: 192
+	.neardata: load addr=405052a8, load size=00000127 bytes, run addr=40504a60, run size=0000073c bytes, compression=rle
+	.fardata: load addr=405053cf, load size=0000000d bytes, run addr=40505298, run size=0000000c bytes, compression=rle
+	.vects: load addr=405053dc, load size=0000000b bytes, run addr=00800000, run size=00000200 bytes, compression=rle
+	CM_CORE__L4PERRegsFile: load addr=405053e7, load size=0000000b bytes, run addr=4a009700, run size=00000218 bytes, compression=rle
+	DSP_ICFGRegsFile: load addr=405053f2, load size=0000000b bytes, run addr=01800000, run size=0000018c bytes, compression=rle
+	GPIO2RegsFile: load addr=405053fd, load size=0000000b bytes, run addr=48055000, run size=00000198 bytes, compression=rle
+	GPIO3RegsFile: load addr=40505408, load size=0000000b bytes, run addr=48057000, run size=00000198 bytes, compression=rle
+	GPIO4RegsFile: load addr=40505413, load size=0000000b bytes, run addr=48059000, run size=00000198 bytes, compression=rle
+	GPIO6RegsFile: load addr=4050541e, load size=0000000b bytes, run addr=4805d000, run size=00000198 bytes, compression=rle
+	GPIO7RegsFile: load addr=40505429, load size=0000000b bytes, run addr=48051000, run size=00000198 bytes, compression=rle
+	GPMCRegsFile: load addr=40505434, load size=0000000b bytes, run addr=50000000, run size=00000378 bytes, compression=rle
+	MAILBOX2RegsFile: load addr=4050543f, load size=0000000b bytes, run addr=4883a000, run size=00000144 bytes, compression=rle
+	MAILBOX3RegsFile: load addr=4050544a, load size=0000000b bytes, run addr=4883c000, run size=00000144 bytes, compression=rle
+	MAILBOX4RegsFile: load addr=40505455, load size=0000000b bytes, run addr=4883e000, run size=00000144 bytes, compression=rle
+	MAILBOX5RegsFile: load addr=40505460, load size=0000000b bytes, run addr=48840000, run size=00000144 bytes, compression=rle
+	MAILBOX6RegsFile: load addr=4050546b, load size=0000000b bytes, run addr=48842000, run size=00000144 bytes, compression=rle
+	MAILBOX7RegsFile: load addr=40505476, load size=0000000b bytes, run addr=48844000, run size=00000144 bytes, compression=rle
+	McSPI2RegsFile: load addr=40505481, load size=0000000b bytes, run addr=4809a000, run size=000001a4 bytes, compression=rle
+	.bss: load addr=4050548c, load size=00000009 bytes, run addr=405052a4, run size=00000004 bytes, compression=rle
+	.far: load addr=40505495, load size=00000009 bytes, run addr=4050519c, run size=000000ce bytes, compression=rle
+	CM_CORE_AON__DSP1RegsFile: load addr=4050549e, load size=00000009 bytes, run addr=4a005400, run size=00000024 bytes, compression=rle
+	CM_CORE_AON__IPURegsFile: load addr=405054a7, load size=00000009 bytes, run addr=4a005500, run size=00000084 bytes, compression=rle
+	CM_CORE__CORERegsFile: load addr=405054b0, load size=00000009 bytes, run addr=4a008700, run size=00000094 bytes, compression=rle
+	Timer5RegsFile: load addr=405054b9, load size=00000009 bytes, run addr=48820000, run size=0000005c bytes, compression=rle
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 405054c4 records: 2, size/record: 4, table size: 8
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                           
+-------   ----                           
+40502d78  ADC                            
+40502d40  ADC_OP                         
+40501a60  ADC_Offset                     
+40502da4  ADC_Read                       
+40504fe8  AIN0_CH1                       
+40504fec  AIN0_CH2                       
+40504ff0  AIN0_CH3                       
+40504ff4  AIN0_CH4                       
+40504ff8  AIN1_CH1                       
+40504ffc  AIN1_CH2                       
+40505000  AIN1_CH3                       
+40505004  AIN1_CH4                       
+40505008  AIN2_CH1                       
+4050500c  AIN2_CH2                       
+40505010  AIN2_CH3                       
+40505014  AIN2_CH4                       
+40505018  AIN3_CH1                       
+4050501c  AIN3_CH2                       
+40505020  AIN3_CH3                       
+40505024  AIN3_CH4                       
+40504200  C$$EXIT                        
+40504fe0  CCSC_cnt                       
+4a005400  CM_CORE_AON__DSP1Regs          
+4a005500  CM_CORE_AON__IPURegs           
+4a008700  CM_CORE__CORERegs              
+4a009700  CM_CORE__L4PERRegs             
+4050515c  CNT_BEn0                       
+4050519c  CenLegBypass_A                 
+405051b0  CenLegBypass_B                 
+405051c4  CenLegBypass_C                 
+405051d8  CenLegComm                     
+405051e6  CenLegOpData_Alower            
+40505260  CenLegOpData_Aupper            
+40505262  CenLegOpData_Blower            
+40505264  CenLegOpData_Bupper            
+40505266  CenLegOpData_Clower            
+40505268  CenLegOpData_Cupper            
+40505184  Compen_CNT                     
+40504a7e  Conv_start                     
+40504d64  Count_Idc_Transient            
+01800000  DSP_ICFGRegs                   
+405051e8  DiffTime                       
+40505180  Diff_CNT                       
+40503858  Ecat_Time_Compen               
+4050517c  End_CNT                        
+40504ab8  Erst_de                        
+40504ae0  Erst_de_err                    
+40504ae4  Erst_de_err_low                
+40504aec  Erst_de_err_low_old            
+40504ae8  Erst_de_err_old                
+40504ac0  Erst_de_low                    
+40504ac8  Erst_de_old                    
+40504f88  Erst_de_test                   
+40504ab0  Erst_ds                        
+40504fb4  Erst_ds_err                    
+40504fbc  Erst_ds_integ_err              
+40504fc4  Erst_ds_p                      
+40504f94  Erst_ds_prime                  
+40504fa4  Erst_ds_q                      
+40504abc  Erst_qe                        
+40504ac4  Erst_qe_low                    
+40504acc  Erst_qe_old                    
+40504f84  Erst_qe_test                   
+40504ab4  Erst_qs                        
+40504fb8  Erst_qs_err                    
+40504fc0  Erst_qs_integ_err              
+40504fc8  Erst_qs_p                      
+40504f98  Erst_qs_prime                  
+40504fa8  Erst_qs_q                      
+40505156  Flag_BE0n_test                 
+40504d40  Flag_CCSC                      
+40504a74  Flag_Con                       
+40504a62  Flag_Converter                 
+40504a66  Flag_Current                   
+40505190  Flag_DAQ_EN                    
+40505140  Flag_DO1                       
+40505142  Flag_DO2                       
+40505144  Flag_DO3                       
+40505146  Flag_DO4                       
+4050514a  Flag_EcatReady                 
+4050514c  Flag_Ecat_DAQ_EN_CNT           
+4050518c  Flag_Ecat_EN                   
+40505194  Flag_Ecat_TEST                 
+40504a70  Flag_Energy_balance            
+40505148  Flag_GPMC_BE1n                 
+40504a78  Flag_Inv                       
+40505188  Flag_Mode_Info                 
+4050515a  Flag_Out_Loop                  
+40504a6a  Flag_SupCirCur                 
+40504a64  Flag_VF                        
+40504a68  Flag_Voltage                   
+40504a6c  Flag_comm_Energy               
+40504a6e  Flag_diff_Energy               
+40504a7c  Flag_gating                    
+40504a7a  Flag_test                      
+40504a72  Flag_total_Energy              
+48055000  GPIO2Regs                      
+48057000  GPIO3Regs                      
+48059000  GPIO4Regs                      
+4805d000  GPIO6Regs                      
+48051000  GPIO7Regs                      
+50000000  GPMCRegs                       
+405009e8  GPMC_Central_Leg               
+405007c4  GPMC_EtherCAT                  
+40500f10  GPMC_Leg_Central               
+40504c4c  IM1_max                        
+40504c18  IM1de                          
+40504c34  IM1de_err                      
+40504c20  IM1de_low                      
+40504c28  IM1de_old                      
+40504e04  IM1de_ref                      
+40504cc4  IM1de_ref_cc                   
+40504b24  IM1ds                          
+40504c1c  IM1qe                          
+40504c38  IM1qe_err                      
+40504c24  IM1qe_low                      
+40504c2c  IM1qe_old                      
+40504e08  IM1qe_ref                      
+40504e0c  IM1qe_ref1                     
+40504dec  IM1qe_ref_anti                 
+40504cc0  IM1qe_ref_cc                   
+40504df8  IM1qe_ref_fb                   
+40504dfc  IM1qe_ref_ff                   
+40504df4  IM1qe_ref_integ                
+40504df0  IM1qe_ref_prop                 
+40504e00  IM1qe_ref_tmp                  
+40504b28  IM1qs                          
+40505158  INT_carrier_loop_cnt1          
+405034c0  ISR_DSPTimer                   
+405040d4  ISR_Default10                  
+405040dc  ISR_Default11                  
+405040e4  ISR_Default12                  
+405040ec  ISR_Default13                  
+405040f4  ISR_Default14                  
+405040fc  ISR_Default15                  
+405040ac  ISR_Default5                   
+405040b4  ISR_Default6                   
+405040bc  ISR_Default7                   
+405040c4  ISR_Default8                   
+405040cc  ISR_Default9                   
+405040a8  ISR_DefaultNMI                 
+405040a0  ISR_Reset                      
+00800000  ISR_TABLE                      
+405050f8  I_AL                           
+405051ec  I_AL_T                         
+40505054  I_AL_offset                    
+40505104  I_AO                           
+405050d0  I_AS                           
+405051f0  I_AS_T                         
+4050503c  I_AS_offset                    
+405050ec  I_AU                           
+405051f4  I_AU_T                         
+40505048  I_AU_offset                    
+405050fc  I_BL                           
+405051f8  I_BL_T                         
+40505058  I_BL_offset                    
+40505108  I_BO                           
+405050d4  I_BS                           
+405051fc  I_BS_T                         
+40505040  I_BS_offset                    
+405050f0  I_BU                           
+40505200  I_BU_T                         
+4050504c  I_BU_offset                    
+40505100  I_CL                           
+40505204  I_CL_T                         
+4050505c  I_CL_offset                    
+4050510c  I_CO                           
+405050d8  I_CS                           
+40505208  I_CS_T                         
+40505044  I_CS_offset                    
+405050f4  I_CU                           
+4050520c  I_CU_T                         
+40505050  I_CU_offset                    
+405050e8  I_DC                           
+40505038  I_DC_offset                    
+4050513c  I_DC_old                       
+405050dc  I_RS                           
+405050e0  I_SS                           
+40505110  I_T1                           
+40505114  I_T2                           
+405050e4  I_TS                           
+40504f78  I_com                          
+40504cbc  I_ref_MAX                      
+40505120  I_sensor_max                   
+40504cec  Icirde                         
+40504ce4  Icirde_err                     
+40504ce8  Icirde_ref                     
+40504cdc  Icirds                         
+40504d08  Icirqe                         
+40504d00  Icirqe_err                     
+40504d04  Icirqe_ref                     
+40504ce0  Icirqs                         
+40504d68  Idc_Transient_Time             
+4050512c  Idc_sensor_low                 
+40502d54  Init_ADC                       
+40502340  Init_DSP_IRQCROSSBAR           
+40502a60  Init_GPIO                      
+40500000  Init_GPMC                      
+40501f00  Init_Interrupt                 
+405038e0  Init_McSPI                     
+40502348  Init_PAD                       
+40502720  Init_PRCM                      
+40503740  Init_Timer                     
+40504fe4  Inv_off_cnt                    
+40504a80  Inv_start                      
+40504a82  Inv_start_Req                  
+40504c80  KM1_ac                         
+40504c84  KM1_ic                         
+40504c88  KM1_pc                         
+40504fac  K_dsogi                        
+40504d38  Kcir_ic                        
+40504d3c  Kcir_pc                        
+40504f04  Ki_Pi                          
+40504f4c  Ki_Pir                         
+40504e58  Ki_com                         
+40504d5c  Ki_dc                          
+40504d94  Ki_dc_total                    
+40504e7c  Ki_diff                        
+40504dc0  Ki_idc                         
+40504e24  Ki_leg                         
+40504d8c  Ki_total                       
+40504f14  Kp_Pir                         
+40504e5c  Kp_com                         
+40504d60  Kp_dc                          
+40504d98  Kp_dc_total                    
+40504e80  Kp_diff                        
+40504dc4  Kp_idc                         
+40504e20  Kp_leg                         
+40504d90  Kp_total                       
+40504ad0  Kpll_d                         
+40504adc  Kpll_i                         
+40504ad4  Kpll_p                         
+40504f40  Kres_Pir                       
+40504e14  Krst_av                        
+40504e1c  Krst_iv                        
+40504e18  Krst_pv                        
+40502fc0  LED                            
+4050519a  LEDCase                        
+40505198  LEDCount                       
+40504a94  L_arm                          
+4883a000  MAILBOX2Regs                   
+4883c000  MAILBOX3Regs                   
+4883e000  MAILBOX4Regs                   
+48840000  MAILBOX5Regs                   
+48842000  MAILBOX6Regs                   
+48844000  MAILBOX7Regs                   
+40504fdc  MAIN_MC_OP_Rec_TIMER_CNT       
+40504fd8  MAIN_MC_OP_Rec_count           
+40505174  M_CASE                         
+4809a000  McSPI2Regs                     
+40504a60  Mode                           
+40505210  Mode_Info                      
+40505214  NLC_REF_AL                     
+40505218  NLC_REF_AU                     
+4050521c  NLC_REF_BL                     
+40505220  NLC_REF_BU                     
+40505224  NLC_REF_CL                     
+40505228  NLC_REF_CU                     
+40504d7c  PDC_ref                        
+40504f80  PRE_MC_TIMER_CNT               
+40504c00  P_C_Leg_ff_low                 
+40504c04  P_C_Leg_ff_low_old             
+40504c08  P_C_Leg_ff_low_old_old         
+40504bf4  P_C_leg_ff                     
+40504c0c  P_C_leg_ff_old                 
+40504c10  P_C_leg_ff_old_old             
+40504c14  P_Leg_com                      
+40504ed0  P_diff_qs                      
+40504ec8  P_diff_qs_old                  
+40504cac  P_ref                          
+40504cb0  P_ref_max                      
+4050118c  Para_Init                      
+40504e78  Pdiff_com_ref_integ            
+40504e64  Pdiff_com_ref_prop             
+40504ed4  Pdiff_diff_ds_ref              
+40504ec0  Pdiff_diff_qs_ref              
+40504ea0  Pdiff_diffa_ref                
+40504e98  Pdiff_diffa_ref_integ          
+40504e9c  Pdiff_diffa_ref_prop           
+40504eac  Pdiff_diffb_ref                
+40504ea4  Pdiff_diffb_ref_integ          
+40504ea8  Pdiff_diffb_ref_prop           
+40504ebc  Pdiff_diffc_ref                
+40504eb4  Pdiff_diffc_ref_integ          
+40504eb8  Pdiff_diffc_ref_prop           
+40504e2c  Plega_ref_integ                
+40504e30  Plega_ref_prop                 
+40504e3c  Plegb_ref_integ                
+40504e40  Plegb_ref_prop                 
+40504e4c  Plegc_ref_integ                
+40504e50  Plegc_ref_prop                 
+40504fd4  Pre_MC_count                   
+40504bd8  Q_120                          
+40504bd4  Q_60                           
+40504cb4  Q_ref                          
+40504a98  R_arm                          
+40504a90  Ramp_case                      
+40504a8c  Ramp_stall_cnt                 
+40504a84  Ref_method                     
+40504cb8  Ref_time                       
+40504a88  Ref_time_cnt                   
+40504a9c  SM_cap                         
+40504aa0  SM_mmc_eq                      
+40505150  STATUS_ECAT_READY_L1           
+40505152  STATUS_ECAT_READY_L2           
+40505154  STATUS_ECAT_READY_L3           
+40501628  Sensor_Inside                  
+40501200  Sensor_Outside                 
+4050522c  SmFaultA                       
+40505230  SmFaultB                       
+40505234  SmFaultC                       
+40505238  SmSumAL                        
+4050523c  SmSumAU                        
+40505240  SmSumBL                        
+40505244  SmSumBU                        
+40505248  SmSumCL                        
+4050524c  SmSumCU                        
+40505178  Start_CNT                      
+40503838  Start_Timer                    
+40504bd0  TWc_Ediff                      
+40504af4  TWc_Erst_de_err                
+40504af8  TWc_Erst_dqe                   
+40504bcc  TWc_Etotal                     
+40504c30  TWc_IM1_dqe                    
+40505138  Tcl                            
+48820000  Timer5Regs                     
+40505124  Trans_ratio                    
+40505134  Twc_Vdc                        
+40502244  USERISR_RSTSET                 
+405022a0  USERISR_SET                    
+40504c94  VM1as_ref                      
+40504ca0  VM1as_sat                      
+40504c98  VM1bs_ref                      
+40504ca4  VM1bs_sat                      
+40504c9c  VM1cs_ref                      
+40504ca8  VM1cs_sat                      
+40504cd0  VM1de                          
+40504c50  VM1de_ref                      
+40504c58  VM1de_ref_anti                 
+40504c70  VM1de_ref_fb                   
+40504c78  VM1de_ref_ff                   
+40504c68  VM1de_ref_integ                
+40504c60  VM1de_ref_prop                 
+40504f6c  VM1de_ref_vf                   
+40504c44  VM1de_sat                      
+40504cc8  VM1ds                          
+40504c8c  VM1ds_ref                      
+40504c3c  VM1ds_sat                      
+40504cd4  VM1qe                          
+40504c54  VM1qe_ref                      
+40504c5c  VM1qe_ref_anti                 
+40504c74  VM1qe_ref_fb                   
+40504c7c  VM1qe_ref_ff                   
+40504c6c  VM1qe_ref_integ                
+40504c64  VM1qe_ref_prop                 
+40504f70  VM1qe_ref_vf                   
+40504c48  VM1qe_sat                      
+40504ccc  VM1qs                          
+40504c90  VM1qs_ref                      
+40504c40  VM1qs_sat                      
+4050509c  V_AB                           
+40505028  V_AB_offset                    
+405050c0  V_AB_sec                       
+405050a8  V_AS_pri                       
+405050b4  V_AS_sec                       
+40505250  V_AS_sec_T                     
+405050a0  V_BC                           
+4050502c  V_BC_offset                    
+405050c4  V_BC_sec                       
+405050ac  V_BS_pri                       
+405050b8  V_BS_sec                       
+40505254  V_BS_sec_T                     
+405050a4  V_CA                           
+40505030  V_CA_offset                    
+405050c8  V_CA_sec                       
+405050b0  V_CS_pri                       
+405050bc  V_CS_sec                       
+40505258  V_CS_sec_T                     
+405050cc  V_DC                           
+4050525c  V_DC_T                         
+40505034  V_DC_offset                    
+4050511c  V_dc_max                       
+40504f7c  V_grid                         
+40505118  V_grid_max                     
+40504f1c  Va0_ref                        
+40504f0c  Va0_ref_delay                  
+40504f00  Va0_ref_integ                  
+40504f08  Va0_ref_prop                   
+40504f18  Va0_ref_res                    
+40504f50  Va0_ref_res_n1                 
+40504f5c  Va0_ref_res_n2                 
+40504f30  Vb0_ref                        
+40504f28  Vb0_ref_delay                  
+40504f20  Vb0_ref_integ                  
+40504f24  Vb0_ref_prop                   
+40504f2c  Vb0_ref_res                    
+40504f54  Vb0_ref_res_n1                 
+40504f60  Vb0_ref_res_n2                 
+40504f48  Vc0_ref                        
+40504f3c  Vc0_ref_delay                  
+40504f34  Vc0_ref_integ                  
+40504f38  Vc0_ref_prop                   
+40504f44  Vc0_ref_res                    
+40504f58  Vc0_ref_res_n1                 
+40504f64  Vc0_ref_res_n2                 
+40504d2c  Vciras_ref                     
+40504d30  Vcirbs_ref                     
+40504d34  Vcircs_ref                     
+40504d0c  Vcirde_ref                     
+40504cf8  Vcirde_ref_fb                  
+40504cfc  Vcirde_ref_ff                  
+40504cf0  Vcirde_ref_integ               
+40504cf4  Vcirde_ref_prop                
+40504d10  Vcirds_ref                     
+40504d24  Vcirqe_ref                     
+40504d1c  Vcirqe_ref_fb                  
+40504d20  Vcirqe_ref_ff                  
+40504d14  Vcirqe_ref_integ               
+40504d18  Vcirqe_ref_prop                
+40504d28  Vcirqs_ref                     
+40504de8  Vdc_err                        
+40504fcc  Vdc_initial_status             
+40504fd0  Vdc_initial_threshold          
+40505128  Vdc_low                        
+40505130  Vdc_old                        
+40504dd0  Vdc_rated                      
+40504e10  Vdc_rated_ref                  
+40504dcc  Vdc_ref                        
+40504de0  Vdc_ref_1                      
+40504dc8  Vdc_ref_idc                    
+40504ddc  Vdc_ref_init                   
+40504d54  Vdc_ref_integ                  
+40504d58  Vdc_ref_prop                   
+40504dd4  Vdc_ref_vc                     
+40504de4  Vdc_tran                       
+40504ecc  Vms                            
+40504dac  Vtotala_ref                    
+40504da4  Vtotala_ref_integ              
+40504da8  Vtotala_ref_prop               
+40504d48  Vxo_com                        
+40504d44  Vxo_ref                        
+40504fb0  W0                             
+40504b40  W_al                           
+40504b3c  W_au                           
+40504b48  W_bl                           
+40504b44  W_bu                           
+40504b50  W_cl                           
+40504b4c  W_cu                           
+40504bfc  W_diff_com                     
+40504e60  W_diff_com_err                 
+40504e94  W_diff_diffa_err               
+40504e90  W_diff_diffb_err               
+40504eb0  W_diff_diffc_err               
+40504b60  W_diffa                        
+40504b78  W_diffa_low                    
+40504b90  W_diffa_low_old                
+40504ba8  W_diffa_low_old_old            
+40504bc0  W_diffa_old                    
+40504be8  W_diffa_old_old                
+40504b64  W_diffb                        
+40504b7c  W_diffb_low                    
+40504b94  W_diffb_low_old                
+40504bac  W_diffb_low_old_old            
+40504bc4  W_diffb_old                    
+40504bec  W_diffb_old_old                
+40504b68  W_diffc                        
+40504b80  W_diffc_low                    
+40504b98  W_diffc_low_old                
+40504bb0  W_diffc_low_old_old            
+40504bc8  W_diffc_old                    
+40504bf0  W_diffc_old_old                
+40504bf8  W_leg                          
+40504e28  W_lega_err                     
+40504e38  W_legb_err                     
+40504e48  W_legc_err                     
+40504b54  W_suma                         
+40504b6c  W_suma_low                     
+40504b84  W_suma_low_old                 
+40504b9c  W_suma_low_old_old             
+40504bb4  W_suma_old                     
+40504bdc  W_suma_old_old                 
+40504b58  W_sumb                         
+40504b70  W_sumb_low                     
+40504b88  W_sumb_low_old                 
+40504ba0  W_sumb_low_old_old             
+40504bb8  W_sumb_old                     
+40504be0  W_sumb_old_old                 
+40504b5c  W_sumc                         
+40504b74  W_sumc_low                     
+40504b8c  W_sumc_low_old                 
+40504ba4  W_sumc_low_old_old             
+40504bbc  W_sumc_old                     
+40504be4  W_sumc_old_old                 
+40504d70  W_total                        
+40504d6c  W_total_err                    
+40504dbc  W_total_rated                  
+40504d88  W_total_rated_1                
+40504db4  W_total_ref                    
+40504db8  W_total_ref_cc                 
+40504d4c  W_total_ref_init               
+40504db0  W_tran                         
+40504f68  Wc                             
+40504aac  Wcc                            
+40504f74  We_M1                          
+40504aa4  Wn                             
+40504d9c  Wtotal_ref_fb                  
+40504da0  Wtotal_ref_ff                  
+40504d74  Wtotal_ref_integ               
+40504d78  Wtotal_ref_prop                
+405054d0  __TI_CINIT_Base                
+40505590  __TI_CINIT_Limit               
+405054c4  __TI_Handler_Table_Base        
+405054cc  __TI_Handler_Table_Limit       
+40504a60  __TI_STACK_END                 
+00000800  __TI_STACK_SIZE                
+40504a60  __TI_STATIC_BASE               
+UNDEFED   __TI_TLS_INIT_Base             
+UNDEFED   __TI_TLS_INIT_Limit            
+40503d80  __TI_auto_init_nobinit_nopinit 
+40505298  __TI_cleanup_ptr               
+40504220  __TI_decompress_none           
+40504240  __TI_decompress_rle24          
+4050529c  __TI_dtors_ptr                 
+405052a0  __TI_enable_exit_profile_output
+ffffffff  __TI_pprof_out_hndl            
+ffffffff  __TI_prof_data_size            
+ffffffff  __TI_prof_data_start           
+40503e40  __TI_tls_init                  
+ffffffff  __binit__                      
+40503240  __c6xabi_divf                  
+40503ae0  __c6xabi_divi                  
+ffffffff  __c_args__                     
+40503ae0  __divi                         
+40504180  _args_main                     
+40503fa0  _c_int00                       
+40504260  _stack                         
+405041c0  _system_post_cinit             
+405041e0  _system_pre_init               
+40504200  abort                          
+ffffffff  binit                          
+40504b18  cos_theta2                     
+40504b14  cos_theta_grid                 
+40504b38  cos_theta_t                    
+40504cd8  count                          
+40504040  cycleDelay                     
+40503bc0  exit                           
+40504a76  flag_inv_boost                 
+40504b00  freq_grid                      
+40504b30  freq_t                         
+40504d50  iDC_err                        
+40504d80  iDC_ref                        
+40504e34  i_ao_cirDC_ref                 
+40504e44  i_bo_cirDC_ref                 
+40504e68  i_cirAC_ref_pos                
+40504e54  i_co_cirDC_ref                 
+40504e84  ia_cirAC_ref_neg               
+40504e6c  ia_cirAC_ref_pos               
+40504ef4  ia_cir_err                     
+40504ee8  ia_cir_err_n1                  
+40504ed8  ia_cir_ref                     
+40504e88  ib_cirAC_ref_neg               
+40504e70  ib_cirAC_ref_pos               
+40504ef8  ib_cir_err                     
+40504eec  ib_cir_err_n1                  
+40504ee4  ib_cir_errr                    
+40504edc  ib_cir_ref                     
+40504e8c  ic_cirAC_ref_neg               
+40504e74  ic_cirAC_ref_pos               
+40504efc  ic_cir_err                     
+40504ef0  ic_cir_err_n1                  
+40504ee0  ic_cir_ref                     
+40504f10  inter                          
+4050516c  mA                             
+40505170  mB                             
+40505168  mDiv                           
+40505164  mMul                           
+405052a4  mSub                           
+40505160  mSum                           
+40504120  main                           
+40503f00  memcpy                         
+40503ca0  memset                         
+4050508c  offset_sum_I_AL                
+40505074  offset_sum_I_AS                
+40505080  offset_sum_I_AU                
+40505090  offset_sum_I_BL                
+40505078  offset_sum_I_BS                
+40505084  offset_sum_I_BU                
+40505094  offset_sum_I_CL                
+4050507c  offset_sum_I_CS                
+40505088  offset_sum_I_CU                
+40505070  offset_sum_I_DC                
+40505060  offset_sum_V_AB                
+40505064  offset_sum_V_BC                
+40505068  offset_sum_V_CA                
+4050506c  offset_sum_V_DC                
+40504d84  p_total                        
+40504ec4  pdiff_multi_d                  
+40504dd8  pf_ref                         
+40504f8c  qErst_ds                       
+40504f9c  qErst_ds_prime                 
+40504f90  qErst_qs                       
+40504fa0  qErst_qs_prime                 
+40504b1c  sin_theta2                     
+40504b10  sin_theta_grid                 
+40504b34  sin_theta_t                    
+40504b20  theta2                         
+40504afc  theta_grid                     
+40504af0  theta_grid_ff                  
+40504ad8  theta_grid_integ               
+40504b2c  theta_t                        
+40504b0c  w_grid                         
+40504b04  w_grid_integ                   
+40504b08  w_grid_prop                    
+40504aa8  zeta                           
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                           
+-------   ----                           
+00000800  __TI_STACK_SIZE                
+00800000  ISR_TABLE                      
+01800000  DSP_ICFGRegs                   
+40500000  Init_GPMC                      
+405007c4  GPMC_EtherCAT                  
+405009e8  GPMC_Central_Leg               
+40500f10  GPMC_Leg_Central               
+4050118c  Para_Init                      
+40501200  Sensor_Outside                 
+40501628  Sensor_Inside                  
+40501a60  ADC_Offset                     
+40501f00  Init_Interrupt                 
+40502244  USERISR_RSTSET                 
+405022a0  USERISR_SET                    
+40502340  Init_DSP_IRQCROSSBAR           
+40502348  Init_PAD                       
+40502720  Init_PRCM                      
+40502a60  Init_GPIO                      
+40502d40  ADC_OP                         
+40502d54  Init_ADC                       
+40502d78  ADC                            
+40502da4  ADC_Read                       
+40502fc0  LED                            
+40503240  __c6xabi_divf                  
+405034c0  ISR_DSPTimer                   
+40503740  Init_Timer                     
+40503838  Start_Timer                    
+40503858  Ecat_Time_Compen               
+405038e0  Init_McSPI                     
+40503ae0  __c6xabi_divi                  
+40503ae0  __divi                         
+40503bc0  exit                           
+40503ca0  memset                         
+40503d80  __TI_auto_init_nobinit_nopinit 
+40503e40  __TI_tls_init                  
+40503f00  memcpy                         
+40503fa0  _c_int00                       
+40504040  cycleDelay                     
+405040a0  ISR_Reset                      
+405040a8  ISR_DefaultNMI                 
+405040ac  ISR_Default5                   
+405040b4  ISR_Default6                   
+405040bc  ISR_Default7                   
+405040c4  ISR_Default8                   
+405040cc  ISR_Default9                   
+405040d4  ISR_Default10                  
+405040dc  ISR_Default11                  
+405040e4  ISR_Default12                  
+405040ec  ISR_Default13                  
+405040f4  ISR_Default14                  
+405040fc  ISR_Default15                  
+40504120  main                           
+40504180  _args_main                     
+405041c0  _system_post_cinit             
+405041e0  _system_pre_init               
+40504200  C$$EXIT                        
+40504200  abort                          
+40504220  __TI_decompress_none           
+40504240  __TI_decompress_rle24          
+40504260  _stack                         
+40504a60  Mode                           
+40504a60  __TI_STACK_END                 
+40504a60  __TI_STATIC_BASE               
+40504a62  Flag_Converter                 
+40504a64  Flag_VF                        
+40504a66  Flag_Current                   
+40504a68  Flag_Voltage                   
+40504a6a  Flag_SupCirCur                 
+40504a6c  Flag_comm_Energy               
+40504a6e  Flag_diff_Energy               
+40504a70  Flag_Energy_balance            
+40504a72  Flag_total_Energy              
+40504a74  Flag_Con                       
+40504a76  flag_inv_boost                 
+40504a78  Flag_Inv                       
+40504a7a  Flag_test                      
+40504a7c  Flag_gating                    
+40504a7e  Conv_start                     
+40504a80  Inv_start                      
+40504a82  Inv_start_Req                  
+40504a84  Ref_method                     
+40504a88  Ref_time_cnt                   
+40504a8c  Ramp_stall_cnt                 
+40504a90  Ramp_case                      
+40504a94  L_arm                          
+40504a98  R_arm                          
+40504a9c  SM_cap                         
+40504aa0  SM_mmc_eq                      
+40504aa4  Wn                             
+40504aa8  zeta                           
+40504aac  Wcc                            
+40504ab0  Erst_ds                        
+40504ab4  Erst_qs                        
+40504ab8  Erst_de                        
+40504abc  Erst_qe                        
+40504ac0  Erst_de_low                    
+40504ac4  Erst_qe_low                    
+40504ac8  Erst_de_old                    
+40504acc  Erst_qe_old                    
+40504ad0  Kpll_d                         
+40504ad4  Kpll_p                         
+40504ad8  theta_grid_integ               
+40504adc  Kpll_i                         
+40504ae0  Erst_de_err                    
+40504ae4  Erst_de_err_low                
+40504ae8  Erst_de_err_old                
+40504aec  Erst_de_err_low_old            
+40504af0  theta_grid_ff                  
+40504af4  TWc_Erst_de_err                
+40504af8  TWc_Erst_dqe                   
+40504afc  theta_grid                     
+40504b00  freq_grid                      
+40504b04  w_grid_integ                   
+40504b08  w_grid_prop                    
+40504b0c  w_grid                         
+40504b10  sin_theta_grid                 
+40504b14  cos_theta_grid                 
+40504b18  cos_theta2                     
+40504b1c  sin_theta2                     
+40504b20  theta2                         
+40504b24  IM1ds                          
+40504b28  IM1qs                          
+40504b2c  theta_t                        
+40504b30  freq_t                         
+40504b34  sin_theta_t                    
+40504b38  cos_theta_t                    
+40504b3c  W_au                           
+40504b40  W_al                           
+40504b44  W_bu                           
+40504b48  W_bl                           
+40504b4c  W_cu                           
+40504b50  W_cl                           
+40504b54  W_suma                         
+40504b58  W_sumb                         
+40504b5c  W_sumc                         
+40504b60  W_diffa                        
+40504b64  W_diffb                        
+40504b68  W_diffc                        
+40504b6c  W_suma_low                     
+40504b70  W_sumb_low                     
+40504b74  W_sumc_low                     
+40504b78  W_diffa_low                    
+40504b7c  W_diffb_low                    
+40504b80  W_diffc_low                    
+40504b84  W_suma_low_old                 
+40504b88  W_sumb_low_old                 
+40504b8c  W_sumc_low_old                 
+40504b90  W_diffa_low_old                
+40504b94  W_diffb_low_old                
+40504b98  W_diffc_low_old                
+40504b9c  W_suma_low_old_old             
+40504ba0  W_sumb_low_old_old             
+40504ba4  W_sumc_low_old_old             
+40504ba8  W_diffa_low_old_old            
+40504bac  W_diffb_low_old_old            
+40504bb0  W_diffc_low_old_old            
+40504bb4  W_suma_old                     
+40504bb8  W_sumb_old                     
+40504bbc  W_sumc_old                     
+40504bc0  W_diffa_old                    
+40504bc4  W_diffb_old                    
+40504bc8  W_diffc_old                    
+40504bcc  TWc_Etotal                     
+40504bd0  TWc_Ediff                      
+40504bd4  Q_60                           
+40504bd8  Q_120                          
+40504bdc  W_suma_old_old                 
+40504be0  W_sumb_old_old                 
+40504be4  W_sumc_old_old                 
+40504be8  W_diffa_old_old                
+40504bec  W_diffb_old_old                
+40504bf0  W_diffc_old_old                
+40504bf4  P_C_leg_ff                     
+40504bf8  W_leg                          
+40504bfc  W_diff_com                     
+40504c00  P_C_Leg_ff_low                 
+40504c04  P_C_Leg_ff_low_old             
+40504c08  P_C_Leg_ff_low_old_old         
+40504c0c  P_C_leg_ff_old                 
+40504c10  P_C_leg_ff_old_old             
+40504c14  P_Leg_com                      
+40504c18  IM1de                          
+40504c1c  IM1qe                          
+40504c20  IM1de_low                      
+40504c24  IM1qe_low                      
+40504c28  IM1de_old                      
+40504c2c  IM1qe_old                      
+40504c30  TWc_IM1_dqe                    
+40504c34  IM1de_err                      
+40504c38  IM1qe_err                      
+40504c3c  VM1ds_sat                      
+40504c40  VM1qs_sat                      
+40504c44  VM1de_sat                      
+40504c48  VM1qe_sat                      
+40504c4c  IM1_max                        
+40504c50  VM1de_ref                      
+40504c54  VM1qe_ref                      
+40504c58  VM1de_ref_anti                 
+40504c5c  VM1qe_ref_anti                 
+40504c60  VM1de_ref_prop                 
+40504c64  VM1qe_ref_prop                 
+40504c68  VM1de_ref_integ                
+40504c6c  VM1qe_ref_integ                
+40504c70  VM1de_ref_fb                   
+40504c74  VM1qe_ref_fb                   
+40504c78  VM1de_ref_ff                   
+40504c7c  VM1qe_ref_ff                   
+40504c80  KM1_ac                         
+40504c84  KM1_ic                         
+40504c88  KM1_pc                         
+40504c8c  VM1ds_ref                      
+40504c90  VM1qs_ref                      
+40504c94  VM1as_ref                      
+40504c98  VM1bs_ref                      
+40504c9c  VM1cs_ref                      
+40504ca0  VM1as_sat                      
+40504ca4  VM1bs_sat                      
+40504ca8  VM1cs_sat                      
+40504cac  P_ref                          
+40504cb0  P_ref_max                      
+40504cb4  Q_ref                          
+40504cb8  Ref_time                       
+40504cbc  I_ref_MAX                      
+40504cc0  IM1qe_ref_cc                   
+40504cc4  IM1de_ref_cc                   
+40504cc8  VM1ds                          
+40504ccc  VM1qs                          
+40504cd0  VM1de                          
+40504cd4  VM1qe                          
+40504cd8  count                          
+40504cdc  Icirds                         
+40504ce0  Icirqs                         
+40504ce4  Icirde_err                     
+40504ce8  Icirde_ref                     
+40504cec  Icirde                         
+40504cf0  Vcirde_ref_integ               
+40504cf4  Vcirde_ref_prop                
+40504cf8  Vcirde_ref_fb                  
+40504cfc  Vcirde_ref_ff                  
+40504d00  Icirqe_err                     
+40504d04  Icirqe_ref                     
+40504d08  Icirqe                         
+40504d0c  Vcirde_ref                     
+40504d10  Vcirds_ref                     
+40504d14  Vcirqe_ref_integ               
+40504d18  Vcirqe_ref_prop                
+40504d1c  Vcirqe_ref_fb                  
+40504d20  Vcirqe_ref_ff                  
+40504d24  Vcirqe_ref                     
+40504d28  Vcirqs_ref                     
+40504d2c  Vciras_ref                     
+40504d30  Vcirbs_ref                     
+40504d34  Vcircs_ref                     
+40504d38  Kcir_ic                        
+40504d3c  Kcir_pc                        
+40504d40  Flag_CCSC                      
+40504d44  Vxo_ref                        
+40504d48  Vxo_com                        
+40504d4c  W_total_ref_init               
+40504d50  iDC_err                        
+40504d54  Vdc_ref_integ                  
+40504d58  Vdc_ref_prop                   
+40504d5c  Ki_dc                          
+40504d60  Kp_dc                          
+40504d64  Count_Idc_Transient            
+40504d68  Idc_Transient_Time             
+40504d6c  W_total_err                    
+40504d70  W_total                        
+40504d74  Wtotal_ref_integ               
+40504d78  Wtotal_ref_prop                
+40504d7c  PDC_ref                        
+40504d80  iDC_ref                        
+40504d84  p_total                        
+40504d88  W_total_rated_1                
+40504d8c  Ki_total                       
+40504d90  Kp_total                       
+40504d94  Ki_dc_total                    
+40504d98  Kp_dc_total                    
+40504d9c  Wtotal_ref_fb                  
+40504da0  Wtotal_ref_ff                  
+40504da4  Vtotala_ref_integ              
+40504da8  Vtotala_ref_prop               
+40504dac  Vtotala_ref                    
+40504db0  W_tran                         
+40504db4  W_total_ref                    
+40504db8  W_total_ref_cc                 
+40504dbc  W_total_rated                  
+40504dc0  Ki_idc                         
+40504dc4  Kp_idc                         
+40504dc8  Vdc_ref_idc                    
+40504dcc  Vdc_ref                        
+40504dd0  Vdc_rated                      
+40504dd4  Vdc_ref_vc                     
+40504dd8  pf_ref                         
+40504ddc  Vdc_ref_init                   
+40504de0  Vdc_ref_1                      
+40504de4  Vdc_tran                       
+40504de8  Vdc_err                        
+40504dec  IM1qe_ref_anti                 
+40504df0  IM1qe_ref_prop                 
+40504df4  IM1qe_ref_integ                
+40504df8  IM1qe_ref_fb                   
+40504dfc  IM1qe_ref_ff                   
+40504e00  IM1qe_ref_tmp                  
+40504e04  IM1de_ref                      
+40504e08  IM1qe_ref                      
+40504e0c  IM1qe_ref1                     
+40504e10  Vdc_rated_ref                  
+40504e14  Krst_av                        
+40504e18  Krst_pv                        
+40504e1c  Krst_iv                        
+40504e20  Kp_leg                         
+40504e24  Ki_leg                         
+40504e28  W_lega_err                     
+40504e2c  Plega_ref_integ                
+40504e30  Plega_ref_prop                 
+40504e34  i_ao_cirDC_ref                 
+40504e38  W_legb_err                     
+40504e3c  Plegb_ref_integ                
+40504e40  Plegb_ref_prop                 
+40504e44  i_bo_cirDC_ref                 
+40504e48  W_legc_err                     
+40504e4c  Plegc_ref_integ                
+40504e50  Plegc_ref_prop                 
+40504e54  i_co_cirDC_ref                 
+40504e58  Ki_com                         
+40504e5c  Kp_com                         
+40504e60  W_diff_com_err                 
+40504e64  Pdiff_com_ref_prop             
+40504e68  i_cirAC_ref_pos                
+40504e6c  ia_cirAC_ref_pos               
+40504e70  ib_cirAC_ref_pos               
+40504e74  ic_cirAC_ref_pos               
+40504e78  Pdiff_com_ref_integ            
+40504e7c  Ki_diff                        
+40504e80  Kp_diff                        
+40504e84  ia_cirAC_ref_neg               
+40504e88  ib_cirAC_ref_neg               
+40504e8c  ic_cirAC_ref_neg               
+40504e90  W_diff_diffb_err               
+40504e94  W_diff_diffa_err               
+40504e98  Pdiff_diffa_ref_integ          
+40504e9c  Pdiff_diffa_ref_prop           
+40504ea0  Pdiff_diffa_ref                
+40504ea4  Pdiff_diffb_ref_integ          
+40504ea8  Pdiff_diffb_ref_prop           
+40504eac  Pdiff_diffb_ref                
+40504eb0  W_diff_diffc_err               
+40504eb4  Pdiff_diffc_ref_integ          
+40504eb8  Pdiff_diffc_ref_prop           
+40504ebc  Pdiff_diffc_ref                
+40504ec0  Pdiff_diff_qs_ref              
+40504ec4  pdiff_multi_d                  
+40504ec8  P_diff_qs_old                  
+40504ecc  Vms                            
+40504ed0  P_diff_qs                      
+40504ed4  Pdiff_diff_ds_ref              
+40504ed8  ia_cir_ref                     
+40504edc  ib_cir_ref                     
+40504ee0  ic_cir_ref                     
+40504ee4  ib_cir_errr                    
+40504ee8  ia_cir_err_n1                  
+40504eec  ib_cir_err_n1                  
+40504ef0  ic_cir_err_n1                  
+40504ef4  ia_cir_err                     
+40504ef8  ib_cir_err                     
+40504efc  ic_cir_err                     
+40504f00  Va0_ref_integ                  
+40504f04  Ki_Pi                          
+40504f08  Va0_ref_prop                   
+40504f0c  Va0_ref_delay                  
+40504f10  inter                          
+40504f14  Kp_Pir                         
+40504f18  Va0_ref_res                    
+40504f1c  Va0_ref                        
+40504f20  Vb0_ref_integ                  
+40504f24  Vb0_ref_prop                   
+40504f28  Vb0_ref_delay                  
+40504f2c  Vb0_ref_res                    
+40504f30  Vb0_ref                        
+40504f34  Vc0_ref_integ                  
+40504f38  Vc0_ref_prop                   
+40504f3c  Vc0_ref_delay                  
+40504f40  Kres_Pir                       
+40504f44  Vc0_ref_res                    
+40504f48  Vc0_ref                        
+40504f4c  Ki_Pir                         
+40504f50  Va0_ref_res_n1                 
+40504f54  Vb0_ref_res_n1                 
+40504f58  Vc0_ref_res_n1                 
+40504f5c  Va0_ref_res_n2                 
+40504f60  Vb0_ref_res_n2                 
+40504f64  Vc0_ref_res_n2                 
+40504f68  Wc                             
+40504f6c  VM1de_ref_vf                   
+40504f70  VM1qe_ref_vf                   
+40504f74  We_M1                          
+40504f78  I_com                          
+40504f7c  V_grid                         
+40504f80  PRE_MC_TIMER_CNT               
+40504f84  Erst_qe_test                   
+40504f88  Erst_de_test                   
+40504f8c  qErst_ds                       
+40504f90  qErst_qs                       
+40504f94  Erst_ds_prime                  
+40504f98  Erst_qs_prime                  
+40504f9c  qErst_ds_prime                 
+40504fa0  qErst_qs_prime                 
+40504fa4  Erst_ds_q                      
+40504fa8  Erst_qs_q                      
+40504fac  K_dsogi                        
+40504fb0  W0                             
+40504fb4  Erst_ds_err                    
+40504fb8  Erst_qs_err                    
+40504fbc  Erst_ds_integ_err              
+40504fc0  Erst_qs_integ_err              
+40504fc4  Erst_ds_p                      
+40504fc8  Erst_qs_p                      
+40504fcc  Vdc_initial_status             
+40504fd0  Vdc_initial_threshold          
+40504fd4  Pre_MC_count                   
+40504fd8  MAIN_MC_OP_Rec_count           
+40504fdc  MAIN_MC_OP_Rec_TIMER_CNT       
+40504fe0  CCSC_cnt                       
+40504fe4  Inv_off_cnt                    
+40504fe8  AIN0_CH1                       
+40504fec  AIN0_CH2                       
+40504ff0  AIN0_CH3                       
+40504ff4  AIN0_CH4                       
+40504ff8  AIN1_CH1                       
+40504ffc  AIN1_CH2                       
+40505000  AIN1_CH3                       
+40505004  AIN1_CH4                       
+40505008  AIN2_CH1                       
+4050500c  AIN2_CH2                       
+40505010  AIN2_CH3                       
+40505014  AIN2_CH4                       
+40505018  AIN3_CH1                       
+4050501c  AIN3_CH2                       
+40505020  AIN3_CH3                       
+40505024  AIN3_CH4                       
+40505028  V_AB_offset                    
+4050502c  V_BC_offset                    
+40505030  V_CA_offset                    
+40505034  V_DC_offset                    
+40505038  I_DC_offset                    
+4050503c  I_AS_offset                    
+40505040  I_BS_offset                    
+40505044  I_CS_offset                    
+40505048  I_AU_offset                    
+4050504c  I_BU_offset                    
+40505050  I_CU_offset                    
+40505054  I_AL_offset                    
+40505058  I_BL_offset                    
+4050505c  I_CL_offset                    
+40505060  offset_sum_V_AB                
+40505064  offset_sum_V_BC                
+40505068  offset_sum_V_CA                
+4050506c  offset_sum_V_DC                
+40505070  offset_sum_I_DC                
+40505074  offset_sum_I_AS                
+40505078  offset_sum_I_BS                
+4050507c  offset_sum_I_CS                
+40505080  offset_sum_I_AU                
+40505084  offset_sum_I_BU                
+40505088  offset_sum_I_CU                
+4050508c  offset_sum_I_AL                
+40505090  offset_sum_I_BL                
+40505094  offset_sum_I_CL                
+4050509c  V_AB                           
+405050a0  V_BC                           
+405050a4  V_CA                           
+405050a8  V_AS_pri                       
+405050ac  V_BS_pri                       
+405050b0  V_CS_pri                       
+405050b4  V_AS_sec                       
+405050b8  V_BS_sec                       
+405050bc  V_CS_sec                       
+405050c0  V_AB_sec                       
+405050c4  V_BC_sec                       
+405050c8  V_CA_sec                       
+405050cc  V_DC                           
+405050d0  I_AS                           
+405050d4  I_BS                           
+405050d8  I_CS                           
+405050dc  I_RS                           
+405050e0  I_SS                           
+405050e4  I_TS                           
+405050e8  I_DC                           
+405050ec  I_AU                           
+405050f0  I_BU                           
+405050f4  I_CU                           
+405050f8  I_AL                           
+405050fc  I_BL                           
+40505100  I_CL                           
+40505104  I_AO                           
+40505108  I_BO                           
+4050510c  I_CO                           
+40505110  I_T1                           
+40505114  I_T2                           
+40505118  V_grid_max                     
+4050511c  V_dc_max                       
+40505120  I_sensor_max                   
+40505124  Trans_ratio                    
+40505128  Vdc_low                        
+4050512c  Idc_sensor_low                 
+40505130  Vdc_old                        
+40505134  Twc_Vdc                        
+40505138  Tcl                            
+4050513c  I_DC_old                       
+40505140  Flag_DO1                       
+40505142  Flag_DO2                       
+40505144  Flag_DO3                       
+40505146  Flag_DO4                       
+40505148  Flag_GPMC_BE1n                 
+4050514a  Flag_EcatReady                 
+4050514c  Flag_Ecat_DAQ_EN_CNT           
+40505150  STATUS_ECAT_READY_L1           
+40505152  STATUS_ECAT_READY_L2           
+40505154  STATUS_ECAT_READY_L3           
+40505156  Flag_BE0n_test                 
+40505158  INT_carrier_loop_cnt1          
+4050515a  Flag_Out_Loop                  
+4050515c  CNT_BEn0                       
+40505160  mSum                           
+40505164  mMul                           
+40505168  mDiv                           
+4050516c  mA                             
+40505170  mB                             
+40505174  M_CASE                         
+40505178  Start_CNT                      
+4050517c  End_CNT                        
+40505180  Diff_CNT                       
+40505184  Compen_CNT                     
+40505188  Flag_Mode_Info                 
+4050518c  Flag_Ecat_EN                   
+40505190  Flag_DAQ_EN                    
+40505194  Flag_Ecat_TEST                 
+40505198  LEDCount                       
+4050519a  LEDCase                        
+4050519c  CenLegBypass_A                 
+405051b0  CenLegBypass_B                 
+405051c4  CenLegBypass_C                 
+405051d8  CenLegComm                     
+405051e6  CenLegOpData_Alower            
+405051e8  DiffTime                       
+405051ec  I_AL_T                         
+405051f0  I_AS_T                         
+405051f4  I_AU_T                         
+405051f8  I_BL_T                         
+405051fc  I_BS_T                         
+40505200  I_BU_T                         
+40505204  I_CL_T                         
+40505208  I_CS_T                         
+4050520c  I_CU_T                         
+40505210  Mode_Info                      
+40505214  NLC_REF_AL                     
+40505218  NLC_REF_AU                     
+4050521c  NLC_REF_BL                     
+40505220  NLC_REF_BU                     
+40505224  NLC_REF_CL                     
+40505228  NLC_REF_CU                     
+4050522c  SmFaultA                       
+40505230  SmFaultB                       
+40505234  SmFaultC                       
+40505238  SmSumAL                        
+4050523c  SmSumAU                        
+40505240  SmSumBL                        
+40505244  SmSumBU                        
+40505248  SmSumCL                        
+4050524c  SmSumCU                        
+40505250  V_AS_sec_T                     
+40505254  V_BS_sec_T                     
+40505258  V_CS_sec_T                     
+4050525c  V_DC_T                         
+40505260  CenLegOpData_Aupper            
+40505262  CenLegOpData_Blower            
+40505264  CenLegOpData_Bupper            
+40505266  CenLegOpData_Clower            
+40505268  CenLegOpData_Cupper            
+40505298  __TI_cleanup_ptr               
+4050529c  __TI_dtors_ptr                 
+405052a0  __TI_enable_exit_profile_output
+405052a4  mSub                           
+405054c4  __TI_Handler_Table_Base        
+405054cc  __TI_Handler_Table_Limit       
+405054d0  __TI_CINIT_Base                
+40505590  __TI_CINIT_Limit               
+48051000  GPIO7Regs                      
+48055000  GPIO2Regs                      
+48057000  GPIO3Regs                      
+48059000  GPIO4Regs                      
+4805d000  GPIO6Regs                      
+4809a000  McSPI2Regs                     
+48820000  Timer5Regs                     
+4883a000  MAILBOX2Regs                   
+4883c000  MAILBOX3Regs                   
+4883e000  MAILBOX4Regs                   
+48840000  MAILBOX5Regs                   
+48842000  MAILBOX6Regs                   
+48844000  MAILBOX7Regs                   
+4a005400  CM_CORE_AON__DSP1Regs          
+4a005500  CM_CORE_AON__IPURegs           
+4a008700  CM_CORE__CORERegs              
+4a009700  CM_CORE__L4PERRegs             
+50000000  GPMCRegs                       
+ffffffff  __TI_pprof_out_hndl            
+ffffffff  __TI_prof_data_size            
+ffffffff  __TI_prof_data_start           
+ffffffff  __binit__                      
+ffffffff  __c_args__                     
+ffffffff  binit                          
+UNDEFED   __TI_TLS_INIT_Base             
+UNDEFED   __TI_TLS_INIT_Limit            
+
+[614 symbols]

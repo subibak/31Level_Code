@@ -1,0 +1,93 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+
+entity GATING_COMPARATOR is
+
+	port(
+				OP_CLK	 		:	in std_logic;
+				PWM_ENABLE		:	in std_logic;
+				CARRIER			:	in std_logic_vector(15 downto 0);
+				REFERENCE		: 	in std_logic_vector(15 downto 0);
+				SEQ				:	in std_logic;
+				CNT_FLAG			:	in std_logic;
+	
+				GATE_IN			: 	out std_logic;	
+				Gating_out_flag : out std_logic		
+			);
+
+end GATING_COMPARATOR;
+
+
+architecture arch of GATING_COMPARATOR is
+   constant Final	:		std_logic_vector(15 downto 0) := "0000111010100110";  
+	constant INITIAL:		std_logic_vector(15 downto 0) := "0000000000000000";
+	signal Gate_reg			:		std_logic;
+	signal Ref_reg				:		std_logic_vector(15 downto 0);
+	signal Seq_reg 			: 		std_logic;
+	signal flag_cnt 			: 		std_logic_vector(1 downto 0) := "11";
+begin
+
+	process(PWM_ENABLE)
+	begin
+		if(PWM_ENABLE = '1') then
+			Ref_reg <= REFERENCE;
+		end if;
+	
+	end process;
+
+	process(CLK, CARRIER,GATE_reg, Seq_reg,flag_cnt,PWM_ENABLE)
+	begin
+				
+		if(PWM_ENABLE = '1') then
+			flag_cnt <= "00";
+		end if;
+		
+		if(CLK'event and CLK = '0') then
+						
+			if(CNT_FLAG = '0') then
+				Seq_reg <= SEQ;
+				Gate_reg<= SEQ;	
+			
+			elsif(Ref_reg > CARRIER) then
+					if(SEQ = '1') then
+						Gate_reg <= SEQ;
+					elsif(SEQ = '0') then
+						Gate_reg <= not(SEQ);
+				  end if;
+				  
+			else
+			     if(SEQ = '1') then
+						Gate_reg <= not(SEQ);
+					elsif(SEQ = '0') then
+						Gate_reg <= SEQ;
+					end if;		
+				end if;	
+		if(Ref_reg = Final) then	
+			  Gate_reg <= '1';
+		end if;
+	   if(Ref_reg = INITIAL) then	
+			  Gate_reg <= '0';
+	   end if;
+				if (flag_cnt /= "11") then
+					flag_cnt <= flag_cnt + '1'; 
+				end if;
+		else	
+			flag_cnt <= flag_cnt;
+		end if;
+		GATE_IN <= GATE_reg;
+
+	end process;
+	
+	
+	process(flag_cnt)
+	begin
+		if (flag_cnt = "01" ) then
+			Gating_out_flag <= '0';
+		else
+			Gating_out_flag <= '1';	
+		end if;
+		
+	end process;
+end arch;

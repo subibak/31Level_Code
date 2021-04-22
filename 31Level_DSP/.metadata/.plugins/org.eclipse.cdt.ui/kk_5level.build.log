@@ -1,0 +1,113 @@
+
+**** Build of configuration Debug for project kk_5level ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../source/ADC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/ADC.d_raw" --obj_directory="source"  "../source/ADC.c"
+Finished building: "../source/ADC.c"
+ 
+Building file: "../source/DAC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/DAC.d_raw" --obj_directory="source"  "../source/DAC.c"
+Finished building: "../source/DAC.c"
+ 
+Building file: "../source/DSP2834x_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/DSP2834x_CodeStartBranch.d_raw" --obj_directory="source"  "../source/DSP2834x_CodeStartBranch.asm"
+Finished building: "../source/DSP2834x_CodeStartBranch.asm"
+ 
+Building file: "../source/DSP2834x_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/DSP2834x_GlobalVariableDefs.d_raw" --obj_directory="source"  "../source/DSP2834x_GlobalVariableDefs.c"
+Finished building: "../source/DSP2834x_GlobalVariableDefs.c"
+ 
+Building file: "../source/DSP2834x_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/DSP2834x_usDelay.d_raw" --obj_directory="source"  "../source/DSP2834x_usDelay.asm"
+Finished building: "../source/DSP2834x_usDelay.asm"
+ 
+Building file: "../source/Fault.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/Fault.d_raw" --obj_directory="source"  "../source/Fault.c"
+Finished building: "../source/Fault.c"
+ 
+Building file: "../source/GPIO.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/GPIO.d_raw" --obj_directory="source"  "../source/GPIO.c"
+Finished building: "../source/GPIO.c"
+ 
+Building file: "../source/Interrupt.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/Interrupt.d_raw" --obj_directory="source"  "../source/Interrupt.c"
+Finished building: "../source/Interrupt.c"
+ 
+Building file: "../source/LED.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/LED.d_raw" --obj_directory="source"  "../source/LED.c"
+Finished building: "../source/LED.c"
+ 
+Building file: "../source/LED1.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/LED1.d_raw" --obj_directory="source"  "../source/LED1.c"
+Finished building: "../source/LED1.c"
+ 
+Building file: "../source/LPF_Parameter.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/LPF_Parameter.d_raw" --obj_directory="source"  "../source/LPF_Parameter.c"
+Finished building: "../source/LPF_Parameter.c"
+ 
+Building file: "../source/MMC_control.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/MMC_control.d_raw" --obj_directory="source"  "../source/MMC_control.c"
+Finished building: "../source/MMC_control.c"
+ 
+Building file: "../source/PWM.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/PWM.d_raw" --obj_directory="source"  "../source/PWM.c"
+Finished building: "../source/PWM.c"
+ 
+Building file: "../source/Sensor.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/Sensor.d_raw" --obj_directory="source"  "../source/Sensor.c"
+Finished building: "../source/Sensor.c"
+ 
+Building file: "../source/SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/SysCtrl.d_raw" --obj_directory="source"  "../source/SysCtrl.c"
+Finished building: "../source/SysCtrl.c"
+ 
+Building file: "../source/WatchDog.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/WatchDog.d_raw" --obj_directory="source"  "../source/WatchDog.c"
+Finished building: "../source/WatchDog.c"
+ 
+Building file: "../source/Xintf.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/Xintf.d_raw" --obj_directory="source"  "../source/Xintf.c"
+Finished building: "../source/Xintf.c"
+ 
+Building file: "../source/ePWM.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/ePWM.d_raw" --obj_directory="source"  "../source/ePWM.c"
+Finished building: "../source/ePWM.c"
+ 
+Building file: "../source/eQEP.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/eQEP.d_raw" --obj_directory="source"  "../source/eQEP.c"
+Finished building: "../source/eQEP.c"
+ 
+Building file: "../source/main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --include_path="C:/Users/subi/Desktop/Code/DSP/workspace_5level_PD_con_20171114/workspace_5level_PD_con_20171101/source" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/kk_5level/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/main.d_raw" --obj_directory="source"  "../source/main.c"
+Finished building: "../source/main.c"
+ 
+Building target: "kk_5level.out"
+Invoking: C2000 Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"kk_5level.map" --stack_size=0x300 --warn_sections -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="kk_5level_linkInfo.xml" --rom_model -o "kk_5level.out" "./source/ADC.obj" "./source/DAC.obj" "./source/DSP2834x_CodeStartBranch.obj" "./source/DSP2834x_GlobalVariableDefs.obj" "./source/DSP2834x_usDelay.obj" "./source/Fault.obj" "./source/GPIO.obj" "./source/Interrupt.obj" "./source/LED.obj" "./source/LED1.obj" "./source/LPF_Parameter.obj" "./source/MMC_control.obj" "./source/PWM.obj" "./source/Sensor.obj" "./source/SysCtrl.obj" "./source/WatchDog.obj" "./source/Xintf.obj" "./source/ePWM.obj" "./source/eQEP.obj" "./source/main.obj" "../28346_RAM_lnk.cmd" "../cmd/DSP2834x_Headers_nonBIOS.cmd"  -llibc.a 
+<Linking>
+Finished building target: "kk_5level.out"
+ 
+
+**** Build Finished ****

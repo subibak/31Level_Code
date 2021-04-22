@@ -1,0 +1,1 @@
+"./hello.o" "./startup_ARMCA15.o" -Wl,-T"../AM572x.lds" 

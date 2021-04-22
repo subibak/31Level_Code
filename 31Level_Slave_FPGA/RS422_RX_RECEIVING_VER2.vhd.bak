@@ -1,0 +1,194 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity RS422_RX_RECEIVING is
+	port(
+			OP_CLK							: in std_logic;
+			EMIF_ADDR						: in std_logic_vector(11 downto 0);
+			EM1CS2n							: in std_logic;
+			EM1WEn							: in std_logic;
+			EM1OEn							: in std_logic;
+			LOAD_EN							: in std_logic;
+			RSTn								: in std_logic;
+			RX_SERIAL_IN					: in std_logic;
+			
+			LOAD_EN						
+			DATA_OUT							: out std_logic_vector(15 downto 0)
+	);
+	
+
+end RS422_RX_RECEIVING;
+
+
+architecture RECEVING of RS422_RX_RECEIVING is
+
+	signal Sample_cnt							: integer range 0 to 305 := 0;
+	signal High_cnt							: integer range 0 to 21 := 0;
+	signal Low_cnt								: integer range 0 to 21 := 0;
+	signal Bit_cnt								: integer range 0 to 305 := 0;
+
+	signal Flag_sample_cnt_inc 			: std_logic := '0';
+	signal Flag_sample_cnt_clr 			: std_logic := '0';
+	signal Flag_high_cnt_inc	 			: std_logic := '0';
+	signal Flag_high_cnt_clr				: std_logic := '0';
+	signal Flag_low_cnt_inc 				: std_logic := '0';
+	signal Flag_low_cnt_clr					: std_logic := '0';
+	signal Flag_bit_deci						: std_logic := '0';
+	signal Flag_load							: std_logic := '0';
+	signal Flag_shift							: std_logic := '0';
+	signal Flag_bit_cnt_clr					: std_logic := '0';
+
+	signal Serial_in_reg 					: std_logic := 'Z';
+	signal Data_in_reg						: std_logic_vector(303 downto 0) := (others => 'Z');
+	signal Data_out_reg						: std_logic_vector(303 downto 0)	:= (others => 'Z');
+
+	type STATETYPE is (IDLE, START, RECEVING, STOP);
+	signal State 								: STATETYPE := IDLE;
+	signal Next_State							: STATETYPE	:= IDLE;
+	
+	type DATA_MEM is array (0 to 19) of std_logic_vector(15 downto 0);
+	signal Data_o			 			: DATA_MEM;
+
+begin
+	
+	RX_OUT <= Data_out_reg;		
+	LOAD_EN <= Flag_load;
+	
+	RECEVING_OP : process(RSTn, OP_CLK, Flag_sample_cnt_clr, Flag_sample_cnt_inc, Flag_high_cnt_clr, Flag_high_cnt_inc,
+								Flag_low_cnt_clr, Flag_low_cnt_inc, Flag_bit_deci, Flag_shift, Flag_load)
+	begin
+		
+		if RSTn = '0' then
+			State <= IDLE;
+			Sample_cnt <= 0;
+			High_cnt <= 0;
+			Low_cnt	<= 0;
+			Bit_cnt <= 0;
+			Data_in_reg <= (others => 'Z');
+		elsif(OP_CLK'event and OP_CLK = '1') then
+			State <= Next_State;
+			
+			if Flag_sample_cnt_clr = '1'  then
+				Sample_cnt <= 0;
+			elsif Flag_sample_cnt_inc = '1' then
+				Sample_cnt <= Sample_cnt + 1;
+			end if;
+			
+			if Flag_high_cnt_clr = '1' then
+				Sample_cnt <= 0;
+				High_cnt <= 0;
+			elsif Flag_high_cnt_inc = '1' then
+				Sample_cnt <= Sample_cnt + 1;
+				High_cnt <= High_cnt + 1;
+			end if;
+			
+			if Flag_low_cnt_clr = '1' then
+				Sample_cnt <= 0;
+				Low_cnt <= 0;
+			elsif Flag_low_cnt_inc = '1' then
+				Sample_cnt <= Sample_cnt + 1;
+				Low_cnt <= Low_cnt + 1;
+			end if;
+	
+			if Flag_bit_deci = '1' then
+				if High_cnt >= Low_cnt then
+					Serial_in_reg <= '1';
+				else
+					Serial_in_reg <= '0';
+				end if;
+			end if;
+	
+			if Flag_bit_cnt_clr = '1' then
+				Sample_cnt <= 0;
+				High_cnt <= 0;
+				Low_cnt <= 0;
+				Bit_cnt <= 0;
+			elsif Flag_shift = '1' then
+				Bit_cnt <= Bit_cnt + 1;
+				Sample_cnt <= 0;
+				High_cnt <= 0;
+				Low_cnt <= 0;
+				Data_in_reg <= Serial_in_reg & Data_in_reg(303 downto 1);
+			end if;
+		
+			if Flag_load = '1' then
+				Data_out_reg <= Data_in_reg;
+			end if;
+		end if;
+	end process;
+	
+	STATE_SWITCH : process(STATE, RX_SERIAL_IN, Bit_cnt, Sample_cnt, Data_in_reg)
+	begin
+	
+		Flag_sample_cnt_inc 	<= '0';
+		Flag_sample_cnt_clr 	<= '0';
+		Flag_high_cnt_inc 	<= '0';
+		Flag_high_cnt_clr		<= '0';
+		Flag_low_cnt_inc 		<= '0';
+		Flag_low_cnt_clr		<= '0';
+		Flag_bit_deci			<= '0';
+		Flag_shift				<= '0';
+		Flag_bit_cnt_clr		<= '0';	
+--		Flag_load				<= '0';
+				
+		case STATE is
+			when IDLE =>
+				if RX_SERIAL_IN = '0' then
+					Next_State <= START;
+				else 
+					Next_State <= IDLE;
+				end if;
+			when START =>
+				if RX_SERIAL_IN = '1' then
+					Flag_sample_cnt_clr <= '1';
+					Next_State <= IDLE;
+				elsif Sample_cnt <= 15 then
+					Flag_sample_cnt_inc <= '1';
+					Next_State <= START;
+				else 
+					Flag_sample_cnt_clr <= '1';
+					Next_State <= RECEVING;
+				end if;
+			when RECEVING => 
+				if	Bit_cnt < 304 then
+					if Sample_cnt < 18 then
+						if Sample_cnt >= 7 and Sample_cnt <= 17 then
+							if RX_SERIAL_IN = '1' then
+								Flag_high_cnt_inc <= '1';
+							elsif RX_SERIAL_IN = '0' then
+								Flag_low_cnt_inc <= '1';
+							end if;
+						else
+							Flag_sample_cnt_inc <= '1';
+						end if;
+						Next_State <= RECEVING;
+					elsif Sample_cnt = 18 then
+						Flag_bit_deci <= '1';
+						Flag_sample_cnt_inc <= '1';
+					else	
+						Flag_shift <= '1';
+						Next_State <= RECEVING;
+					end if;
+				elsif	Bit_cnt = 304 then
+					if Sample_cnt < 19 then
+						Flag_sample_cnt_inc <= '1';
+						Flag_load <= '1';
+						Next_State <= RECEVING;
+					else
+						Flag_bit_cnt_clr <= '1';
+						Flag_load <= '0';
+						Next_State <= STOP;
+					end if;
+				else
+					Next_State <= STOP;
+				end if;	
+			when STOP =>
+				Flag_load <= '0';
+				Next_State <= IDLE;
+			when others =>
+				Next_State <= IDLE;
+		end case;
+	end process;
+
+end RECEVING;

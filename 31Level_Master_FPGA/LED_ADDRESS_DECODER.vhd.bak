@@ -1,0 +1,60 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity LED_ADDRESS_DECODER is 
+
+	port(
+			OP_CLK					:	in std_logic;
+			EMIF_ADDR				:	in std_logic_vector(11 downto 0);
+						
+			EMIF1_CS2n				:	in std_logic;
+			EMIF1_CS3n				:	in std_logic;
+			EMIF1_CS4n				:	in std_logic;
+			EM1WEn					: 	in std_logic;
+			
+			LED_ENn					:	out std_logic;									-- LED_FPGA
+-------------------------------------------------------------------------------------			
+			DAC8803_A_CH1n			:	out std_logic;									-- DAC8803_A_CH1
+			DAC8803_A_CH2n			:	out std_logic;									-- DAC8803_A_CH1
+			DAC8803_A_CH3n			:	out std_logic;									-- DAC8803_A_CH1
+			DAC8803_A_CH4n			:	out std_logic;									-- DAC8803_A_CH1
+			DAC8803_A_CH5n			:	out std_logic;									-- DAC8803_A_CH1
+			DAC8803_A_CH6n			:	out std_logic;									-- DAC8803_A_CH1
+			DAC8803_A_CH7n			:	out std_logic;									-- DAC8803_A_CH1
+			DAC8803_A_CH8n			:	out std_logic;									-- DAC8803_A_CH1
+			DAC8803_A_GENn			:	out std_logic;									-- DAC8803_A_GEN
+-------------------------------------------------------------------------------------
+			RX422_TX_RSTn			:	out std_logic;									-- 
+			RX422_TX_READY_ENn	:	out std_logic;									-- DAC8803_A_CH1
+			RX422_TX_AUX_RSTn		:	out std_logic									-- 			
+
+	 );
+		  
+end ADDRESS_DECODER; 
+
+architecture Decoder of ADDRESS_DECODER is
+	
+begin 
+	
+	if OP_CLK'event and OP_CLK = '1' then
+		
+	LED_ENn 						<= '0'  when EMIF_ADDR(11 downto 0) = "000000000001" and EMIF1_CS2n = '0' and EM1WEn = '0' else '1';
+
+	--DAC8803
+	DAC8803_A_CH1n				<= '0'  when EMIF_ADDR(11 downto 0) = "000100010010" and EMIF1_CS4n = '0' and EM1WEn = '0' else '1';
+	DAC8803_A_CH2n				<= '0'  when EMIF_ADDR(11 downto 0) = "000100100100" and EMIF1_CS4n = '0' and EM1WEn = '0' else '1';
+	DAC8803_A_CH3n				<= '0'  when EMIF_ADDR(11 downto 0) = "000100110110" and EMIF1_CS4n = '0' and EM1WEn = '0' else '1';
+	DAC8803_A_CH4n				<= '0'  when EMIF_ADDR(11 downto 0) = "000101001000" and EMIF1_CS4n = '0' and EM1WEn = '0' else '1';
+	DAC8803_A_CH5n				<= '0'  when EMIF_ADDR(11 downto 0) = "000101011010" and EMIF1_CS4n = '0' and EM1WEn = '0' else '1';
+	DAC8803_A_CH6n				<= '0'  when EMIF_ADDR(11 downto 0) = "000101101100" and EMIF1_CS4n = '0' and EM1WEn = '0' else '1';
+	DAC8803_A_CH7n				<= '0'  when EMIF_ADDR(11 downto 0) = "000101111110" and EMIF1_CS4n = '0' and EM1WEn = '0' else '1';
+	DAC8803_A_CH8n				<= '0'  when EMIF_ADDR(11 downto 0) = "000110000000" and EMIF1_CS4n = '0' and EM1WEn = '0' else '1';
+	DAC8803_A_GENn				<= '0'  when EMIF_ADDR(11 downto 0) = "000110010010" and EMIF1_CS4n = '0' and EM1WEn = '0' else '1';
+	
+	--RX422_TX
+	RX422_TX_RSTn 				<= '0'  when EMIF_ADDR(11 downto 0) = "000000000010" and EMIF1_CS2n = '0' and EM1WEn = '0' else '1';
+	RX422_TX_READY_ENn 	   <= '0'  when EMIF_ADDR(11 downto 0) = "000000001001" and EMIF1_CS2n = '0' and EM1WEn = '0' else '1';
+	RX422_TX_AUX_RSTn 		<= '0'  when EMIF_ADDR(11 downto 0) = "000000001011" and EMIF1_CS2n = '0' and EM1WEn = '0' else '1';
+
+end Decoder;

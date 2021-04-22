@@ -1,0 +1,21 @@
+-----TI-REX started at Mon Mar 22 2021 22:02:31 GMT+0900 (대한민국 표준시)
+Mon, 22 Mar 2021 13:02:34 GMT connect deprecated methodOverride: use method-override npm module instead at app.js:647:21
+",
+        "family": "IPv4",
+        "mac": "50:46:5d:70:f9:5d",
+        "internal": false
+    }
+]
+2021-03-22T13:02:31.281Z INFO DAEMON dinfra - [
+    "multiple candidate address ignored",
+    "VMware Network Adapter VMnet8",
+    {
+        "address": "164.125.121.42",
+        "netmask": "255.255.255.0",
+        "family": "IPv4",
+        "mac": "50:46:5d:70:f9:5d",
+        "internal": false
+    }
+]
+-----TI-REX started at Mon Mar 22 2021 22:02:31 GMT+0900 (대한민국 표준시)
+TIREX server listening on port 55432

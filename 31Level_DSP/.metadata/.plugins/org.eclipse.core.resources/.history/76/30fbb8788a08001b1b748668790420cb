@@ -1,0 +1,86 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../Source/Dual_core.c \
+../Source/EMIF.c \
+../Source/F2837xD_GlobalVariableDefs.c \
+../Source/GPIO.c \
+../Source/IPC.c \
+../Source/Input_Xbar.c \
+../Source/Interrupt.c \
+../Source/SysCtrl.c \
+../Source/WatchDog.c \
+../Source/ePWM.c \
+../Source/main.c 
+
+C_DEPS += \
+./Source/Dual_core.d \
+./Source/EMIF.d \
+./Source/F2837xD_GlobalVariableDefs.d \
+./Source/GPIO.d \
+./Source/IPC.d \
+./Source/Input_Xbar.d \
+./Source/Interrupt.d \
+./Source/SysCtrl.d \
+./Source/WatchDog.d \
+./Source/ePWM.d \
+./Source/main.d 
+
+OBJS += \
+./Source/Dual_core.obj \
+./Source/EMIF.obj \
+./Source/F2837xD_GlobalVariableDefs.obj \
+./Source/GPIO.obj \
+./Source/IPC.obj \
+./Source/Input_Xbar.obj \
+./Source/Interrupt.obj \
+./Source/SysCtrl.obj \
+./Source/WatchDog.obj \
+./Source/ePWM.obj \
+./Source/main.obj 
+
+OBJS__QUOTED += \
+"Source\Dual_core.obj" \
+"Source\EMIF.obj" \
+"Source\F2837xD_GlobalVariableDefs.obj" \
+"Source\GPIO.obj" \
+"Source\IPC.obj" \
+"Source\Input_Xbar.obj" \
+"Source\Interrupt.obj" \
+"Source\SysCtrl.obj" \
+"Source\WatchDog.obj" \
+"Source\ePWM.obj" \
+"Source\main.obj" 
+
+C_DEPS__QUOTED += \
+"Source\Dual_core.d" \
+"Source\EMIF.d" \
+"Source\F2837xD_GlobalVariableDefs.d" \
+"Source\GPIO.d" \
+"Source\IPC.d" \
+"Source\Input_Xbar.d" \
+"Source\Interrupt.d" \
+"Source\SysCtrl.d" \
+"Source\WatchDog.d" \
+"Source\ePWM.d" \
+"Source\main.d" 
+
+C_SRCS__QUOTED += \
+"../Source/Dual_core.c" \
+"../Source/EMIF.c" \
+"../Source/F2837xD_GlobalVariableDefs.c" \
+"../Source/GPIO.c" \
+"../Source/IPC.c" \
+"../Source/Input_Xbar.c" \
+"../Source/Interrupt.c" \
+"../Source/SysCtrl.c" \
+"../Source/WatchDog.c" \
+"../Source/ePWM.c" \
+"../Source/main.c" 
+
+

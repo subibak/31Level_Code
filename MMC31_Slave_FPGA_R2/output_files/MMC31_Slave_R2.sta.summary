@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1000mV 100C Model Setup 'CLK_EMIF'
+Slack : 4.447
+TNS   : 0.000
+
+Type  : Slow 1000mV 100C Model Setup 'nEM1WE'
+Slack : 5.231
+TNS   : 0.000
+
+Type  : Slow 1000mV 100C Model Hold 'CLK_EMIF'
+Slack : 0.526
+TNS   : 0.000
+
+Type  : Slow 1000mV 100C Model Hold 'nEM1WE'
+Slack : 2.756
+TNS   : 0.000
+
+Type  : Slow 1000mV 100C Model Minimum Pulse Width 'CLK_EMIF'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1000mV 100C Model Minimum Pulse Width 'nEM1WE'
+Slack : 29.745
+TNS   : 0.000
+
+Type  : Slow 1000mV -40C Model Setup 'CLK_EMIF'
+Slack : 4.763
+TNS   : 0.000
+
+Type  : Slow 1000mV -40C Model Setup 'nEM1WE'
+Slack : 5.018
+TNS   : 0.000
+
+Type  : Slow 1000mV -40C Model Hold 'CLK_EMIF'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow 1000mV -40C Model Hold 'nEM1WE'
+Slack : 2.979
+TNS   : 0.000
+
+Type  : Slow 1000mV -40C Model Minimum Pulse Width 'CLK_EMIF'
+Slack : 4.635
+TNS   : 0.000
+
+Type  : Slow 1000mV -40C Model Minimum Pulse Width 'nEM1WE'
+Slack : 29.969
+TNS   : 0.000
+
+Type  : Fast 1000mV -40C Model Setup 'nEM1WE'
+Slack : 5.069
+TNS   : 0.000
+
+Type  : Fast 1000mV -40C Model Setup 'CLK_EMIF'
+Slack : 6.825
+TNS   : 0.000
+
+Type  : Fast 1000mV -40C Model Hold 'CLK_EMIF'
+Slack : 0.276
+TNS   : 0.000
+
+Type  : Fast 1000mV -40C Model Hold 'nEM1WE'
+Slack : 3.740
+TNS   : 0.000
+
+Type  : Fast 1000mV -40C Model Minimum Pulse Width 'CLK_EMIF'
+Slack : 4.476
+TNS   : 0.000
+
+Type  : Fast 1000mV -40C Model Minimum Pulse Width 'nEM1WE'
+Slack : 29.361
+TNS   : 0.000
+
+------------------------------------------------------------

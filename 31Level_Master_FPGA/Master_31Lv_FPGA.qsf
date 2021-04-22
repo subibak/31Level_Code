@@ -1,0 +1,529 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions
+# and other software and tools, and its AMPP partner logic
+# functions, and any output files from any of the foregoing
+# (including device programming or simulation files), and any
+# associated documentation or information are expressly subject
+# to the terms and conditions of the Altera Program License
+# Subscription Agreement, Altera MegaCore Function License
+# Agreement, or other applicable license agreement, including,
+# without limitation, that your use is for the sole purpose of
+# programming logic devices manufactured by Altera and sold by
+# Altera or its authorized distributors.  Please refer to the
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 22:01:58  November 18, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Master_31Lv_FPGA_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE40F23I8L
+set_global_assignment -name TOP_LEVEL_ENTITY Master_31Lv_FPGA
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:12:04  DECEMBER 30, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_C6 -to LED0
+set_location_assignment PIN_D7 -to LED1
+set_location_assignment PIN_G10 -to LED2
+set_location_assignment PIN_F10 -to LED3
+set_location_assignment PIN_AB12 -to CLK0
+set_location_assignment PIN_AB11 -to GPMC_CLK
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE gpmc_signal_check.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_RAM_BLOCK_TYPE=AUTO" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_location_assignment PIN_B4 -to ADC0_CSn
+set_location_assignment PIN_A4 -to ADC0_CVn
+set_location_assignment PIN_F8 -to ADC0_RDn
+set_location_assignment PIN_G8 -to ADC0_WRn
+set_location_assignment PIN_B3 -to ADC1_CSn
+set_location_assignment PIN_A3 -to ADC1_CVn
+set_location_assignment PIN_D6 -to ADC1_RDn
+set_location_assignment PIN_E7 -to ADC1_WRn
+set_location_assignment PIN_C4 -to ADC2_CSn
+set_location_assignment PIN_C3 -to ADC2_CVn
+set_location_assignment PIN_F7 -to ADC2_RDn
+set_location_assignment PIN_G7 -to ADC2_WRn
+set_location_assignment PIN_A5 -to ADC3_CSn
+set_location_assignment PIN_H11 -to ADC3_CVn
+set_location_assignment PIN_B5 -to ADC3_RDn
+set_location_assignment PIN_H10 -to ADC3_WRn
+set_location_assignment PIN_AB17 -to GPMC_A12_L1
+set_location_assignment PIN_M22 -to GPMC_A12_L2
+set_location_assignment PIN_C20 -to GPMC_A12_L3
+set_location_assignment PIN_R15 -to GPMC_ADDR_L1[10]
+set_location_assignment PIN_R14 -to GPMC_ADDR_L1[9]
+set_location_assignment PIN_R16 -to GPMC_ADDR_L1[8]
+set_location_assignment PIN_T16 -to GPMC_ADDR_L1[7]
+set_location_assignment PIN_U17 -to GPMC_ADDR_L1[6]
+set_location_assignment PIN_U16 -to GPMC_ADDR_L1[5]
+set_location_assignment PIN_V16 -to GPMC_ADDR_L1[4]
+set_location_assignment PIN_AB20 -to GPMC_ADDR_L1[3]
+set_location_assignment PIN_AA20 -to GPMC_ADDR_L1[2]
+set_location_assignment PIN_Y17 -to GPMC_ADDR_L1[1]
+set_location_assignment PIN_W17 -to GPMC_ADDR_L1[0]
+set_location_assignment PIN_N17 -to GPMC_ADDR_L2[10]
+set_location_assignment PIN_N19 -to GPMC_ADDR_L2[9]
+set_location_assignment PIN_N20 -to GPMC_ADDR_L2[8]
+set_location_assignment PIN_P21 -to GPMC_ADDR_L2[7]
+set_location_assignment PIN_P22 -to GPMC_ADDR_L2[6]
+set_location_assignment PIN_P20 -to GPMC_ADDR_L2[5]
+set_location_assignment PIN_R21 -to GPMC_ADDR_L2[4]
+set_location_assignment PIN_R22 -to GPMC_ADDR_L2[3]
+set_location_assignment PIN_N16 -to GPMC_ADDR_L2[2]
+set_location_assignment PIN_R19 -to GPMC_ADDR_L2[1]
+set_location_assignment PIN_R18 -to GPMC_ADDR_L2[0]
+set_location_assignment PIN_B22 -to GPMC_ADDR_L3[10]
+set_location_assignment PIN_C21 -to GPMC_ADDR_L3[9]
+set_location_assignment PIN_C22 -to GPMC_ADDR_L3[8]
+set_location_assignment PIN_H17 -to GPMC_ADDR_L3[7]
+set_location_assignment PIN_G18 -to GPMC_ADDR_L3[6]
+set_location_assignment PIN_F19 -to GPMC_ADDR_L3[5]
+set_location_assignment PIN_D21 -to GPMC_ADDR_L3[4]
+set_location_assignment PIN_D22 -to GPMC_ADDR_L3[3]
+set_location_assignment PIN_H16 -to GPMC_ADDR_L3[2]
+set_location_assignment PIN_J17 -to GPMC_ADDR_L3[1]
+set_location_assignment PIN_H18 -to GPMC_ADDR_L3[0]
+set_location_assignment PIN_V15 -to GPMC_ADVn_L1
+set_location_assignment PIN_P6 -to GPMC_ADVn_L2
+set_location_assignment PIN_F14 -to GPMC_ADVn_L3
+set_location_assignment PIN_F15 -to GPMC_BE0n_L3
+set_location_assignment PIN_T7 -to GPMC_BE0n_L2
+set_location_assignment PIN_T14 -to GPMC_BE0n_L1
+set_location_assignment PIN_T15 -to GPMC_BE1n_L1
+set_location_assignment PIN_L6 -to GPMC_BE1n_L2
+set_location_assignment PIN_E16 -to GPMC_BE1n_L3
+set_location_assignment PIN_AA11 -to GPMC_CLK_L1
+set_location_assignment PIN_T21 -to GPMC_CLK_L2
+set_location_assignment PIN_G22 -to GPMC_CLK_L3
+set_location_assignment PIN_V14 -to GPMC_CS0n_L1
+set_location_assignment PIN_N7 -to GPMC_CS0n_L2
+set_location_assignment PIN_D17 -to GPMC_CS0n_L3
+set_location_assignment PIN_H14 -to GPMC_CS3n_L3
+set_location_assignment PIN_P7 -to GPMC_CS3n_L2
+set_location_assignment PIN_U14 -to GPMC_CS3n_L1
+set_location_assignment PIN_W14 -to GPMC_DATA_L1[15]
+set_location_assignment PIN_V13 -to GPMC_DATA_L1[14]
+set_location_assignment PIN_T13 -to GPMC_DATA_L1[13]
+set_location_assignment PIN_T12 -to GPMC_DATA_L1[12]
+set_location_assignment PIN_AB16 -to GPMC_DATA_L1[11]
+set_location_assignment PIN_AA16 -to GPMC_DATA_L1[10]
+set_location_assignment PIN_U12 -to GPMC_DATA_L1[9]
+set_location_assignment PIN_AB15 -to GPMC_DATA_L1[8]
+set_location_assignment PIN_AA15 -to GPMC_DATA_L1[7]
+set_location_assignment PIN_Y13 -to GPMC_DATA_L1[6]
+set_location_assignment PIN_W13 -to GPMC_DATA_L1[5]
+set_location_assignment PIN_V12 -to GPMC_DATA_L1[4]
+set_location_assignment PIN_AB14 -to GPMC_DATA_L1[3]
+set_location_assignment PIN_AA14 -to GPMC_DATA_L1[2]
+set_location_assignment PIN_AB13 -to GPMC_DATA_L1[1]
+set_location_assignment PIN_AA13 -to GPMC_DATA_L1[0]
+set_location_assignment PIN_U21 -to GPMC_DATA_L2[15]
+set_location_assignment PIN_U22 -to GPMC_DATA_L2[14]
+set_location_assignment PIN_R20 -to GPMC_DATA_L2[13]
+set_location_assignment PIN_V21 -to GPMC_DATA_L2[12]
+set_location_assignment PIN_V22 -to GPMC_DATA_L2[11]
+set_location_assignment PIN_R17 -to GPMC_DATA_L2[10]
+set_location_assignment PIN_P16 -to GPMC_DATA_L2[9]
+set_location_assignment PIN_P15 -to GPMC_DATA_L2[8]
+set_location_assignment PIN_W21 -to GPMC_DATA_L2[7]
+set_location_assignment PIN_W22 -to GPMC_DATA_L2[6]
+set_location_assignment PIN_U19 -to GPMC_DATA_L2[5]
+set_location_assignment PIN_U20 -to GPMC_DATA_L2[4]
+set_location_assignment PIN_Y21 -to GPMC_DATA_L2[3]
+set_location_assignment PIN_Y22 -to GPMC_DATA_L2[2]
+set_location_assignment PIN_W19 -to GPMC_DATA_L2[1]
+set_location_assignment PIN_AA21 -to GPMC_DATA_L2[0]
+set_location_assignment PIN_H19 -to GPMC_DATA_L3[15]
+set_location_assignment PIN_H20 -to GPMC_DATA_L3[14]
+set_location_assignment PIN_F21 -to GPMC_DATA_L3[13]
+set_location_assignment PIN_F22 -to GPMC_DATA_L3[12]
+set_location_assignment PIN_J18 -to GPMC_DATA_L3[11]
+set_location_assignment PIN_K18 -to GPMC_DATA_L3[10]
+set_location_assignment PIN_K17 -to GPMC_DATA_L3[9]
+set_location_assignment PIN_H21 -to GPMC_DATA_L3[8]
+set_location_assignment PIN_H22 -to GPMC_DATA_L3[7]
+set_location_assignment PIN_J21 -to GPMC_DATA_L3[6]
+set_location_assignment PIN_J22 -to GPMC_DATA_L3[5]
+set_location_assignment PIN_K21 -to GPMC_DATA_L3[4]
+set_location_assignment PIN_K22 -to GPMC_DATA_L3[3]
+set_location_assignment PIN_K19 -to GPMC_DATA_L3[2]
+set_location_assignment PIN_L21 -to GPMC_DATA_L3[1]
+set_location_assignment PIN_L22 -to GPMC_DATA_L3[0]
+set_location_assignment PIN_G15 -to GPMC_OEn_L3
+set_location_assignment PIN_U13 -to GPMC_OEn_L1
+set_location_assignment PIN_R5 -to GPMC_OEn_L2
+set_location_assignment PIN_M6 -to GPMC_WAIT1_L2
+set_location_assignment PIN_F16 -to GPMC_WAIT1_L3
+set_location_assignment PIN_AB18 -to GPMC_WAIT1_L1
+set_location_assignment PIN_W15 -to GPMC_WEn_L1
+set_location_assignment PIN_G16 -to GPMC_WEn_L3
+set_location_assignment PIN_R7 -to GPMC_WEn_L2
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_NCE_PIN OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_T3 -to GPMC_WAIT1_C
+set_location_assignment PIN_W2 -to GPMC_OEn_C
+set_location_assignment PIN_W1 -to GPMC_WEn_C
+set_location_assignment PIN_V6 -to GPMC_DATA_C[0]
+set_location_assignment PIN_V5 -to GPMC_DATA_C[1]
+set_location_assignment PIN_U7 -to GPMC_DATA_C[2]
+set_location_assignment PIN_U8 -to GPMC_DATA_C[3]
+set_location_assignment PIN_Y4 -to GPMC_DATA_C[4]
+set_location_assignment PIN_Y3 -to GPMC_DATA_C[5]
+set_location_assignment PIN_Y6 -to GPMC_DATA_C[6]
+set_location_assignment PIN_AA3 -to GPMC_DATA_C[7]
+set_location_assignment PIN_AB3 -to GPMC_DATA_C[8]
+set_location_assignment PIN_W6 -to GPMC_DATA_C[9]
+set_location_assignment PIN_V7 -to GPMC_DATA_C[10]
+set_location_assignment PIN_AA4 -to GPMC_DATA_C[11]
+set_location_assignment PIN_AB4 -to GPMC_DATA_C[12]
+set_location_assignment PIN_AA5 -to GPMC_DATA_C[13]
+set_location_assignment PIN_AB5 -to GPMC_DATA_C[14]
+set_location_assignment PIN_T8 -to GPMC_DATA_C[15]
+set_location_assignment PIN_M7 -to GPMC_CS3n_C
+set_location_assignment PIN_N6 -to GPMC_CS0n_C
+set_location_assignment PIN_Y1 -to GPMC_BE1n_C
+set_location_assignment PIN_N8 -to GPMC_ADVn_C
+set_location_assignment PIN_U10 -to GPMC_ADDR_C[0]
+set_location_assignment PIN_AA8 -to GPMC_ADDR_C[1]
+set_location_assignment PIN_AB8 -to GPMC_ADDR_C[2]
+set_location_assignment PIN_AA9 -to GPMC_ADDR_C[3]
+set_location_assignment PIN_AB9 -to GPMC_ADDR_C[4]
+set_location_assignment PIN_U11 -to GPMC_ADDR_C[5]
+set_location_assignment PIN_V11 -to GPMC_ADDR_C[6]
+set_location_assignment PIN_W10 -to GPMC_ADDR_C[7]
+set_location_assignment PIN_Y10 -to GPMC_ADDR_C[8]
+set_location_assignment PIN_AA10 -to GPMC_ADDR_C[9]
+set_location_assignment PIN_AB10 -to GPMC_ADDR_C[10]
+set_location_assignment PIN_V9 -to GPMC_ADDR_C[11]
+set_location_assignment PIN_T10 -to GPMC_A12_C
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLK0
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC0_CSn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC0_CVn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC0_RDn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC0_WRn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC1_CSn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC1_CVn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC1_RDn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC1_WRn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC2_CSn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC2_CVn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC2_RDn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC2_WRn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC3_CSn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC3_CVn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC3_RDn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ADC3_WRn
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_WEn_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_WEn_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_WEn_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_WAIT1_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_WAIT1_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_WAIT1_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_OEn_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_OEn_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_OEn_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L3[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L2[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_L1[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CS3n_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CS3n_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CS3n_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CS0n_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CS0n_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CS0n_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CLK_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CLK_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CLK_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_BE1n_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_BE1n_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_BE1n_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_BE0n_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_BE0n_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_BE0n_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADVn_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADVn_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADVn_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L3[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L2[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_L1[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_A12_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_A12_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_A12_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_OEn_C
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_WEn_C
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_WAIT1_C
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_A12_C
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_C[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADVn_C
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_BE1n_C
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CS0n_C
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_CS3n_C
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_DATA_C[0]
+set_location_assignment PIN_Y2 -to GPMC_BE0n_C
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_BE0n_C
+set_location_assignment PIN_B21 -to GPMC_ADDR_11_L3
+set_location_assignment PIN_N18 -to GPMC_ADDR_11_L2
+set_location_assignment PIN_AA18 -to GPMC_ADDR_11_L1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_11_L3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_11_L2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPMC_ADDR_11_L1
+set_global_assignment -name VHDL_FILE CARRIER_GENERATOR_HB6.vhd
+set_global_assignment -name VHDL_FILE DAC_ADDRESS_DECODER.vhd
+set_global_assignment -name VHDL_FILE DAC8803_BUFFER.vhd
+set_global_assignment -name VHDL_FILE DAC8803_8CH.vhd
+set_global_assignment -name VHDL_FILE altpll0.vhd
+set_global_assignment -name SOURCE_FILE altpll0.cmp
+set_global_assignment -name VHDL_FILE ADC_ADDRESS_DECODER.vhd
+set_global_assignment -name VHDL_FILE LED_FPGA.vhd
+set_global_assignment -name VHDL_FILE LED_ADDRESS_DECODER.vhd
+set_global_assignment -name QIP_FILE altpll0.qip
+set_global_assignment -name SIGNALTAP_FILE gpmc_signal_check.stp
+set_global_assignment -name SIGNALTAP_FILE ADC_check.stp
+set_global_assignment -name SIGNALTAP_FILE LED_check.stp
+set_global_assignment -name VHDL_FILE EtherCAT_Central_Leg_Master_Memeory.vhd
+set_global_assignment -name BDF_FILE Master_31Lv_FPGA.bdf
+set_global_assignment -name VHDL_FILE LEG_MASTER_SYNC.vhd
+set_global_assignment -name VHDL_FILE CenLeg_GPMC_WR_FLAG.vhd
+set_global_assignment -name SIGNALTAP_FILE output_files/GPMC.stp
+set_global_assignment -name VHDL_FILE CARRIER_GENERATOR.vhd
+set_global_assignment -name VHDL_FILE CARRIER_GENERATOR_600.vhd
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=1" -section_id auto_signaltap_0
+set_global_assignment -name VHDL_FILE EtherCAT_Central_Leg_Master_Memeory2.vhd
+set_location_assignment PIN_U1 -to FPGA_XF2
+set_location_assignment PIN_U2 -to FPGA_XF1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_XF2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to FPGA_XF1
+set_global_assignment -name VHDL_FILE ADC_ADDRESS_DECODER_VER2.vhd
+set_global_assignment -name SIGNALTAP_FILE ADC_VER2_check.stp
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to CLK_100M -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=16384" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=16384" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to GPMC_ADDR_L2[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to GPMC_ADDR_L2[10] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to GPMC_ADDR_L2[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to GPMC_ADDR_L2[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to GPMC_ADDR_L2[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to GPMC_ADDR_L2[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to GPMC_ADDR_L2[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to GPMC_ADDR_L2[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to GPMC_ADDR_L2[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to GPMC_ADDR_L2[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to GPMC_ADDR_L2[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to GPMC_CS0n_L2 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to GPMC_DATA_L2[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to GPMC_DATA_L2[10] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to GPMC_DATA_L2[11] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to GPMC_DATA_L2[12] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to GPMC_DATA_L2[13] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to GPMC_DATA_L2[14] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to GPMC_DATA_L2[15] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to GPMC_DATA_L2[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to GPMC_DATA_L2[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to GPMC_DATA_L2[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to GPMC_DATA_L2[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to GPMC_DATA_L2[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to GPMC_DATA_L2[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to GPMC_DATA_L2[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to GPMC_DATA_L2[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to GPMC_DATA_L2[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to GPMC_OEn_L2 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to GPMC_WEn_L2 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to GPMC_ADDR_L2[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to GPMC_ADDR_L2[10] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to GPMC_ADDR_L2[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to GPMC_ADDR_L2[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to GPMC_ADDR_L2[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to GPMC_ADDR_L2[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to GPMC_ADDR_L2[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to GPMC_ADDR_L2[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to GPMC_ADDR_L2[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to GPMC_ADDR_L2[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to GPMC_ADDR_L2[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to GPMC_CS0n_L2 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to GPMC_DATA_L2[0] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to GPMC_DATA_L2[10] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to GPMC_DATA_L2[11] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to GPMC_DATA_L2[12] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to GPMC_DATA_L2[13] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to GPMC_DATA_L2[14] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to GPMC_DATA_L2[15] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to GPMC_DATA_L2[1] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to GPMC_DATA_L2[2] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to GPMC_DATA_L2[3] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to GPMC_DATA_L2[4] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to GPMC_DATA_L2[5] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to GPMC_DATA_L2[6] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to GPMC_DATA_L2[7] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to GPMC_DATA_L2[8] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to GPMC_DATA_L2[9] -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to GPMC_OEn_L2 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to GPMC_WEn_L2 -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT trigger_in -to GPMC_OEn_L2 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=30" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=30" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=118" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=45966" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=43100" -section_id auto_signaltap_0
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/gpmc_signal_check_auto_stripped.stp

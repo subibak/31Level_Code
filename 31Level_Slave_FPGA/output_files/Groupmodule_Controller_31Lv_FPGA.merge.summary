@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Thu Jun 14 13:09:35 2018
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : Groupmodule_Controller_31Lv_FPGA
+Top-level Entity Name : Groupmodule_Controller_31Lv
+Family : Cyclone IV E
+Total logic elements : 3,057
+    Total combinational functions : 2,159
+    Dedicated logic registers : 1,811
+Total registers : 1811
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 1,015,808
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

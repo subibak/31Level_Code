@@ -1,0 +1,24 @@
+/*
+ * Define_Basetypes.h
+ *
+ *  Created on: 2018. 8. 27.
+ *      Author: subi
+ */
+
+#ifndef DEFINE_BASETYPES_H_
+#define DEFINE_BASETYPES_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+//Include header files
+#include "F2837xD/F2837xD_device.h"
+
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* DEFINE_BASETYPES_H_ */

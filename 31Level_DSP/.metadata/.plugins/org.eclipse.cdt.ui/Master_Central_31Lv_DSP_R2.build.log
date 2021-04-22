@@ -1,0 +1,79 @@
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP_R2 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.d_raw" --obj_directory="Includes/AM572x_C66"  "../Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.c"
+Finished building: "../Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.c"
+ 
+Building file: "../Sources/ADC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/ADC.d_raw" --obj_directory="Sources"  "../Sources/ADC.c"
+Finished building: "../Sources/ADC.c"
+ 
+Building file: "../Sources/CtrlModule.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/CtrlModule.d_raw" --obj_directory="Sources"  "../Sources/CtrlModule.c"
+Finished building: "../Sources/CtrlModule.c"
+ 
+Building file: "../Sources/DAC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/DAC.d_raw" --obj_directory="Sources"  "../Sources/DAC.c"
+Finished building: "../Sources/DAC.c"
+ 
+Building file: "../Sources/D_IO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/D_IO.d_raw" --obj_directory="Sources"  "../Sources/D_IO.c"
+Finished building: "../Sources/D_IO.c"
+ 
+Building file: "../Sources/Fault.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Fault.d_raw" --obj_directory="Sources"  "../Sources/Fault.c"
+Finished building: "../Sources/Fault.c"
+ 
+Building file: "../Sources/Filter.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Filter.d_raw" --obj_directory="Sources"  "../Sources/Filter.c"
+Finished building: "../Sources/Filter.c"
+ 
+Building file: "../Sources/GPIO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPIO.d_raw" --obj_directory="Sources"  "../Sources/GPIO.c"
+Finished building: "../Sources/GPIO.c"
+ 
+Building file: "../Sources/GPMC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPMC.d_raw" --obj_directory="Sources"  "../Sources/GPMC.c"
+Finished building: "../Sources/GPMC.c"
+ 
+Building file: "../Sources/IPC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IPC.d_raw" --obj_directory="Sources"  "../Sources/IPC.c"
+Finished building: "../Sources/IPC.c"
+ 
+Building file: "../Sources/IntCtrl.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IntCtrl.d_raw" --obj_directory="Sources"  "../Sources/IntCtrl.c"
+Finished building: "../Sources/IntCtrl.c"
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+Finished building: "../Sources/Interrupt.c"
+ 
+Building file: "../Sources/L3_MAIN_interconnect.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP_R2/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=L2RAM --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/L3_MAIN_interconnect.d_raw" --obj_directory="Sources"  "../Sources/L3_MAIN_interconnect.c"
+Finished building: "../Sources/L3_MAIN_interconnect.c"
+ 
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP_R2 ****
+
+!CommandLauncher.error.commandCanceled!
+Error: Program "C:/ti/ccs1020/ccs/utils/bin/gmake" is not found in PATH
+
+PATH=[C:\ti\ccs1020\ccs\ccs_base\emulation\analysis\bin\..\..\..\common\bin;C:\ti\ccs1020\ccs\ccs_base\emulation\analysis\bin\..\..\..\DebugServer\bin;C:\ti\ccs1020\ccs\ccs_base\emulation\analysis\bin\ofs;C:\ti\ccs1020\ccs\ccs_base\common\bin;C:\ti\ccs1020\ccs\ccs_base\common\uscif;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Trace Analyzer and Collector\9.0.3.050\bin;C:\Program Files (x86)\Intel\MPI\5.0.3.050\intel64\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32\compiler;C:\TwinCAT\Common64;C:\TwinCAT\Common32;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\MATLAB\R2019b\runtime\win64;C:\Program Files\MATLAB\R2019b\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\IDM Computer Solutions\UltraCompare;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\IDM Computer Solutions\UEStudio;C:\Users\subi\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\subi\AppData\Local\Programs\Python\Python38-32\;C:\Program Files (x86)\Intel\Trace Analyzer and Collector\9.0.3.050\dll;C:\Cadence\SPB_16.5\OpenAccess\bin\win32\opt;C:\Cadence\SPB_16.5\tools\Capture;C:\Cadence\SPB_16.5\tools\PSpice\Library;C:\Cadence\SPB_16.5\tools\PSpice;C:\Cadence\SPB_16.5\tools\specctra\bin;C:\Cadence\SPB_16.5\tools\fet\bin;C:\Cadence\SPB_16.5\tools\libutil\bin;C:\Cadence\SPB_16.5\tools\bin;C:\Cadence\SPB_16.5\tools\pcb\bin;C:\Users\subi\AppData\Local\Microsoft\WindowsApps;C:\MentorGraphics\9.5PADS\SDD_HOME\common\win32\lib;C:\intelFPGA\18.1\modelsim_ase\win32aloem;C:\intelFPGA_lite\18.1\modelsim_ase\win32aloem;C:\Program Files\Bandizip\;C:\ti\ccs1020\ccs\ccs_base\emulation\analysis\bin\.;C:\ti\ccs1020\ccs\ccs_base\emulation\analysis\bin\../xmldb/aet_config;C:\ti\ccs1020\ccs\ccs_base\emulation\analysis\bin\../xmldb/trace_config/setup;C:\ti\ccs1020\ccs\ccs_base\emulation\analysis\bin\../xmldb/trace_config/devices;C:\ti\ccs1020\ccs\ccs_base\emulation\analysis\bin\../../../common/bin;C:\ti\ccs1020\ccs\ccs_base\emulation\analysis\bin\../../../common/uscif;C:\ti\ccs1020\ccs\ccs_base\emulation\analysis\bin\../../tpi;C:\ti\ccs1020\ccs\ccs_base\emulation\drivers]
+
+**** Build Finished ****

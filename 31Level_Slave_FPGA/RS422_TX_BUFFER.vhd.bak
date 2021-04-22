@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity RS422_TX_BUFFER is 
+	port();
+end RS422_TX_BUFFER;
+
+architecture TX_BUFFER of RS422_TX_BUFFER is
+begin
+end TX_BUFFER;
+

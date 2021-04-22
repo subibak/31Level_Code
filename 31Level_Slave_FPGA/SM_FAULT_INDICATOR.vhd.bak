@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity SM_FAULT_INDICATOR is
+	port(
+			OP_CLK			: 	in std_logic;
+			EMIF_ADDR		:	in std_logic_vector(11 downto 0);
+			EM1CS2n			:	in std_logic;
+			EM1WEn			: 	in std_logic;
+			EMIF_DATA		:  in std_logic_vector(15 downto 0);	
+			
+			SM
+	
+	);
+end SM_FAULT_INDICATOR;
+
+architecture arch of SM_FAULT_INDICATOR is
+
+begin
+	
+	LED_INDICATOR_OP : process(OP_CLK, EMIF_ADDR, EM1CS2n, EM1WEn)
+	begin
+			if EMIF_ADDR = "000011100001" and EM1CS2n = '0' and EM1WEn = '0' then
+				DAQ_TX_IND <= conv_integer(EMIF_DATA(15 downto 0));
+			end if;	
+	end process;
+
+end arch;
+ 

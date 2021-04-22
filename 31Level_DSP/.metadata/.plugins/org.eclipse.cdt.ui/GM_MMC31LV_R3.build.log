@@ -1,0 +1,132 @@
+
+**** Build of configuration Debug_CPU1_FLASH for project GM_MMC31LV_R3 ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../CPU1_BOOT_FLASH/DSP28xxx_FLASH_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="CPU1_BOOT_FLASH/DSP28xxx_FLASH_CodeStartBranch.d_raw" --obj_directory="CPU1_BOOT_FLASH"  "../CPU1_BOOT_FLASH/DSP28xxx_FLASH_CodeStartBranch.asm"
+Finished building: "../CPU1_BOOT_FLASH/DSP28xxx_FLASH_CodeStartBranch.asm"
+ 
+Building file: "../CPU1_BOOT_FLASH/DSP28xxx_SectionCopy_nonBIOS.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="CPU1_BOOT_FLASH/DSP28xxx_SectionCopy_nonBIOS.d_raw" --obj_directory="CPU1_BOOT_FLASH"  "../CPU1_BOOT_FLASH/DSP28xxx_SectionCopy_nonBIOS.asm"
+Finished building: "../CPU1_BOOT_FLASH/DSP28xxx_SectionCopy_nonBIOS.asm"
+ 
+Building file: "../include/F2837xD/F2837xD_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="include/F2837xD/F2837xD_GlobalVariableDefs.d_raw" --obj_directory="include/F2837xD"  "../include/F2837xD/F2837xD_GlobalVariableDefs.c"
+Finished building: "../include/F2837xD/F2837xD_GlobalVariableDefs.c"
+ 
+Building file: "../include/F2837xD/F2837xD_usDelay.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="include/F2837xD/F2837xD_usDelay.d_raw" --obj_directory="include/F2837xD"  "../include/F2837xD/F2837xD_usDelay.asm"
+Finished building: "../include/F2837xD/F2837xD_usDelay.asm"
+ 
+Building file: "../include/FPGA/FPGA_GlobalVariableDefs.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="include/FPGA/FPGA_GlobalVariableDefs.d_raw" --obj_directory="include/FPGA"  "../include/FPGA/FPGA_GlobalVariableDefs.c"
+Finished building: "../include/FPGA/FPGA_GlobalVariableDefs.c"
+ 
+Building file: "../source/CPU1_Interrupt.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/CPU1_Interrupt.d_raw" --obj_directory="source"  "../source/CPU1_Interrupt.c"
+Finished building: "../source/CPU1_Interrupt.c"
+ 
+Building file: "../source/CPU2_Interrupt.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/CPU2_Interrupt.d_raw" --obj_directory="source"  "../source/CPU2_Interrupt.c"
+Finished building: "../source/CPU2_Interrupt.c"
+ 
+Building file: "../source/Dual_core.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/Dual_core.d_raw" --obj_directory="source"  "../source/Dual_core.c"
+Finished building: "../source/Dual_core.c"
+ 
+Building file: "../source/EMIF.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/EMIF.d_raw" --obj_directory="source"  "../source/EMIF.c"
+Finished building: "../source/EMIF.c"
+ 
+Building file: "../source/FPGA_GPIO.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/FPGA_GPIO.d_raw" --obj_directory="source"  "../source/FPGA_GPIO.c"
+Finished building: "../source/FPGA_GPIO.c"
+ 
+Building file: "../source/IPC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/IPC.d_raw" --obj_directory="source"  "../source/IPC.c"
+Finished building: "../source/IPC.c"
+ 
+Building file: "../source/Input_Xbar.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/Input_Xbar.d_raw" --obj_directory="source"  "../source/Input_Xbar.c"
+Finished building: "../source/Input_Xbar.c"
+ 
+Building file: "../source/GPIO.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/GPIO.d_raw" --obj_directory="source"  "../source/GPIO.c"
+Finished building: "../source/GPIO.c"
+ 
+Building file: "../source/LED.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/LED.d_raw" --obj_directory="source"  "../source/LED.c"
+Finished building: "../source/LED.c"
+ 
+Building file: "../source/Sensor.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/Sensor.d_raw" --obj_directory="source"  "../source/Sensor.c"
+Finished building: "../source/Sensor.c"
+ 
+Building file: "../source/SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/SysCtrl.d_raw" --obj_directory="source"  "../source/SysCtrl.c"
+Finished building: "../source/SysCtrl.c"
+ 
+Building file: "../source/WatchDog.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/WatchDog.d_raw" --obj_directory="source"  "../source/WatchDog.c"
+Finished building: "../source/WatchDog.c"
+ 
+Building file: "../source/main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/main.d_raw" --obj_directory="source"  "../source/main.c"
+Finished building: "../source/main.c"
+ 
+Building file: "../source/ePWM.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R3/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="source/ePWM.d_raw" --obj_directory="source"  "../source/ePWM.c"
+Finished building: "../source/ePWM.c"
+ 
+Building target: "GM_MMC31LV_CPU1_FLASH.out"
+Invoking: C2000 Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O2 --define=CPU1 --define=CPU2_BOOT_ENABLE --define=CPU2_FLASH_BOOT --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"GM_MMC31LV_CPU1_FLASH.map" --heap_size=0x400 --stack_size=0x200 --warn_sections -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="GM_MMC31LV_R3_linkInfo.xml" --rom_model -o "GM_MMC31LV_CPU1_FLASH.out" "./CPU1_BOOT_FLASH/DSP28xxx_FLASH_CodeStartBranch.obj" "./CPU1_BOOT_FLASH/DSP28xxx_SectionCopy_nonBIOS.obj" "./include/F2837xD/F2837xD_GlobalVariableDefs.obj" "./include/F2837xD/F2837xD_usDelay.obj" "./include/FPGA/FPGA_GlobalVariableDefs.obj" "./source/CPU1_Interrupt.obj" "./source/CPU2_Interrupt.obj" "./source/Dual_core.obj" "./source/EMIF.obj" "./source/FPGA_GPIO.obj" "./source/GPIO.obj" "./source/IPC.obj" "./source/Input_Xbar.obj" "./source/LED.obj" "./source/Sensor.obj" "./source/SysCtrl.obj" "./source/WatchDog.obj" "./source/ePWM.obj" "./source/main.obj" "../CPU1_2_Common/F2837xD_UserDefined_lnk.cmd" "../CPU1_BOOT_FLASH/2837xD_FLASH_lnk_cpu1.cmd" "../CPU1_BOOT_FLASH/F2837xD_Headers_nonBIOS_cpu1.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined          first referenced
+  symbol                in file     
+ ---------          ----------------
+ _Bypass_data       ./source/IPC.obj
+ _Fault_data        ./source/IPC.obj
+ _Flash_ROM_lsb     ./source/IPC.obj
+ _Flash_ROM_msb     ./source/IPC.obj
+ _Limit_temperature ./source/IPC.obj
+ _Limit_v_sm_over   ./source/IPC.obj
+ _Limit_v_sm_under  ./source/IPC.obj
+ _Operation_data    ./source/IPC.obj
+ _Ref               ./source/IPC.obj
+ _SlaveStatus       ./source/IPC.obj
+ _Slave_OP_mode     ./source/IPC.obj
+ _Status_data       ./source/IPC.obj
+ _Sum_v_sm          ./source/IPC.obj
+ 
+error #10234-D: unresolved symbols remain
+ 
+error #10010: errors encountered during linking; "GM_MMC31LV_CPU1_FLASH.out" not built
+>> Compilation failure
+makefile:169: recipe for target 'GM_MMC31LV_CPU1_FLASH.out' failed
+gmake[1]: *** [GM_MMC31LV_CPU1_FLASH.out] Error 1
+gmake: *** [all] Error 2
+makefile:165: recipe for target 'all' failed
+
+**** Build Finished ****

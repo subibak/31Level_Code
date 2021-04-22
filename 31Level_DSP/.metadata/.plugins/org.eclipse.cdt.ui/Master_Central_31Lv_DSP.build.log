@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.2.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.2.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+ 
+>> Compilation failure
+Sources/subdir_rules.mk:9: recipe for target 'Sources/Interrupt.obj' failed
+"../Sources/Interrupt.c", line 51: error #20: identifier "ma" is undefined
+1 error detected in the compilation of "../Sources/Interrupt.c".
+gmake: *** [Sources/Interrupt.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

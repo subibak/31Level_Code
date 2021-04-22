@@ -1,0 +1,48 @@
+--------------------------------------------------Description-------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
+
+-- PWM 파형의 DEAD TIME 삽입
+-- 내부 동작
+-- 1. RST_N 이 1일 경우 q_buffer의 값이 00000000, dead_t는 1
+-- 2. clk가 상승 엣지 일 때 
+--    1) q_buffer가 150이면 q_buffer는 00000000, dead_t도 0
+--    2) q_buffer가 150이 아닐 경우 q_buffer는 1씩 증가   
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity  DEAD_TIME is
+	port (clk, rst_n: in std_logic;
+		  dead_t : OUT std_logic);
+end DEAD_TIME;
+
+architecture act of DEAD_TIME is
+signal q_buffer : std_logic_vector(7 downto 0);
+
+begin 
+	process (clk, rst_n )
+	begin 
+	
+	
+		if rst_n='1' then 
+		q_buffer <= "00000000";
+		dead_t   <= '1';
+
+		elsif (clk'event and clk ='1') then 
+	
+			if (q_buffer = 150) THEN 
+				dead_t <= '0' ;
+			else 
+				q_buffer <= q_buffer + '1';
+				dead_t   <= '1';
+			end if;
+	
+		end if;
+	
+	end process;
+
+end act;

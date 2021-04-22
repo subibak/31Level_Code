@@ -1,0 +1,214 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity DAC8803_8CH is
+
+	port(
+			CLK			:  	in std_logic;
+			DAC_CS_IN	:		in std_logic;
+			DAC_LD_IN_1	:		in std_logic;
+			DAC_LD_IN_2	:		in std_logic;
+			DAC_DATA 	:		in std_logic_vector(15 downto 0);
+			
+			DAC_LD_1	: 		out std_logic;
+			DAC_LD_2	: 		out std_logic;
+			DAC_CS	:		out std_logic;
+			DAC_CLK	:		out std_logic;
+			DAC_SDI	:		out std_logic
+		);
+
+end DAC8803_8CH;
+
+architecture arch of DAC8803_8CH is
+	
+	signal dac_reg			:		std_logic_vector(1 downto 0);
+	signal dac_reg_1		:		std_logic_vector(1 downto 0);
+	signal dac_reg_2		:		std_logic_vector(1 downto 0);
+	signal dac_reg_3		:		std_logic_vector(1 downto 0);
+	signal dac_reg_4		:		std_logic_vector(1 downto 0);
+	signal dac_count		:		std_logic_vector(15 downto 0);
+	signal dac_count_1	:		std_logic_vector(15 downto 0);
+	signal dac_count_2	:		std_logic_vector(15 downto 0);
+	signal dac_count_3	:		std_logic_vector(15 downto 0);
+	signal dac_count_4	:		std_logic_vector(15 downto 0);
+	signal dac_csn			: 		std_logic;
+	signal dac_ldn			: 		std_logic;
+	signal dac_ldn_1		: 		std_logic;
+	signal dac_ldn_2		: 		std_logic;
+	signal clk_temp		: 		std_logic;
+	signal dac_sdi_temp	: 		std_logic;
+
+begin	
+	--100MHz의 클럭을 받아서 클럭이 매번 	발생할 때 마다 외부에서(DSP) 받은 칩 셀렉터 신호를 2bit 의 레지스터에 저장&갱신
+	--침 셀렉터 신호가 매 클럭 발생할 때마다 2bit 의 레지스터 최하위 비트에 저장됨 
+	--그리고 다음 클럭 발생시 이전에 저장되었던 값을 상위 비트에 저장하면서 하위비트에는 새로운 값으로 갱신 
+	process(CLK)
+	begin
+		if CLK'event and CLK = '1' then
+				dac_reg <= dac_reg(0) & DAC_CS_IN;
+				dac_reg_1 <= dac_reg_1(0) & DAC_LD_IN_1;
+				dac_reg_2 <= dac_reg_2(0) & DAC_LD_IN_2;
+		end if;
+	end process;
+	
+	-- 칩 셀렉터 신호를 저장하는 레지스트들의 값이 10 이 되면 해당되는 카운터를 리셋하고 그 외에는 카운터를 계속 함		
+	process(CLK, dac_reg_1, dac_reg_2)
+	begin	
+		if CLK'event and CLK = '1' then
+			if(dac_reg = "10") then
+				dac_count <= ( others => '0');
+			else 
+				dac_count <= 1 + dac_count;
+			end if;
+			
+			if(dac_reg_1 = "10") then
+				dac_count_1 <= ( others => '0');
+			else 
+				dac_count_1 <= 1 + dac_count_1;
+			end if;
+			
+			if(dac_reg_2 = "10") then
+				dac_count_2 <= ( others => '0');
+			else 
+				dac_count_2 <= 1 + dac_count_2;
+			end if;
+		
+		end if;
+	end process;
+	
+	process(CLK, dac_count, dac_count_1, dac_count_2)
+	begin	
+	--실제로 DAC8803 에 들어가는 /CS 신호를 만들어 냄
+	--카운터의 값에 따라 출력 신호 값의 변화를 주어 active low 로 동작하게 함
+		if CLK'event and CLK = '1' then
+			if dac_count <= "1010" then 
+				dac_csn <= '1';
+			elsif dac_count > "1010" and dac_count <= "11001000" then
+				dac_csn <= '0';
+			else
+				dac_csn <= '1';
+			end if;
+	
+	-- 실제로 DAC8803에 들어가는 /LOAD 신호를 만들어 냄
+	--카운터의 값에 따라 출력 신호 값의 변화를 주어 active low 로 동작하게 함	
+			if dac_count_1 <= "11010010" then 
+				DAC_LD_1 <= '1';
+			elsif dac_count_1 > "11010010" and dac_count_1 <= "11110000" then
+				DAC_LD_1 <= '0';
+			else 
+				DAC_LD_1 <= '1';
+			end if;
+		
+			if dac_count_2 <= "11010010" then 
+				DAC_LD_2 <= '1';
+			elsif dac_count_2 > "11010010" and dac_count_2 <= "11110000" then
+				DAC_LD_2 <= '0';
+			else 
+				DAC_LD_2 <= '1';
+			end if;
+		end if;
+
+	end process;
+
+	-- 실제로 DAC8803에 들어가는 CLK와 SDI 를 만들어 냄
+	-- 카운터가 0.05us 만큼 카운팅 할 때마다 clk 를 High ,Low 로 바꿔서 DAC8803 CLK 신호를 만들어 냄
+	-- 더불어 XD로 받은 16bit 데이터 값을 최상위 비트부터 DAC8803 CLK값을 0으로 출력할때 SDI 출력으로 보냄	
+	process(CLK, dac_count)
+	begin
+		if CLK'event and CLK = '1' then
+			if dac_count <= "1111" then  --0.15 us    --count 5us each step 100MHz 사용할 경우 
+				clk_temp <= '0';
+			elsif dac_count > "1111" and dac_count <= "10100" then  -- 0.20 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(15);
+			elsif dac_count > "10100" and dac_count <= "11001" then  -- 0.25 us
+				clk_temp <= '1'; 
+			elsif dac_count > "11001" and dac_count <= "11110" then  -- 0.30 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(14);
+			elsif dac_count > "11110" and dac_count <= "100011" then -- 0.35 us				
+				clk_temp <= '1';
+			elsif dac_count > "100011" and dac_count <="101000"then -- 0.40 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(13);													
+			elsif dac_count > "101000" and dac_count <="101101" then -- 0.45 us
+				clk_temp <= '1';
+			elsif dac_count > "101101" and dac_count <= "110010"then -- 0.50 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(12);                                        
+			elsif dac_count > "110010" and dac_count <= "110111"then -- 0.55 us
+				clk_temp <= '1';
+			elsif dac_count > "110111" and dac_count <= "111100"then -- 0.60 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(11);
+			elsif dac_count > "111100" and dac_count <= "1000001"then -- 0.65 us
+				clk_temp <= '1';
+			elsif dac_count > "1000001" and dac_count <= "1000110"then -- 0.70 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(10);
+			elsif dac_count > "1000110" and dac_count <= "1001011"then -- 0.75 us
+				clk_temp <= '1';
+			elsif dac_count > "1001011" and dac_count <="1010000"then 	-- 0.80 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(9);													
+			elsif dac_count > "1010000" and dac_count <="1010101"then -- 0.85 us
+				clk_temp <= '1';
+			elsif dac_count > "1010101" and dac_count <= "1011010"then -- 0.90 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(8);	                                        	
+			elsif dac_count > "1011010" and dac_count <= "1011111"then -- 0.95 us
+				clk_temp <= '1';
+			elsif dac_count > "1011111" and dac_count <= "1100100"then -- 1.00 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(7);
+			elsif dac_count > "1100100" and dac_count <= "1101001"then -- 1.05 us
+				clk_temp <= '1';
+			elsif dac_count > "1101001" and dac_count <= "1101110"then -- 1.10 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(6);
+			elsif dac_count > "1101110" and dac_count <= "1110011"then 	-- 1.15 us
+				clk_temp <= '1';
+			elsif dac_count > "1110011" and dac_count <="1111000"then	-- 1.20 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(5);													
+			elsif dac_count > "1111000" and dac_count <="1111101"then 	-- 1.25 us
+				clk_temp <= '1';
+			elsif dac_count > "1111101" and dac_count <= "10000010"then 	-- 1.30 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(4);	                                        	
+			elsif dac_count > "10000010" and dac_count <= "10000111"then 	-- 1.35 us
+				clk_temp <= '1';
+			elsif dac_count > "10000111" and dac_count <= "10001100"then 	-- 1.40 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(3);
+			elsif dac_count > "10001100" and dac_count <= "10010001"then 	-- 1.45 us
+				clk_temp <= '1';
+			elsif dac_count > "10010001" and dac_count <="10010110"then 	-- 1.50 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(2);													
+			elsif dac_count > "10010110" and dac_count <="10011011"then 	-- 1.55 us
+				clk_temp <= '1';
+			elsif dac_count > "10011011" and dac_count <= "10100000"then 	--	1.60 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(1);	                                        	
+			elsif dac_count > "10100000" and dac_count <= "10100101"then 	-- 1.65 us
+				clk_temp <= '1';
+			elsif dac_count > "10100101" and dac_count <= "10101010"then  -- 1.70 us
+				clk_temp <= '0';
+				dac_sdi_temp <= DAC_DATA(0);
+			elsif dac_count > "10101010" and dac_count <= "10101111" then
+				clk_temp <= '1';
+			else
+				clk_temp <= '0';		
+				dac_sdi_temp  <= '1';		
+			end if;
+		end if;
+			
+		
+	end process;
+		DAC_CLK   <= clk_temp;
+		DAC_SDI   <= dac_sdi_temp;
+		DAC_CS 	 <= dac_csn;
+
+end arch;

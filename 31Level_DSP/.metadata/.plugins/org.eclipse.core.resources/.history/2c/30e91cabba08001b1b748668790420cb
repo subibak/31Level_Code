@@ -1,0 +1,158 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../Source/ADC.c \
+../Source/Bypass.c \
+../Source/DAC.c \
+../Source/DAQ_RS422.c \
+../Source/Dual_core.c \
+../Source/EMIF.c \
+../Source/F2837xD_GlobalVariableDefs.c \
+../Source/FAN.c \
+../Source/Fault.c \
+../Source/GPIO.c \
+../Source/Group_module_test.c \
+../Source/Interrupt.c \
+../Source/LED.c \
+../Source/LPF_Parameter.c \
+../Source/OPERATION_MODE.c \
+../Source/PWM.c \
+../Source/Sensor.c \
+../Source/SysCtrl.c \
+../Source/Vol_Balance.c \
+../Source/WatchDog.c \
+../Source/ePWM.c \
+../Source/main.c \
+../Source/timer.c 
+
+C_DEPS += \
+./Source/ADC.d \
+./Source/Bypass.d \
+./Source/DAC.d \
+./Source/DAQ_RS422.d \
+./Source/Dual_core.d \
+./Source/EMIF.d \
+./Source/F2837xD_GlobalVariableDefs.d \
+./Source/FAN.d \
+./Source/Fault.d \
+./Source/GPIO.d \
+./Source/Group_module_test.d \
+./Source/Interrupt.d \
+./Source/LED.d \
+./Source/LPF_Parameter.d \
+./Source/OPERATION_MODE.d \
+./Source/PWM.d \
+./Source/Sensor.d \
+./Source/SysCtrl.d \
+./Source/Vol_Balance.d \
+./Source/WatchDog.d \
+./Source/ePWM.d \
+./Source/main.d \
+./Source/timer.d 
+
+OBJS += \
+./Source/ADC.obj \
+./Source/Bypass.obj \
+./Source/DAC.obj \
+./Source/DAQ_RS422.obj \
+./Source/Dual_core.obj \
+./Source/EMIF.obj \
+./Source/F2837xD_GlobalVariableDefs.obj \
+./Source/FAN.obj \
+./Source/Fault.obj \
+./Source/GPIO.obj \
+./Source/Group_module_test.obj \
+./Source/Interrupt.obj \
+./Source/LED.obj \
+./Source/LPF_Parameter.obj \
+./Source/OPERATION_MODE.obj \
+./Source/PWM.obj \
+./Source/Sensor.obj \
+./Source/SysCtrl.obj \
+./Source/Vol_Balance.obj \
+./Source/WatchDog.obj \
+./Source/ePWM.obj \
+./Source/main.obj \
+./Source/timer.obj 
+
+OBJS__QUOTED += \
+"Source\ADC.obj" \
+"Source\Bypass.obj" \
+"Source\DAC.obj" \
+"Source\DAQ_RS422.obj" \
+"Source\Dual_core.obj" \
+"Source\EMIF.obj" \
+"Source\F2837xD_GlobalVariableDefs.obj" \
+"Source\FAN.obj" \
+"Source\Fault.obj" \
+"Source\GPIO.obj" \
+"Source\Group_module_test.obj" \
+"Source\Interrupt.obj" \
+"Source\LED.obj" \
+"Source\LPF_Parameter.obj" \
+"Source\OPERATION_MODE.obj" \
+"Source\PWM.obj" \
+"Source\Sensor.obj" \
+"Source\SysCtrl.obj" \
+"Source\Vol_Balance.obj" \
+"Source\WatchDog.obj" \
+"Source\ePWM.obj" \
+"Source\main.obj" \
+"Source\timer.obj" 
+
+C_DEPS__QUOTED += \
+"Source\ADC.d" \
+"Source\Bypass.d" \
+"Source\DAC.d" \
+"Source\DAQ_RS422.d" \
+"Source\Dual_core.d" \
+"Source\EMIF.d" \
+"Source\F2837xD_GlobalVariableDefs.d" \
+"Source\FAN.d" \
+"Source\Fault.d" \
+"Source\GPIO.d" \
+"Source\Group_module_test.d" \
+"Source\Interrupt.d" \
+"Source\LED.d" \
+"Source\LPF_Parameter.d" \
+"Source\OPERATION_MODE.d" \
+"Source\PWM.d" \
+"Source\Sensor.d" \
+"Source\SysCtrl.d" \
+"Source\Vol_Balance.d" \
+"Source\WatchDog.d" \
+"Source\ePWM.d" \
+"Source\main.d" \
+"Source\timer.d" 
+
+C_SRCS__QUOTED += \
+"../Source/ADC.c" \
+"../Source/Bypass.c" \
+"../Source/DAC.c" \
+"../Source/DAQ_RS422.c" \
+"../Source/Dual_core.c" \
+"../Source/EMIF.c" \
+"../Source/F2837xD_GlobalVariableDefs.c" \
+"../Source/FAN.c" \
+"../Source/Fault.c" \
+"../Source/GPIO.c" \
+"../Source/Group_module_test.c" \
+"../Source/Interrupt.c" \
+"../Source/LED.c" \
+"../Source/LPF_Parameter.c" \
+"../Source/OPERATION_MODE.c" \
+"../Source/PWM.c" \
+"../Source/Sensor.c" \
+"../Source/SysCtrl.c" \
+"../Source/Vol_Balance.c" \
+"../Source/WatchDog.c" \
+"../Source/ePWM.c" \
+"../Source/main.c" \
+"../Source/timer.c" 
+
+

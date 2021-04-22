@@ -1,0 +1,125 @@
+# FIXED
+
+Source/Dual_core.obj: ../Source/Dual_core.c
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_Header.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_SysCtrl.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_Struct.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_device.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/assert.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/_ti_config.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/linkage.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/stdarg.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/sys/_types.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/sys/cdefs.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/machine/_types.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/stdbool.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/stddef.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/stdint.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/_stdint40.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/sys/stdint.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/machine/_stdint.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/sys/_stdint.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_adc.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_analogsubsys.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_cla.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_cmpss.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_cputimer.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_dac.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_dcsm.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_dma.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_defaultisr.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_ecap.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_emif.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_epwm.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_epwm_xbar.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_eqep.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_flash.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_gpio.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_i2c.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_input_xbar.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_ipc.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_mcbsp.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_memconfig.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_nmiintrupt.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_output_xbar.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_piectrl.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_pievect.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_sci.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_sdfm.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_spi.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_sysctrl.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_trig_xbar.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_upp.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_xbar.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_xint.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_Prototypes.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_device.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_Basetypes.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_LED.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_Address.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/math.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/_defs.h
+Source/Dual_core.obj: C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/machine/_limits.h
+Source/Dual_core.obj: C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/FPGA/FPGA_GPIO.h
+
+../Source/Dual_core.c: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_Header.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_SysCtrl.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_Struct.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_device.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/assert.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/_ti_config.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/linkage.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/stdarg.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/sys/_types.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/sys/cdefs.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/machine/_types.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/stdbool.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/stddef.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/stdint.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/_stdint40.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/sys/stdint.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/machine/_stdint.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/sys/_stdint.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_adc.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_analogsubsys.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_cla.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_cmpss.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_cputimer.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_dac.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_dcsm.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_dma.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_defaultisr.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_ecap.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_emif.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_epwm.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_epwm_xbar.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_eqep.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_flash.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_gpio.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_i2c.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_input_xbar.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_ipc.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_mcbsp.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_memconfig.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_nmiintrupt.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_output_xbar.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_piectrl.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_pievect.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_sci.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_sdfm.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_spi.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_sysctrl.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_trig_xbar.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_upp.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_xbar.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_xint.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_Prototypes.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/F2837xD/F2837xD_device.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_Basetypes.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_LED.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/Define_Address.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/math.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/_defs.h: 
+C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.6.LTS/include/machine/_limits.h: 
+C:/Users/subi/Desktop/31Level_Code/31Level_DSP/GM_MMC31LV_R2/include/FPGA/FPGA_GPIO.h: 

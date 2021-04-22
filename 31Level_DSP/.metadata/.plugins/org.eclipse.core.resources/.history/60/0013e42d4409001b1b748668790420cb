@@ -1,0 +1,35 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../Cmd/BOOT_FLASH_CPU1/2837xD_FLASH_lnk_cpu1.cmd 
+
+ASM_SRCS += \
+../Cmd/BOOT_FLASH_CPU1/DSP28xxx_FLASH_CodeStartBranch.asm \
+../Cmd/BOOT_FLASH_CPU1/DSP28xxx_SectionCopy_nonBIOS.asm 
+
+OBJS += \
+./Cmd/BOOT_FLASH_CPU1/DSP28xxx_FLASH_CodeStartBranch.obj \
+./Cmd/BOOT_FLASH_CPU1/DSP28xxx_SectionCopy_nonBIOS.obj 
+
+ASM_DEPS += \
+./Cmd/BOOT_FLASH_CPU1/DSP28xxx_FLASH_CodeStartBranch.d \
+./Cmd/BOOT_FLASH_CPU1/DSP28xxx_SectionCopy_nonBIOS.d 
+
+OBJS__QUOTED += \
+"Cmd\BOOT_FLASH_CPU1\DSP28xxx_FLASH_CodeStartBranch.obj" \
+"Cmd\BOOT_FLASH_CPU1\DSP28xxx_SectionCopy_nonBIOS.obj" 
+
+ASM_DEPS__QUOTED += \
+"Cmd\BOOT_FLASH_CPU1\DSP28xxx_FLASH_CodeStartBranch.d" \
+"Cmd\BOOT_FLASH_CPU1\DSP28xxx_SectionCopy_nonBIOS.d" 
+
+ASM_SRCS__QUOTED += \
+"../Cmd/BOOT_FLASH_CPU1/DSP28xxx_FLASH_CodeStartBranch.asm" \
+"../Cmd/BOOT_FLASH_CPU1/DSP28xxx_SectionCopy_nonBIOS.asm" 
+
+

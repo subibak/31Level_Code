@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity LED_FPGA is
+port( 
+		LED_EN 		:	in std_logic;
+		LED_SEQ 		:	in std_logic_vector(3 downto 0);
+		
+		LED_OUT 		:	out std_logic_vector(3 downto 0)
+		);
+end LED_FPGA ;
+
+architecture Sequence of LED_FPGA is
+begin
+
+		if(LED_EN = '0') then
+		if(EMIC_WE'event and EMIC_WE = '1')then 
+		case D is
+			when "0001" => led_out <= "0001";
+			when "0010" => led_out <= "0011";
+			when "0011" => led_out <= "0111";
+			when "0100" => led_out <= "1111";
+			when "0101" => led_out <= "1110";
+			when "0110" => led_out <= "1100";
+			when "0111" => led_out <= "1000";
+			when others => led_out <= "0000";
+		end case;
+
+end Sequence;
+

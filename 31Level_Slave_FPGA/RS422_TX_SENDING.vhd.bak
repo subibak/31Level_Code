@@ -1,0 +1,12 @@
+library ieee
+use ieee.std_logic_1164.all
+use ieee.std_logic_arith.all
+
+entity RS422_TX_SENDING is
+	port();
+	
+end RS422_TX_SENDING;
+
+architecture SENDING of RS422_TX_SENDING is
+begin
+end SENDING

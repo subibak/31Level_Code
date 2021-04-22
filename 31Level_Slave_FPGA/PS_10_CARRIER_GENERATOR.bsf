@@ -1,0 +1,253 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 280 544)
+	(text "PS_10_CARRIER_GENERATOR" (rect 5 0 158 12)(font "Arial" ))
+	(text "inst" (rect 8 512 20 524)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "OP_CLK" (rect 0 0 38 12)(font "Arial" ))
+		(text "OP_CLK" (rect 21 27 59 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "PWM_CNT_EN" (rect 0 0 70 12)(font "Arial" ))
+		(text "PWM_CNT_EN" (rect 21 43 91 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 264 32)
+		(output)
+		(text "CNT_1_OUT[15..0]" (rect 0 0 79 12)(font "Arial" ))
+		(text "CNT_1_OUT[15..0]" (rect 164 27 243 39)(font "Arial" ))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
+	)
+	(port
+		(pt 264 48)
+		(output)
+		(text "SEQ_1_OUT" (rect 0 0 55 12)(font "Arial" ))
+		(text "SEQ_1_OUT" (rect 188 43 243 55)(font "Arial" ))
+		(line (pt 264 48)(pt 248 48)(line_width 1))
+	)
+	(port
+		(pt 264 64)
+		(output)
+		(text "CNT_1_FLAG_OUT" (rect 0 0 88 12)(font "Arial" ))
+		(text "CNT_1_FLAG_OUT" (rect 155 59 243 71)(font "Arial" ))
+		(line (pt 264 64)(pt 248 64)(line_width 1))
+	)
+	(port
+		(pt 264 80)
+		(output)
+		(text "CNT_2_OUT[15..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "CNT_2_OUT[15..0]" (rect 163 75 243 87)(font "Arial" ))
+		(line (pt 264 80)(pt 248 80)(line_width 3))
+	)
+	(port
+		(pt 264 96)
+		(output)
+		(text "SEQ_2_OUT" (rect 0 0 56 12)(font "Arial" ))
+		(text "SEQ_2_OUT" (rect 187 91 243 103)(font "Arial" ))
+		(line (pt 264 96)(pt 248 96)(line_width 1))
+	)
+	(port
+		(pt 264 112)
+		(output)
+		(text "CNT_2_FLAG_OUT" (rect 0 0 89 12)(font "Arial" ))
+		(text "CNT_2_FLAG_OUT" (rect 154 107 243 119)(font "Arial" ))
+		(line (pt 264 112)(pt 248 112)(line_width 1))
+	)
+	(port
+		(pt 264 128)
+		(output)
+		(text "CNT_3_OUT[15..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "CNT_3_OUT[15..0]" (rect 163 123 243 135)(font "Arial" ))
+		(line (pt 264 128)(pt 248 128)(line_width 3))
+	)
+	(port
+		(pt 264 144)
+		(output)
+		(text "SEQ_3_OUT" (rect 0 0 56 12)(font "Arial" ))
+		(text "SEQ_3_OUT" (rect 187 139 243 151)(font "Arial" ))
+		(line (pt 264 144)(pt 248 144)(line_width 1))
+	)
+	(port
+		(pt 264 160)
+		(output)
+		(text "CNT_3_FLAG_OUT" (rect 0 0 89 12)(font "Arial" ))
+		(text "CNT_3_FLAG_OUT" (rect 154 155 243 167)(font "Arial" ))
+		(line (pt 264 160)(pt 248 160)(line_width 1))
+	)
+	(port
+		(pt 264 176)
+		(output)
+		(text "CNT_4_OUT[15..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "CNT_4_OUT[15..0]" (rect 162 171 243 183)(font "Arial" ))
+		(line (pt 264 176)(pt 248 176)(line_width 3))
+	)
+	(port
+		(pt 264 192)
+		(output)
+		(text "SEQ_4_OUT" (rect 0 0 57 12)(font "Arial" ))
+		(text "SEQ_4_OUT" (rect 186 187 243 199)(font "Arial" ))
+		(line (pt 264 192)(pt 248 192)(line_width 1))
+	)
+	(port
+		(pt 264 208)
+		(output)
+		(text "CNT_4_FLAG_OUT" (rect 0 0 90 12)(font "Arial" ))
+		(text "CNT_4_FLAG_OUT" (rect 153 203 243 215)(font "Arial" ))
+		(line (pt 264 208)(pt 248 208)(line_width 1))
+	)
+	(port
+		(pt 264 224)
+		(output)
+		(text "CNT_5_OUT[15..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "CNT_5_OUT[15..0]" (rect 163 219 243 231)(font "Arial" ))
+		(line (pt 264 224)(pt 248 224)(line_width 3))
+	)
+	(port
+		(pt 264 240)
+		(output)
+		(text "SEQ_5_OUT" (rect 0 0 56 12)(font "Arial" ))
+		(text "SEQ_5_OUT" (rect 187 235 243 247)(font "Arial" ))
+		(line (pt 264 240)(pt 248 240)(line_width 1))
+	)
+	(port
+		(pt 264 256)
+		(output)
+		(text "CNT_5_FLAG_OUT" (rect 0 0 89 12)(font "Arial" ))
+		(text "CNT_5_FLAG_OUT" (rect 154 251 243 263)(font "Arial" ))
+		(line (pt 264 256)(pt 248 256)(line_width 1))
+	)
+	(port
+		(pt 264 272)
+		(output)
+		(text "CNT_6_OUT[15..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "CNT_6_OUT[15..0]" (rect 163 267 243 279)(font "Arial" ))
+		(line (pt 264 272)(pt 248 272)(line_width 3))
+	)
+	(port
+		(pt 264 288)
+		(output)
+		(text "SEQ_6_OUT" (rect 0 0 56 12)(font "Arial" ))
+		(text "SEQ_6_OUT" (rect 187 283 243 295)(font "Arial" ))
+		(line (pt 264 288)(pt 248 288)(line_width 1))
+	)
+	(port
+		(pt 264 304)
+		(output)
+		(text "CNT_6_FLAG_OUT" (rect 0 0 89 12)(font "Arial" ))
+		(text "CNT_6_FLAG_OUT" (rect 154 299 243 311)(font "Arial" ))
+		(line (pt 264 304)(pt 248 304)(line_width 1))
+	)
+	(port
+		(pt 264 320)
+		(output)
+		(text "CNT_7_OUT[15..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "CNT_7_OUT[15..0]" (rect 163 315 243 327)(font "Arial" ))
+		(line (pt 264 320)(pt 248 320)(line_width 3))
+	)
+	(port
+		(pt 264 336)
+		(output)
+		(text "SEQ_7_OUT" (rect 0 0 56 12)(font "Arial" ))
+		(text "SEQ_7_OUT" (rect 187 331 243 343)(font "Arial" ))
+		(line (pt 264 336)(pt 248 336)(line_width 1))
+	)
+	(port
+		(pt 264 352)
+		(output)
+		(text "CNT_7_FLAG_OUT" (rect 0 0 89 12)(font "Arial" ))
+		(text "CNT_7_FLAG_OUT" (rect 154 347 243 359)(font "Arial" ))
+		(line (pt 264 352)(pt 248 352)(line_width 1))
+	)
+	(port
+		(pt 264 368)
+		(output)
+		(text "CNT_8_OUT[15..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "CNT_8_OUT[15..0]" (rect 163 363 243 375)(font "Arial" ))
+		(line (pt 264 368)(pt 248 368)(line_width 3))
+	)
+	(port
+		(pt 264 384)
+		(output)
+		(text "SEQ_8_OUT" (rect 0 0 56 12)(font "Arial" ))
+		(text "SEQ_8_OUT" (rect 187 379 243 391)(font "Arial" ))
+		(line (pt 264 384)(pt 248 384)(line_width 1))
+	)
+	(port
+		(pt 264 400)
+		(output)
+		(text "CNT_8_FLAG_OUT" (rect 0 0 89 12)(font "Arial" ))
+		(text "CNT_8_FLAG_OUT" (rect 154 395 243 407)(font "Arial" ))
+		(line (pt 264 400)(pt 248 400)(line_width 1))
+	)
+	(port
+		(pt 264 416)
+		(output)
+		(text "CNT_9_OUT[15..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "CNT_9_OUT[15..0]" (rect 163 411 243 423)(font "Arial" ))
+		(line (pt 264 416)(pt 248 416)(line_width 3))
+	)
+	(port
+		(pt 264 432)
+		(output)
+		(text "SEQ_9_OUT" (rect 0 0 56 12)(font "Arial" ))
+		(text "SEQ_9_OUT" (rect 187 427 243 439)(font "Arial" ))
+		(line (pt 264 432)(pt 248 432)(line_width 1))
+	)
+	(port
+		(pt 264 448)
+		(output)
+		(text "CNT_9_FLAG_OUT" (rect 0 0 89 12)(font "Arial" ))
+		(text "CNT_9_FLAG_OUT" (rect 154 443 243 455)(font "Arial" ))
+		(line (pt 264 448)(pt 248 448)(line_width 1))
+	)
+	(port
+		(pt 264 464)
+		(output)
+		(text "CNT_10_OUT[15..0]" (rect 0 0 83 12)(font "Arial" ))
+		(text "CNT_10_OUT[15..0]" (rect 160 459 243 471)(font "Arial" ))
+		(line (pt 264 464)(pt 248 464)(line_width 3))
+	)
+	(port
+		(pt 264 480)
+		(output)
+		(text "SEQ_10_OUT" (rect 0 0 60 12)(font "Arial" ))
+		(text "SEQ_10_OUT" (rect 183 475 243 487)(font "Arial" ))
+		(line (pt 264 480)(pt 248 480)(line_width 1))
+	)
+	(port
+		(pt 264 496)
+		(output)
+		(text "CNT_10_FLAG_OUT" (rect 0 0 93 12)(font "Arial" ))
+		(text "CNT_10_FLAG_OUT" (rect 150 491 243 503)(font "Arial" ))
+		(line (pt 264 496)(pt 248 496)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 248 512)(line_width 1))
+	)
+)

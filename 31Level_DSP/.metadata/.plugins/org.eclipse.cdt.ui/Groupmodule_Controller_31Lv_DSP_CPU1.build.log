@@ -1,0 +1,73 @@
+
+**** Build of configuration Debug_FLASH for project Groupmodule_Controller_31Lv_DSP_CPU1 ****
+
+"C:\\ti\\ccs901\\ccs\\utils\\bin\\gmake" -k -j 4 all -O 
+ 
+Building file: "../source/Dual_core.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/Dual_core.d_raw" --obj_directory="source"  "../source/Dual_core.c"
+Finished building: "../source/Dual_core.c"
+ 
+Building file: "../source/EMIF.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/EMIF.d_raw" --obj_directory="source"  "../source/EMIF.c"
+Finished building: "../source/EMIF.c"
+ 
+Building file: "../source/GPIO.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/GPIO.d_raw" --obj_directory="source"  "../source/GPIO.c"
+Finished building: "../source/GPIO.c"
+ 
+Building file: "../source/IPC.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/IPC.d_raw" --obj_directory="source"  "../source/IPC.c"
+Finished building: "../source/IPC.c"
+ 
+Building file: "../source/Input_Xbar.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/Input_Xbar.d_raw" --obj_directory="source"  "../source/Input_Xbar.c"
+Finished building: "../source/Input_Xbar.c"
+ 
+Building file: "../source/Interrupt.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/Interrupt.d_raw" --obj_directory="source"  "../source/Interrupt.c"
+Finished building: "../source/Interrupt.c"
+ 
+Building file: "../source/LED.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/LED.d_raw" --obj_directory="source"  "../source/LED.c"
+Finished building: "../source/LED.c"
+ 
+Building file: "../source/Sensor.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/Sensor.d_raw" --obj_directory="source"  "../source/Sensor.c"
+Finished building: "../source/Sensor.c"
+ 
+Building file: "../source/SysCtrl.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/SysCtrl.d_raw" --obj_directory="source"  "../source/SysCtrl.c"
+Finished building: "../source/SysCtrl.c"
+ 
+Building file: "../source/WatchDog.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/WatchDog.d_raw" --obj_directory="source"  "../source/WatchDog.c"
+Finished building: "../source/WatchDog.c"
+ 
+Building file: "../source/ePWM.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/ePWM.d_raw" --obj_directory="source"  "../source/ePWM.c"
+Finished building: "../source/ePWM.c"
+ 
+Building file: "../source/main.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/include" --include_path="C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="source/main.d_raw" --obj_directory="source"  "../source/main.c"
+Finished building: "../source/main.c"
+ 
+Building target: "Groupmodule_Controller_31Lv_DSP_CPU1.out"
+Invoking: C2000 Linker
+"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --advice:performance=all --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Groupmodule_Controller_31Lv_DSP_CPU1.map" --heap_size=0x200 --stack_size=0x200 --warn_sections -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/lib" -i"C:/ti/ccs901/ccs/tools/compiler/ti-cgt-c2000_18.12.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Groupmodule_Controller_31Lv_DSP_CPU1_linkInfo.xml" --rom_model -o "Groupmodule_Controller_31Lv_DSP_CPU1.out" "./BOOT_FLASH/DSP28xxx_FLASH_CodeStartBranch.obj" "./BOOT_FLASH/DSP28xxx_SectionCopy_nonBIOS.obj" "./include/F2837xD/F2837xD_GlobalVariableDefs.obj" "./include/F2837xD/F2837xD_usDelay.obj" "./source/Dual_core.obj" "./source/EMIF.obj" "./source/GPIO.obj" "./source/IPC.obj" "./source/Input_Xbar.obj" "./source/Interrupt.obj" "./source/LED.obj" "./source/Sensor.obj" "./source/SysCtrl.obj" "./source/WatchDog.obj" "./source/ePWM.obj" "./source/main.obj" "../F2837xD_Headers_nonBIOS_cpu1.cmd" "../BOOT_FLASH/2837xD_FLASH_lnk_cpu1.cmd" "../EtherCAT_Library/F2837xD_EtherCAT_Slave_Lib.lib"  -llibc.a -l"C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Groupmodule_Controller_31Lv_DSP_CPU1/EtherCAT_Library/F2837xD_EtherCAT_Slave_Lib.lib" 
+<Linking>
+Finished building target: "Groupmodule_Controller_31Lv_DSP_CPU1.out"
+ 
+
+**** Build Finished ****
