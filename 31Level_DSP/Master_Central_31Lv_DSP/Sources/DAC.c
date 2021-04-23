@@ -63,7 +63,7 @@ void DAC(void)
     return;
 }
 
-void DAC_out(Uint16 ch, Uint32 data)
+void DAC_out(Uint16 ch, Uint16 data)
 {
 //    while(McSPI2Regs.MCSPI_CH0STAT.bit.TXS == 1);
 
@@ -77,9 +77,7 @@ void DAC_out(Uint16 ch, Uint32 data)
     }
 
     while(McSPI2Regs.MCSPI_CH0STAT.bit.TXFFE == 0)
-    {
         DAC_LOAD_HIGH;
-    };
 
     DAC_LOAD_LOW;
 

@@ -31,6 +31,7 @@ interrupt void ISR_DSPTimer(void)
     CenLeg_WR_READY = 0x0000;
 
     ADC_OP();
+    DAC();
     Sensor_Outside();
     Sensor_Inside();
 
@@ -70,7 +71,7 @@ interrupt void ISR_DSPTimer(void)
     HMI_CenMa_Matching();
 
     LED();
-//    DAC();
+
 
     XF1_OFF;
 	// Interrupt Clear.

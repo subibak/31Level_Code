@@ -5678,3 +5678,998 @@ Finished building target: "Master_Central_31Lv_DSP.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/DAC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/DAC.d_raw" --obj_directory="Sources"  "../Sources/DAC.c"
+ 
+>> Compilation failure
+Sources/subdir_rules.mk:9: recipe for target 'Sources/DAC.obj' failed
+"../Sources/DAC.c", line 66: error #148: declaration is incompatible with "void DAC_out(Uint16, Uint32)" (declared at line 33 of "C:\Users\subi\Desktop\31Level_Code\31Level_DSP\Master_Central_31Lv_DSP\Includes\Define_DAC.h")
+1 error detected in the compilation of "../Sources/DAC.c".
+gmake: *** [Sources/DAC.obj] Error 1
+Building file: "../Sources/CtrlModule.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/CtrlModule.d_raw" --obj_directory="Sources"  "../Sources/CtrlModule.c"
+Finished building: "../Sources/CtrlModule.c"
+ 
+Building file: "../Sources/GPIO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPIO.d_raw" --obj_directory="Sources"  "../Sources/GPIO.c"
+Finished building: "../Sources/GPIO.c"
+ 
+Building file: "../Sources/D_IO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/D_IO.d_raw" --obj_directory="Sources"  "../Sources/D_IO.c"
+Finished building: "../Sources/D_IO.c"
+ 
+Building file: "../Sources/ADC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/ADC.d_raw" --obj_directory="Sources"  "../Sources/ADC.c"
+Finished building: "../Sources/ADC.c"
+ 
+Building file: "../Sources/Fault.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Fault.d_raw" --obj_directory="Sources"  "../Sources/Fault.c"
+Finished building: "../Sources/Fault.c"
+ 
+Building file: "../Sources/IPC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IPC.d_raw" --obj_directory="Sources"  "../Sources/IPC.c"
+Finished building: "../Sources/IPC.c"
+ 
+Building file: "../Sources/Group_sorting.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Group_sorting.d_raw" --obj_directory="Sources"  "../Sources/Group_sorting.c"
+Finished building: "../Sources/Group_sorting.c"
+ 
+Building file: "../Sources/GPMC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPMC.d_raw" --obj_directory="Sources"  "../Sources/GPMC.c"
+Finished building: "../Sources/GPMC.c"
+ 
+Building file: "../Sources/L3_MAIN_interconnect.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/L3_MAIN_interconnect.d_raw" --obj_directory="Sources"  "../Sources/L3_MAIN_interconnect.c"
+Finished building: "../Sources/L3_MAIN_interconnect.c"
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+Finished building: "../Sources/Interrupt.c"
+ 
+Building file: "../Sources/LED.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/LED.d_raw" --obj_directory="Sources"  "../Sources/LED.c"
+Finished building: "../Sources/LED.c"
+ 
+Building file: "../Sources/IntCtrl.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IntCtrl.d_raw" --obj_directory="Sources"  "../Sources/IntCtrl.c"
+Finished building: "../Sources/IntCtrl.c"
+ 
+Building file: "../Sources/Mailbox.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Mailbox.d_raw" --obj_directory="Sources"  "../Sources/Mailbox.c"
+Finished building: "../Sources/Mailbox.c"
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building file: "../Sources/PRCM.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/PRCM.d_raw" --obj_directory="Sources"  "../Sources/PRCM.c"
+Finished building: "../Sources/PRCM.c"
+ 
+Building file: "../Sources/device.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/device.d_raw" --obj_directory="Sources"  "../Sources/device.c"
+Finished building: "../Sources/device.c"
+ 
+Building file: "../Sources/Timer.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Timer.d_raw" --obj_directory="Sources"  "../Sources/Timer.c"
+Finished building: "../Sources/Timer.c"
+ 
+Building file: "../Sources/main.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/main.d_raw" --obj_directory="Sources"  "../Sources/main.c"
+Finished building: "../Sources/main.c"
+ 
+Building file: "../Sources/Sensor.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Sensor.d_raw" --obj_directory="Sources"  "../Sources/Sensor.c"
+Finished building: "../Sources/Sensor.c"
+ 
+Building file: "../Sources/MMC_controller.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/MMC_controller.d_raw" --obj_directory="Sources"  "../Sources/MMC_controller.c"
+Finished building: "../Sources/MMC_controller.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/D_IO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/D_IO.d_raw" --obj_directory="Sources"  "../Sources/D_IO.c"
+Finished building: "../Sources/D_IO.c"
+ 
+Building file: "../Sources/DAC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/DAC.d_raw" --obj_directory="Sources"  "../Sources/DAC.c"
+Finished building: "../Sources/DAC.c"
+ 
+Building file: "../Sources/CtrlModule.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/CtrlModule.d_raw" --obj_directory="Sources"  "../Sources/CtrlModule.c"
+Finished building: "../Sources/CtrlModule.c"
+ 
+Building file: "../Sources/Fault.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Fault.d_raw" --obj_directory="Sources"  "../Sources/Fault.c"
+Finished building: "../Sources/Fault.c"
+ 
+Building file: "../Sources/ADC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/ADC.d_raw" --obj_directory="Sources"  "../Sources/ADC.c"
+Finished building: "../Sources/ADC.c"
+ 
+Building file: "../Sources/GPIO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPIO.d_raw" --obj_directory="Sources"  "../Sources/GPIO.c"
+Finished building: "../Sources/GPIO.c"
+ 
+Building file: "../Sources/GPMC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPMC.d_raw" --obj_directory="Sources"  "../Sources/GPMC.c"
+Finished building: "../Sources/GPMC.c"
+ 
+Building file: "../Sources/Group_sorting.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Group_sorting.d_raw" --obj_directory="Sources"  "../Sources/Group_sorting.c"
+Finished building: "../Sources/Group_sorting.c"
+ 
+Building file: "../Sources/IPC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IPC.d_raw" --obj_directory="Sources"  "../Sources/IPC.c"
+Finished building: "../Sources/IPC.c"
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+Finished building: "../Sources/Interrupt.c"
+ 
+Building file: "../Sources/L3_MAIN_interconnect.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/L3_MAIN_interconnect.d_raw" --obj_directory="Sources"  "../Sources/L3_MAIN_interconnect.c"
+Finished building: "../Sources/L3_MAIN_interconnect.c"
+ 
+Building file: "../Sources/LED.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/LED.d_raw" --obj_directory="Sources"  "../Sources/LED.c"
+Finished building: "../Sources/LED.c"
+ 
+Building file: "../Sources/IntCtrl.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IntCtrl.d_raw" --obj_directory="Sources"  "../Sources/IntCtrl.c"
+Finished building: "../Sources/IntCtrl.c"
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building file: "../Sources/PRCM.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/PRCM.d_raw" --obj_directory="Sources"  "../Sources/PRCM.c"
+Finished building: "../Sources/PRCM.c"
+ 
+Building file: "../Sources/device.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/device.d_raw" --obj_directory="Sources"  "../Sources/device.c"
+Finished building: "../Sources/device.c"
+ 
+Building file: "../Sources/Mailbox.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Mailbox.d_raw" --obj_directory="Sources"  "../Sources/Mailbox.c"
+Finished building: "../Sources/Mailbox.c"
+ 
+Building file: "../Sources/Timer.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Timer.d_raw" --obj_directory="Sources"  "../Sources/Timer.c"
+Finished building: "../Sources/Timer.c"
+ 
+Building file: "../Sources/main.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/main.d_raw" --obj_directory="Sources"  "../Sources/main.c"
+Finished building: "../Sources/main.c"
+ 
+Building file: "../Sources/Sensor.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Sensor.d_raw" --obj_directory="Sources"  "../Sources/Sensor.c"
+Finished building: "../Sources/Sensor.c"
+ 
+Building file: "../Sources/MMC_controller.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/MMC_controller.d_raw" --obj_directory="Sources"  "../Sources/MMC_controller.c"
+Finished building: "../Sources/MMC_controller.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+Finished building: "../Sources/Interrupt.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'Master_Central_31Lv_DSP.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/DAC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/DAC.d_raw" --obj_directory="Sources"  "../Sources/DAC.c"
+Finished building: "../Sources/DAC.c"
+ 
+Building file: "../Sources/CtrlModule.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/CtrlModule.d_raw" --obj_directory="Sources"  "../Sources/CtrlModule.c"
+Finished building: "../Sources/CtrlModule.c"
+ 
+Building file: "../Sources/D_IO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/D_IO.d_raw" --obj_directory="Sources"  "../Sources/D_IO.c"
+Finished building: "../Sources/D_IO.c"
+ 
+Building file: "../Sources/Fault.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Fault.d_raw" --obj_directory="Sources"  "../Sources/Fault.c"
+Finished building: "../Sources/Fault.c"
+ 
+Building file: "../Sources/ADC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/ADC.d_raw" --obj_directory="Sources"  "../Sources/ADC.c"
+Finished building: "../Sources/ADC.c"
+ 
+Building file: "../Sources/GPIO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPIO.d_raw" --obj_directory="Sources"  "../Sources/GPIO.c"
+Finished building: "../Sources/GPIO.c"
+ 
+Building file: "../Sources/Group_sorting.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Group_sorting.d_raw" --obj_directory="Sources"  "../Sources/Group_sorting.c"
+Finished building: "../Sources/Group_sorting.c"
+ 
+Building file: "../Sources/GPMC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPMC.d_raw" --obj_directory="Sources"  "../Sources/GPMC.c"
+Finished building: "../Sources/GPMC.c"
+ 
+Building file: "../Sources/IPC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IPC.d_raw" --obj_directory="Sources"  "../Sources/IPC.c"
+Finished building: "../Sources/IPC.c"
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+Finished building: "../Sources/Interrupt.c"
+ 
+Building file: "../Sources/LED.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/LED.d_raw" --obj_directory="Sources"  "../Sources/LED.c"
+Finished building: "../Sources/LED.c"
+ 
+Building file: "../Sources/IntCtrl.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IntCtrl.d_raw" --obj_directory="Sources"  "../Sources/IntCtrl.c"
+Finished building: "../Sources/IntCtrl.c"
+ 
+Building file: "../Sources/L3_MAIN_interconnect.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/L3_MAIN_interconnect.d_raw" --obj_directory="Sources"  "../Sources/L3_MAIN_interconnect.c"
+Finished building: "../Sources/L3_MAIN_interconnect.c"
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building file: "../Sources/PRCM.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/PRCM.d_raw" --obj_directory="Sources"  "../Sources/PRCM.c"
+Finished building: "../Sources/PRCM.c"
+ 
+Building file: "../Sources/device.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/device.d_raw" --obj_directory="Sources"  "../Sources/device.c"
+Finished building: "../Sources/device.c"
+ 
+Building file: "../Sources/main.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/main.d_raw" --obj_directory="Sources"  "../Sources/main.c"
+Finished building: "../Sources/main.c"
+ 
+Building file: "../Sources/Mailbox.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Mailbox.d_raw" --obj_directory="Sources"  "../Sources/Mailbox.c"
+Finished building: "../Sources/Mailbox.c"
+ 
+Building file: "../Sources/Timer.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Timer.d_raw" --obj_directory="Sources"  "../Sources/Timer.c"
+Finished building: "../Sources/Timer.c"
+ 
+Building file: "../Sources/Sensor.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Sensor.d_raw" --obj_directory="Sources"  "../Sources/Sensor.c"
+Finished building: "../Sources/Sensor.c"
+ 
+Building file: "../Sources/MMC_controller.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/MMC_controller.d_raw" --obj_directory="Sources"  "../Sources/MMC_controller.c"
+Finished building: "../Sources/MMC_controller.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/DAC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/DAC.d_raw" --obj_directory="Sources"  "../Sources/DAC.c"
+Finished building: "../Sources/DAC.c"
+ 
+Building file: "../Sources/D_IO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/D_IO.d_raw" --obj_directory="Sources"  "../Sources/D_IO.c"
+Finished building: "../Sources/D_IO.c"
+ 
+Building file: "../Sources/CtrlModule.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/CtrlModule.d_raw" --obj_directory="Sources"  "../Sources/CtrlModule.c"
+Finished building: "../Sources/CtrlModule.c"
+ 
+Building file: "../Sources/ADC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/ADC.d_raw" --obj_directory="Sources"  "../Sources/ADC.c"
+Finished building: "../Sources/ADC.c"
+ 
+Building file: "../Sources/Fault.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Fault.d_raw" --obj_directory="Sources"  "../Sources/Fault.c"
+Finished building: "../Sources/Fault.c"
+ 
+Building file: "../Sources/GPIO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPIO.d_raw" --obj_directory="Sources"  "../Sources/GPIO.c"
+Finished building: "../Sources/GPIO.c"
+ 
+Building file: "../Sources/Group_sorting.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Group_sorting.d_raw" --obj_directory="Sources"  "../Sources/Group_sorting.c"
+Finished building: "../Sources/Group_sorting.c"
+ 
+Building file: "../Sources/IPC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IPC.d_raw" --obj_directory="Sources"  "../Sources/IPC.c"
+Finished building: "../Sources/IPC.c"
+ 
+Building file: "../Sources/GPMC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPMC.d_raw" --obj_directory="Sources"  "../Sources/GPMC.c"
+Finished building: "../Sources/GPMC.c"
+ 
+Building file: "../Sources/L3_MAIN_interconnect.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/L3_MAIN_interconnect.d_raw" --obj_directory="Sources"  "../Sources/L3_MAIN_interconnect.c"
+Finished building: "../Sources/L3_MAIN_interconnect.c"
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+Finished building: "../Sources/Interrupt.c"
+ 
+Building file: "../Sources/IntCtrl.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IntCtrl.d_raw" --obj_directory="Sources"  "../Sources/IntCtrl.c"
+Finished building: "../Sources/IntCtrl.c"
+ 
+Building file: "../Sources/LED.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/LED.d_raw" --obj_directory="Sources"  "../Sources/LED.c"
+Finished building: "../Sources/LED.c"
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building file: "../Sources/Timer.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Timer.d_raw" --obj_directory="Sources"  "../Sources/Timer.c"
+Finished building: "../Sources/Timer.c"
+ 
+Building file: "../Sources/PRCM.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/PRCM.d_raw" --obj_directory="Sources"  "../Sources/PRCM.c"
+Finished building: "../Sources/PRCM.c"
+ 
+Building file: "../Sources/Mailbox.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Mailbox.d_raw" --obj_directory="Sources"  "../Sources/Mailbox.c"
+Finished building: "../Sources/Mailbox.c"
+ 
+Building file: "../Sources/device.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/device.d_raw" --obj_directory="Sources"  "../Sources/device.c"
+Finished building: "../Sources/device.c"
+ 
+Building file: "../Sources/Sensor.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Sensor.d_raw" --obj_directory="Sources"  "../Sources/Sensor.c"
+Finished building: "../Sources/Sensor.c"
+ 
+Building file: "../Sources/main.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/main.d_raw" --obj_directory="Sources"  "../Sources/main.c"
+Finished building: "../Sources/main.c"
+ 
+Building file: "../Sources/MMC_controller.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/MMC_controller.d_raw" --obj_directory="Sources"  "../Sources/MMC_controller.c"
+Finished building: "../Sources/MMC_controller.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/DAC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/DAC.d_raw" --obj_directory="Sources"  "../Sources/DAC.c"
+ 
+>> Compilation failure
+Sources/subdir_rules.mk:9: recipe for target 'Sources/DAC.obj' failed
+"../Sources/DAC.c", line 66: error #148: declaration is incompatible with "void DAC_out(Uint16, Uint32)" (declared at line 33 of "C:\Users\subi\Desktop\31Level_Code\31Level_DSP\Master_Central_31Lv_DSP\Includes\Define_DAC.h")
+1 error detected in the compilation of "../Sources/DAC.c".
+gmake: *** [Sources/DAC.obj] Error 1
+Building file: "../Sources/D_IO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/D_IO.d_raw" --obj_directory="Sources"  "../Sources/D_IO.c"
+Finished building: "../Sources/D_IO.c"
+ 
+Building file: "../Sources/CtrlModule.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/CtrlModule.d_raw" --obj_directory="Sources"  "../Sources/CtrlModule.c"
+Finished building: "../Sources/CtrlModule.c"
+ 
+Building file: "../Sources/Fault.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Fault.d_raw" --obj_directory="Sources"  "../Sources/Fault.c"
+Finished building: "../Sources/Fault.c"
+ 
+Building file: "../Sources/ADC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/ADC.d_raw" --obj_directory="Sources"  "../Sources/ADC.c"
+Finished building: "../Sources/ADC.c"
+ 
+Building file: "../Sources/GPIO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPIO.d_raw" --obj_directory="Sources"  "../Sources/GPIO.c"
+Finished building: "../Sources/GPIO.c"
+ 
+Building file: "../Sources/IPC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IPC.d_raw" --obj_directory="Sources"  "../Sources/IPC.c"
+Finished building: "../Sources/IPC.c"
+ 
+Building file: "../Sources/Group_sorting.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Group_sorting.d_raw" --obj_directory="Sources"  "../Sources/Group_sorting.c"
+Finished building: "../Sources/Group_sorting.c"
+ 
+Building file: "../Sources/L3_MAIN_interconnect.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/L3_MAIN_interconnect.d_raw" --obj_directory="Sources"  "../Sources/L3_MAIN_interconnect.c"
+Finished building: "../Sources/L3_MAIN_interconnect.c"
+ 
+Building file: "../Sources/GPMC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPMC.d_raw" --obj_directory="Sources"  "../Sources/GPMC.c"
+Finished building: "../Sources/GPMC.c"
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+Finished building: "../Sources/Interrupt.c"
+ 
+Building file: "../Sources/LED.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/LED.d_raw" --obj_directory="Sources"  "../Sources/LED.c"
+Finished building: "../Sources/LED.c"
+ 
+Building file: "../Sources/IntCtrl.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IntCtrl.d_raw" --obj_directory="Sources"  "../Sources/IntCtrl.c"
+Finished building: "../Sources/IntCtrl.c"
+ 
+Building file: "../Sources/Mailbox.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Mailbox.d_raw" --obj_directory="Sources"  "../Sources/Mailbox.c"
+Finished building: "../Sources/Mailbox.c"
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building file: "../Sources/Timer.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Timer.d_raw" --obj_directory="Sources"  "../Sources/Timer.c"
+Finished building: "../Sources/Timer.c"
+ 
+Building file: "../Sources/device.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/device.d_raw" --obj_directory="Sources"  "../Sources/device.c"
+Finished building: "../Sources/device.c"
+ 
+Building file: "../Sources/PRCM.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/PRCM.d_raw" --obj_directory="Sources"  "../Sources/PRCM.c"
+Finished building: "../Sources/PRCM.c"
+ 
+Building file: "../Sources/main.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/main.d_raw" --obj_directory="Sources"  "../Sources/main.c"
+Finished building: "../Sources/main.c"
+ 
+Building file: "../Sources/Sensor.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Sensor.d_raw" --obj_directory="Sources"  "../Sources/Sensor.c"
+Finished building: "../Sources/Sensor.c"
+ 
+Building file: "../Sources/MMC_controller.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/MMC_controller.d_raw" --obj_directory="Sources"  "../Sources/MMC_controller.c"
+Finished building: "../Sources/MMC_controller.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/DAC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/DAC.d_raw" --obj_directory="Sources"  "../Sources/DAC.c"
+Finished building: "../Sources/DAC.c"
+ 
+Building file: "../Sources/D_IO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/D_IO.d_raw" --obj_directory="Sources"  "../Sources/D_IO.c"
+Finished building: "../Sources/D_IO.c"
+ 
+Building file: "../Sources/CtrlModule.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/CtrlModule.d_raw" --obj_directory="Sources"  "../Sources/CtrlModule.c"
+Finished building: "../Sources/CtrlModule.c"
+ 
+Building file: "../Sources/Fault.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Fault.d_raw" --obj_directory="Sources"  "../Sources/Fault.c"
+Finished building: "../Sources/Fault.c"
+ 
+Building file: "../Sources/GPIO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPIO.d_raw" --obj_directory="Sources"  "../Sources/GPIO.c"
+Finished building: "../Sources/GPIO.c"
+ 
+Building file: "../Sources/ADC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/ADC.d_raw" --obj_directory="Sources"  "../Sources/ADC.c"
+Finished building: "../Sources/ADC.c"
+ 
+Building file: "../Sources/IPC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IPC.d_raw" --obj_directory="Sources"  "../Sources/IPC.c"
+Finished building: "../Sources/IPC.c"
+ 
+Building file: "../Sources/GPMC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPMC.d_raw" --obj_directory="Sources"  "../Sources/GPMC.c"
+Finished building: "../Sources/GPMC.c"
+ 
+Building file: "../Sources/Group_sorting.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Group_sorting.d_raw" --obj_directory="Sources"  "../Sources/Group_sorting.c"
+Finished building: "../Sources/Group_sorting.c"
+ 
+Building file: "../Sources/L3_MAIN_interconnect.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/L3_MAIN_interconnect.d_raw" --obj_directory="Sources"  "../Sources/L3_MAIN_interconnect.c"
+Finished building: "../Sources/L3_MAIN_interconnect.c"
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+Finished building: "../Sources/Interrupt.c"
+ 
+Building file: "../Sources/LED.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/LED.d_raw" --obj_directory="Sources"  "../Sources/LED.c"
+Finished building: "../Sources/LED.c"
+ 
+Building file: "../Sources/IntCtrl.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IntCtrl.d_raw" --obj_directory="Sources"  "../Sources/IntCtrl.c"
+Finished building: "../Sources/IntCtrl.c"
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building file: "../Sources/Mailbox.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Mailbox.d_raw" --obj_directory="Sources"  "../Sources/Mailbox.c"
+Finished building: "../Sources/Mailbox.c"
+ 
+Building file: "../Sources/PRCM.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/PRCM.d_raw" --obj_directory="Sources"  "../Sources/PRCM.c"
+Finished building: "../Sources/PRCM.c"
+ 
+Building file: "../Sources/Timer.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Timer.d_raw" --obj_directory="Sources"  "../Sources/Timer.c"
+Finished building: "../Sources/Timer.c"
+ 
+Building file: "../Sources/device.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/device.d_raw" --obj_directory="Sources"  "../Sources/device.c"
+Finished building: "../Sources/device.c"
+ 
+Building file: "../Sources/main.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/main.d_raw" --obj_directory="Sources"  "../Sources/main.c"
+Finished building: "../Sources/main.c"
+ 
+Building file: "../Sources/Sensor.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Sensor.d_raw" --obj_directory="Sources"  "../Sources/Sensor.c"
+Finished building: "../Sources/Sensor.c"
+ 
+Building file: "../Sources/MMC_controller.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/MMC_controller.d_raw" --obj_directory="Sources"  "../Sources/MMC_controller.c"
+Finished building: "../Sources/MMC_controller.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug_FLASH for project Groupmodule_Controller_31Lv_DSP_CPU1 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'Groupmodule_Controller_31Lv_DSP_CPU1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug_FLASH for project Groupmodule_Controller_31Lv_DSP_CPU1 ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'Groupmodule_Controller_31Lv_DSP_CPU1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+Finished building: "../Sources/Interrupt.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../Sources/DAC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/DAC.d_raw" --obj_directory="Sources"  "../Sources/DAC.c"
+Finished building: "../Sources/DAC.c"
+ 
+Building file: "../Sources/CtrlModule.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/CtrlModule.d_raw" --obj_directory="Sources"  "../Sources/CtrlModule.c"
+Finished building: "../Sources/CtrlModule.c"
+ 
+Building file: "../Sources/D_IO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/D_IO.d_raw" --obj_directory="Sources"  "../Sources/D_IO.c"
+Finished building: "../Sources/D_IO.c"
+ 
+Building file: "../Sources/Fault.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Fault.d_raw" --obj_directory="Sources"  "../Sources/Fault.c"
+Finished building: "../Sources/Fault.c"
+ 
+Building file: "../Sources/ADC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/ADC.d_raw" --obj_directory="Sources"  "../Sources/ADC.c"
+Finished building: "../Sources/ADC.c"
+ 
+Building file: "../Sources/GPIO.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPIO.d_raw" --obj_directory="Sources"  "../Sources/GPIO.c"
+Finished building: "../Sources/GPIO.c"
+ 
+Building file: "../Sources/Group_sorting.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Group_sorting.d_raw" --obj_directory="Sources"  "../Sources/Group_sorting.c"
+Finished building: "../Sources/Group_sorting.c"
+ 
+Building file: "../Sources/GPMC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/GPMC.d_raw" --obj_directory="Sources"  "../Sources/GPMC.c"
+Finished building: "../Sources/GPMC.c"
+ 
+Building file: "../Sources/IPC.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IPC.d_raw" --obj_directory="Sources"  "../Sources/IPC.c"
+Finished building: "../Sources/IPC.c"
+ 
+Building file: "../Sources/L3_MAIN_interconnect.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/L3_MAIN_interconnect.d_raw" --obj_directory="Sources"  "../Sources/L3_MAIN_interconnect.c"
+Finished building: "../Sources/L3_MAIN_interconnect.c"
+ 
+Building file: "../Sources/Interrupt.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Interrupt.d_raw" --obj_directory="Sources"  "../Sources/Interrupt.c"
+Finished building: "../Sources/Interrupt.c"
+ 
+Building file: "../Sources/LED.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/LED.d_raw" --obj_directory="Sources"  "../Sources/LED.c"
+Finished building: "../Sources/LED.c"
+ 
+Building file: "../Sources/IntCtrl.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/IntCtrl.d_raw" --obj_directory="Sources"  "../Sources/IntCtrl.c"
+Finished building: "../Sources/IntCtrl.c"
+ 
+Building file: "../Sources/McSPI.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/McSPI.d_raw" --obj_directory="Sources"  "../Sources/McSPI.c"
+Finished building: "../Sources/McSPI.c"
+ 
+Building file: "../Sources/PRCM.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/PRCM.d_raw" --obj_directory="Sources"  "../Sources/PRCM.c"
+Finished building: "../Sources/PRCM.c"
+ 
+Building file: "../Sources/Timer.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Timer.d_raw" --obj_directory="Sources"  "../Sources/Timer.c"
+Finished building: "../Sources/Timer.c"
+ 
+Building file: "../Sources/Mailbox.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Mailbox.d_raw" --obj_directory="Sources"  "../Sources/Mailbox.c"
+Finished building: "../Sources/Mailbox.c"
+ 
+Building file: "../Sources/device.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/device.d_raw" --obj_directory="Sources"  "../Sources/device.c"
+Finished building: "../Sources/device.c"
+ 
+Building file: "../Sources/main.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/main.d_raw" --obj_directory="Sources"  "../Sources/main.c"
+Finished building: "../Sources/main.c"
+ 
+Building file: "../Sources/Sensor.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/Sensor.d_raw" --obj_directory="Sources"  "../Sources/Sensor.c"
+Finished building: "../Sources/Sensor.c"
+ 
+Building file: "../Sources/MMC_controller.c"
+Invoking: C6000 Compiler
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP" --include_path="C:/Users/subi/Desktop/31Level_Code/31Level_DSP/Master_Central_31Lv_DSP/Includes" --include_path="C:/ti/ti-cgt-c6000_8.3.2/include" --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Sources/MMC_controller.d_raw" --obj_directory="Sources"  "../Sources/MMC_controller.c"
+Finished building: "../Sources/MMC_controller.c"
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Master_Central_31Lv_DSP ****
+
+"C:\\ti\\ccs1020\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building target: "Master_Central_31Lv_DSP.out"
+Invoking: C6000 Linker
+"C:/ti/ti-cgt-c6000_8.3.2/bin/cl6x" -mv6600 --define=am5728 --define=core1 -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Master_Central_31Lv_DSP.map" --heap_size=0x800 --stack_size=0x800 -i"C:/ti/ti-cgt-c6000_8.3.2/lib" -i"C:/ti/ti-cgt-c6000_8.3.2/include" --reread_libs --define=CORE1=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Master_Central_31Lv_DSP_linkInfo.xml" --rom_model -o "Master_Central_31Lv_DSP.out" "./Includes/AM572x_C66/AM572x_C66_GlobarVariableDefs.obj" "./Sources/ADC.obj" "./Sources/CtrlModule.obj" "./Sources/DAC.obj" "./Sources/D_IO.obj" "./Sources/Fault.obj" "./Sources/GPIO.obj" "./Sources/GPMC.obj" "./Sources/Group_sorting.obj" "./Sources/IPC.obj" "./Sources/IntCtrl.obj" "./Sources/Interrupt.obj" "./Sources/L3_MAIN_interconnect.obj" "./Sources/LED.obj" "./Sources/MMC_controller.obj" "./Sources/Mailbox.obj" "./Sources/McSPI.obj" "./Sources/PRCM.obj" "./Sources/Sensor.obj" "./Sources/Timer.obj" "./Sources/device.obj" "./Sources/main.obj" "../AM572x_C66_Headers_nonBIOS.cmd" "../AM57xx_C66.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Master_Central_31Lv_DSP.out"
+ 
+
+**** Build Finished ****
